@@ -2,13 +2,12 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
   template: JST['products/show'],
 
   events: {
-    'click #reviews button': 'renderReviewForm',
+    'click .review-create-btn': 'renderReviewForm',
     'click #cancel-btn': 'render'
   },
 
   initialize: function(options) {
     this.listenTo(this.model, 'sync', this.render);
-    this.listenTo(this.model.reviews(), 'sync', this.render)
   },
 
   addReviews: function(review) {
@@ -17,6 +16,7 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
   },
 
   render: function() {
+    console.log('rendering')
     this.$el.html(this.template({ product: this.model }));
     this.renderReviews();
     return this;

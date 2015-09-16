@@ -13,24 +13,20 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault();
-    this.collection.create({
+    var that = this;
+    var attrs = {
       product_id: this.collection.product.id,
       title: this.$('input').val(),
       body: this.$('textarea').val(),
       star_rating: this.$('select').val()
-    }, { wait: true });
+    }
+    var that = this;
+    var newReview = new Celadon.Models.Review();
+    newReview.save(attrs, {
+      success: function() {
+        that.collection.add(newReview);
+        Backbone.history.navigate('#/product/' +   that.collection.product.id, { trigger: true })
+      }
+    })
   },
 })
-
-// var attrs = { product_id: this.collection.product.id,
-//   title: this.$('input').val(),
-//   body: this.$('textarea').val(),
-//   star_rating: this.$('select').val()
-// }
-// var that = this;
-// var newReview = new Celadon.Models.Review();
-// newReview.save(attrs, {
-//   success: function() {
-//
-//   }
-// })
