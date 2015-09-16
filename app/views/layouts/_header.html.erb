@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top group" role="navigation">
   <div class="container container-fluid">
     <div class="navbar-logo">
-      <a class="navbar-logo-img" href="#">Celadon</a>
+      <a class="navbar-logo-img" href="/#">Celadon</a>
     </div>
 
     <div class="search-bar">
@@ -18,7 +18,13 @@
     </div>
     <ul class="navbar-btn">
       <li>
-        <p class="line1">Hello. Sign in</p>
+        <p class="line1">Hello.
+          <% if signed_in? %>
+            <a href="/#/user/<%= current_user.id %>"><%= current_user.fname %></a>
+          <% else %>
+            <%= link_to "Sign in", new_session_url %>
+          <% end %>
+        </p>
         <p class="line2"><a href="#/user/1">Your Account</a></p>
       </li>
       <li>
@@ -37,6 +43,9 @@
       </li>
       <li>
         <p class="line2">Cart</p>
+      </li>
+      <li>
+        <%= button_to "Sign out", session_url, method: :delete %>
       </li>
     </ul>
   </div>

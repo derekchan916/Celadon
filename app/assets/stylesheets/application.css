@@ -15,7 +15,7 @@
  */
 
 
- html, body, header, ul, li, button, input, textarea, a {
+ html, body, header, ul, li, input {
    margin: 0;
    padding: 0;
    border: 0;
