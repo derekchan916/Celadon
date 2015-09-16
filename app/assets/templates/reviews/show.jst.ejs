@@ -1,0 +1,18 @@
+<div class="average-rating">
+
+</div>
+<li>
+  <div class="review-header">
+    <p>
+      <%= review.escape('star_rating') %> stars. <%= review.escape('title') %>
+    </p>
+    <p>
+      By <%= review.escape('fname') %> <%= review.escape('lname') %> on <%= review.escape('created_at') %>
+    </p>
+  </div>
+  <div class="review-body">
+    <p>
+      <%= review.escape('body') %>
+    </p>
+  </div>
+</li>

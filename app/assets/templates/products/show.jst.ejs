@@ -14,4 +14,15 @@
     Attack: <%= product.escape('attack') %><br>
     Defense: <%= product.escape('defense') %>
   </div>
+  <div id="reviews">
+    <h3>Customer Reviews</h3>
+    <div class="review-summary">
+      Number of reviews: <%= product.escape('number_of_reviews') %><br>
+      <%= product.escape('average_star_rating') %> out of 5 stars
+    </div>
+    <div id="review-create">
+      Share your thoughts with other customers
+      <button>Write a customer review</button>
+    </div>
+  </div>
 </div>

@@ -25,4 +25,17 @@ class Product < ActiveRecord::Base
   validates :poke_type, inclusion: { in: TYPES }
 
   has_many :reviews, class_name: 'Review', foreign_key: :product_id
+
+  def average_star_rating
+    ratings = []
+    self.reviews.each do |review|
+      ratings << review.star_rating
+    end
+
+    ratings.empty? ? 0 : ratings.inject(&:+) / ratings.count.to_f
+  end
+
+  def number_of_reviews
+    self.reviews.count
+  end
 end
