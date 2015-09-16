@@ -13,6 +13,7 @@ ActiveRecord::Base.transaction do
       "attack"=>49,
       "defense"=>49,
       "poke_type"=>"grass",
+      "description"=>"Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
       "moves"=>[
          "tackle",
          "vine whip"
@@ -23,6 +24,7 @@ ActiveRecord::Base.transaction do
       "attack"=>62,
       "defense"=>63,
       "poke_type"=>"grass",
+      "description"=>"There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon."
       "moves"=>[
          "tackle",
          "vine whip",
@@ -34,6 +36,7 @@ ActiveRecord::Base.transaction do
       "attack"=>82,
       "defense"=>83,
       "poke_type"=>"grass",
+      "description"=>"There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people."
       "moves"=>[
          "tackle",
          "vine whip",
@@ -45,6 +48,7 @@ ActiveRecord::Base.transaction do
       "attack"=>52,
       "defense"=>43,
       "poke_type"=>"fire",
+      "description"=>"The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely."
       "moves"=>[
          "scratch",
          "ember",
@@ -56,6 +60,7 @@ ActiveRecord::Base.transaction do
       "attack"=>64,
       "defense"=>58,
       "poke_type"=>"fire",
+      "description"=>"Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color."
       "moves"=>[
          "scratch",
          "ember",
@@ -68,6 +73,7 @@ ActiveRecord::Base.transaction do
       "attack"=>84,
       "defense"=>78,
       "poke_type"=>"fire",
+      "description"=>"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself."
       "moves"=>[
          "flamethrower",
          "wing attack",

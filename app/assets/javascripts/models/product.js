@@ -3,7 +3,6 @@ Celadon.Models.Product = Backbone.Model.extend({
 
   parse: function(payload) {
     if (payload.reviews) {
-      debugger
       this.reviews().set(payload.reviews, { parse: true })
       delete payload.reviews
     }
@@ -13,7 +12,6 @@ Celadon.Models.Product = Backbone.Model.extend({
 
   reviews: function() {
     if (!this._reviews) {
-      debugger
       this._reviews = new Celadon.Collections.Reviews([], { product: this })
     }
     return this._reviews;
