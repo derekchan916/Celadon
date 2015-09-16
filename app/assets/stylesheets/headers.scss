@@ -1,0 +1,61 @@
+.navbar {
+  display: block;
+  background: #232F3E;
+  color: white;
+  border-bottom: 1px solid gray;
+  height: 95px;
+}
+
+.navbar-logo {
+  float: left;
+}
+
+.navbar-logo > .navbar-logo-img {
+  display: block;
+  font-weight: bold;
+  font-size: 27px;
+  margin-left: 35px;
+  margin-top: 8px;
+  margin-right: 48px;
+}
+
+.search-bar {
+  display: block;
+  float: left;
+  background: white;
+  width: 700px;
+  height: 36px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.search-bar > .search-bar-input {
+}
+
+.search-bar > .search-bar-button {
+  position: relative;
+  display: block;
+  height: 22px;
+  float: right;
+  background: #FEBD69;
+  padding: 7px 13px 7px 13px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -18px;
+}
+
+.navbar-btn {
+  float: right;
+}
+
+.navbar-btn > li {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-bar-img {
+  width: 20px
+}
