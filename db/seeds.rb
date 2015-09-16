@@ -95,7 +95,7 @@ ActiveRecord::Base.transaction do
     stats["price"] = rand(50..100)
     stats["level"] = rand(20..40)
 
-    stats["image_url"] = "/assets/product_snaps/#{num}.png"
+    stats["image_url"] = "product_snaps/#{num}.png"
     stats
   end
 

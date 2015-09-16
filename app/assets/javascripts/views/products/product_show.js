@@ -16,7 +16,6 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
   },
 
   render: function() {
-    console.log('rendering')
     this.$el.html(this.template({ product: this.model }));
     this.renderReviews();
     return this;

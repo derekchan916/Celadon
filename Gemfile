@@ -36,6 +36,9 @@ gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'jquery-ui-rails'
 gem 'bcrypt-ruby', require: 'bcrypt'
+gem 'figaro'
+gem 'paperclip'
+gem 'aws-sdk', '~> 1.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
