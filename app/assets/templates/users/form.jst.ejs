@@ -1,0 +1,14 @@
+<h3>Edit your account</h3>
+<form>
+  First Name:
+  <input
+    type="text"
+    name="user[fname]"
+    value="<%= user.escape('fname') %>"><br>
+  Last Name:
+  <input
+    type="text"
+    name="user[lname]"
+    value="<%= user.escape('lname') %>">
+  <button>Submit</button>
+</form>

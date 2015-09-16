@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ .hidden {
+   display: none;
+ }
+
+ .search-bar-img {
+   width: 20px
+ }

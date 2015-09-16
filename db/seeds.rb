@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 ActiveRecord::Base.transaction do
-  pokemon = {
+  product = {
     "1"=>{
       "name"=>"Bulbasaur",
       "attack"=>49,
@@ -77,7 +77,7 @@ ActiveRecord::Base.transaction do
     },
   }
 
-  pokemon = pokemon.map do |num, stats|
+  product = product.map do |num, stats|
     if num.length == 1
       num = "00#{num}"
       stats["national_id"] = num
@@ -89,9 +89,9 @@ ActiveRecord::Base.transaction do
     stats["price"] = rand(50..100)
     stats["level"] = rand(20..40)
 
-    stats["image_url"] = "/assets/pokemon_snaps/#{num}.png"
+    stats["image_url"] = "/assets/product_snaps/#{num}.png"
     stats
   end
 
-  Product.create!(pokemon)
+  Product.create!(product)
 end

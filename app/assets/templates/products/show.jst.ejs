@@ -1,0 +1,17 @@
+<div class='poke-image'>
+  <img src="<%= product.escape('image_url') %>">
+  </div>
+  <div class='poke-content'>
+  <div class='poke-content-header'>
+    <h3><%= product.escape('name') %></h3>
+    <p>
+      Date found: <%= product.escape('created_at') %><br>
+      Price: $<%= product.escape('price') %>
+    </p>
+  </div>
+  <div class='poke-content-content'>
+    Level: <%= product.escape('level') %><br>
+    Attack: <%= product.escape('attack') %><br>
+    Defense: <%= product.escape('defense') %>
+  </div>
+</div>
