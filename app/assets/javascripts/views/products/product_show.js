@@ -2,17 +2,17 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
   template: JST['products/show'],
 
   events: {
-    'click #reviews button': 'renderListForm'
+    'click #reviews button': 'renderReviewForm',
+    'click #cancel-btn': 'render'
   },
 
   initialize: function(options) {
     this.listenTo(this.model, 'sync', this.render);
+    this.listenTo(this.model.reviews(), 'sync', this.render)
   },
 
   addReviews: function(review) {
-    var view = new Celadon.Views.ReviewShow({
-      model: review
-    })
+    var view = new Celadon.Views.ReviewShow({ model: review });
     this.addSubview('#reviews', view);
   },
 
@@ -26,7 +26,10 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
     this.model.reviews().each(this.addReviews.bind(this));
   },
 
-  renderListForm: function() {
-    console.log('this works')
+  renderReviewForm: function() {
+    var view = new Celadon.Views.ReviewForm ({
+      collection: this.model.reviews()
+    })
+    this.addSubview('#review-create', view)
   }
 })
