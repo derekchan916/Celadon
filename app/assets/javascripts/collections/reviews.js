@@ -1,5 +1,5 @@
 Celadon.Collections.Reviews = Backbone.Collection.extend({
-  url: 'api/reviews',
+  url: '/api/reviews',
   model: Celadon.Models.Review,
 
   initialize: function(model, options) {

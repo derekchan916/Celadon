@@ -3,6 +3,11 @@ window.Celadon = {
   Collections: {},
   Views: {},
   Routers: {},
+
+  // events: {
+  //   'click .navbar-btn': 'toggleDropdown'
+  // },
+
   initialize: function() {
     Celadon.products = new Celadon.Collections.Products();
     Celadon.products.fetch();
@@ -12,7 +17,11 @@ window.Celadon = {
       $rootEl: $('#main')
     })
     Backbone.history.start();
-  }
+  },
+
+  // toggleDropdown: function(e) {
+  //   console.log('works');
+  // }
 };
 
 $(document).ready(function(){

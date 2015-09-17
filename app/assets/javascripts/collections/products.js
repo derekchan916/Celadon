@@ -1,5 +1,5 @@
 Celadon.Collections.Products = Backbone.Collection.extend({
-  url: 'api/products',
+  url: '/api/products',
   model: Celadon.Models.Product,
 
   getOrFetch: function(id) {

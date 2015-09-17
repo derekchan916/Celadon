@@ -1,5 +1,5 @@
 Celadon.Models.Product = Backbone.Model.extend({
-  urlRoot: 'api/products',
+  urlRoot: '/api/products',
 
   parse: function(payload) {
     if (payload.reviews) {

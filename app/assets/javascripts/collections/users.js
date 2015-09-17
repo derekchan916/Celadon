@@ -1,5 +1,5 @@
 Celadon.Collections.Users = Backbone.Collection.extend({
-  url: 'api/users',
+  url: '/api/users',
   model: Celadon.Models.User,
 
   getOrFetch: function(id) {
