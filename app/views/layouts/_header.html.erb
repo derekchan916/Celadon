@@ -36,7 +36,7 @@
         <span class="line2">Your Account
           <span class="arrow">
 
-            <div class="dropdown" id="dropdown">
+            <div class="dropdown hidden" id="dropdown">
               <span class="dropdown-arrow"></span>
               <ul>
                 <% if !signed_in? %>
@@ -67,14 +67,15 @@
           <span class="arrow"><span>
         </span>
       </a>
-      <a href="#/user/<%= current_user.id %>/cart_items">
+      <% if signed_in? %>
+        <a href="#/user/<%= current_user.id %>/cart_items">
+      <% else %>
+        <a href='/session/new'>
+      <% end %>
         <span class="line1"></span>
         <span class="line2">Cart</span>
         <span class="cart-img"></span>
       </a>
-      <span>
-        <%= button_to "Sign out", session_url, method: :delete %>
-      </span>
     </div>
   </div>
 </nav>

@@ -26,7 +26,7 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
     }
     newCartItem.save(attrs, {
       success: function() {
-        console.log('you added it to the cart!')
+        $('#add-cart-message').toggleClass('hidden');
       }
     })
 
@@ -43,6 +43,7 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
 
   render: function() {
     this.$el.html(this.template({ product: this.model }));
+    $('#add-cart-message').addClass('hidden');
     this.renderReviews();
     return this;
   },

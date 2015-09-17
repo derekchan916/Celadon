@@ -1,6 +1,7 @@
 module Api
   class CartItemsController < ApiController
     def create
+      sleep(1)
       @cart_item = current_user.cart_items.new(cart_params)
 
       if @cart_item.save
