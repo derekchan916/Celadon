@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   has_many :reviews, class_name: 'Review', foreign_key: :author_id
+  has_many :cart_items
 
   attr_reader :password
   after_initialize :ensure_session_token

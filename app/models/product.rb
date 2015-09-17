@@ -25,6 +25,7 @@ class Product < ActiveRecord::Base
   validates :poke_type, inclusion: { in: TYPES }
 
   has_many :reviews, class_name: 'Review', foreign_key: :product_id
+  has_many :cart_items
 
   def average_star_rating
     ratings = []
