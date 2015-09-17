@@ -9,6 +9,7 @@ Current User for shopping cart on Backbone side
 Current User for reviews on Rails side
 Change headers to backbone
 Change the price to floating number
+Check to see if there is already that product in the cart, add it if there is.
 Make sure after you purchase something it gets deleted from the product list?
   To do this, change the products, no levels, no stats etc. But have stock.
 Create Table for category, area, and vendor

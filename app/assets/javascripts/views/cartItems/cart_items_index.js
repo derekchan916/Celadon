@@ -20,7 +20,8 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
     product.fetch({
       success: function() {
         var cartItemListItem = new Celadon.Views.CartItemListItem({
-          model: product
+          model: product,
+          cartItem: cartItem
         });
         that.addSubview('ul.cart-items', cartItemListItem);
       }

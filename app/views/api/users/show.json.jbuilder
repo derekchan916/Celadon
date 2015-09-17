@@ -9,6 +9,6 @@ end
 
 json.cart_items do
   json.array!(@user.cart_items) do |cart_item|
-    json.extract!(cart_item, :id, :product_id, :quantity)
+    json.extract!(cart_item, :id, :user_id, :product_id, :quantity)
   end
 end

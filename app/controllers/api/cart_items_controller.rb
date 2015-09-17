@@ -13,7 +13,8 @@ module Api
 
     def destroy
       @cart_item = CartItem.find(params[:id])
-      @cart_item.destroy
+      @cart_item.try(:destroy)
+      render json: {}
     end
 
     private
