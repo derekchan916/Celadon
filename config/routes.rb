@@ -7,9 +7,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     resources :products, only: [:index, :show]
     resources :users, only: [:index, :show, :update]
-    resources :reviews, only: [:create, :destroy] do
-    # post :show_by_product, on: :member
-    # post :show_by_user, on: :member
-    end
+    resources :reviews, only: [:create, :destroy]
+    resources :cart_items, only: [:create, :index, :destroy]
   end
 end

@@ -22,7 +22,7 @@ module Api
 
     private
     def review_params
-      params.require(:review).permit(:star_rating, :title, :body,   :product_id)
+      params.require(:review).permit(:star_rating, :title, :body, :product_id)
     end
   end
 end

@@ -1,0 +1,12 @@
+<div class='cart-product-img'>
+  <img src="<%= product.escape('image_url') %>">
+</div>
+<div class='cart-product-content'>
+  <div class='poke-content-header'>
+    <h3><%= product.escape('name') %></h3>
+    <p>Delete</p>
+    <p>
+      Price: $<%= product.escape('price') %>
+    </p>
+  </div>
+</div>

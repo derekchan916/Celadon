@@ -105,6 +105,7 @@ ActiveRecord::Base.transaction do
 
   User.create(email: "lorenallchan", fname: "Lorena", lname: "Chan", password: "lorenallchan")
 
+  Review.create(author_id: 1, product_id: 1, star_rating: 5, title: "Pretty Good", body: "This little fella was Pretty good.")
   Review.create(author_id: 2, product_id: 1, star_rating: 2, title: "Mehhhhh", body: "Wasn't THAAAT great... was only ok.")
 
   CartItem.create(user_id: 1, product_id: 1)
