@@ -1,5 +1,7 @@
 json.extract!(@user, :id, :email, :fname, :lname)
 json.image_url asset_path(@user.image.url(:original))
+json.current_subtotal @user.current_subtotal
+json.number_of_cart_items @user.number_of_cart_items
 
 json.reviews do
   json.array!(@user.reviews) do |review|

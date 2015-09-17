@@ -31,6 +31,20 @@ class User < ActiveRecord::Base
     self.session_token
   end
 
+  def current_subtotal
+    subtotal = 0
+
+    self.cart_items.each do |cart_item|
+      subtotal += cart_item.product.price
+    end
+
+    subtotal
+  end
+
+  def number_of_cart_items
+    self.cart_items.count
+  end
+
   protected
   def ensure_session_token
     self.session_token ||= SecureRandom.urlsafe_base64(16)
