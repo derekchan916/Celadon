@@ -40,7 +40,7 @@
   display: block;
   float: left;
   height: 35px;
-  width: 700px;
+  width: 800px;
   padding: 0 6px 10px 6px;
   color: black;
   padding: 0 6px;
@@ -71,47 +71,108 @@
   background: #FEBD69;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
 }
 
 .search-bar-button > .search-bar-img {
   padding: 6px 0 0 9px;
   width: 25px;
 }
-///////////////////////////////////
+
 .navbar-btn {
-  // position: absolute;
   float: right;
-  right: 10px;
-  top: 20px;
+  padding: 6px 7px 5px 32px;
+  margin-top: 2px;
 }
 
-.navbar-btn > li:hover {
-  border: 1px solid #ccc;
-}
-
-.navbar-btn > li {
+.navbar-btn > a {
+  position: relative;
   float: left;
-  height: 28px;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  margin: 0 1px 0 3px;
+  overflow: hidden;
   border: 1px solid transparent;
 }
 
-.navbar-btn > li > p {
-  float: left;
-  clear: both;
+.navbar-btn > a:hover {
+  border-radius: 5px;
+  border: 1px solid #838B8B;
+  box-shadow: 1px;
 }
 
-.navbar-btn > li > .line1 {
+.navbar-btn .line1 {
   font-size: 12px;
   color: #ccc;
+  height: 14px;
+  font-weight: 400;
+  margin-top: 9px;
+  float: left;
+  clear: both;
+  // display: inline-block;
+  padding-right: 11px;
 }
 
-.navbar-btn > li > .line2 {
+.navbar-btn .line2 {
+  color: white;
   font-size: 14px;
-  font-weight: bold;
-  margin-top: 0;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 0 11px 5px 0;
+  float: left;
+  clear: both;
+  // display: inline-block;
+}
+
+.navbar-btn .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 0 2px 5px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #606060;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  left: 46%;
+  top: -8px;
+  margin: 0 auto;
+  width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+}
+
+.navbar-btn > .dropdown {
+  position: absolute;
+  padding: 10px 15px;
+  line-height: 25px;
+  background: white;
+  font-size: 13px;
+  color: #444444;
+  top: 95px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown .dropdown-btn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  width: 84%;
+  margin: 0 auto;
+  border: 1px solid #E47911;
+  border-radius: 5px;
+  background: #FEBD69;
+}
+
+.dropdown > ul > li > a:hover {
+  color: #E47911;
+  text-decoration: underline;
 }
 
 .hidden {

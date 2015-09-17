@@ -20,37 +20,49 @@
         </div>
       </div>
     </div>
-    <ul class="navbar-btn">
-      <li>
-        <p class="line1">Hello.
+    <div class="navbar-btn">
+      <a href="#">
+        <span class="line1">Hello.
           <% if signed_in? %>
-            <a href="/#/user/<%= current_user.id %>"><%= current_user.fname %></a>
+            <%= current_user.fname %>
           <% else %>
-            <%= link_to "Sign in", new_session_url %>
+             Sign in
           <% end %>
-        </p>
-        <p class="line2"><a href="#/user/1">Your Account</a></p>
-      </li>
-      <li>
-        <p class="line1">Wish</p>
-        <p class="line2">List</p>
-        <div class="dropdown hidden">
+        </span>
+        <span class="line2">Your Account
+          <span class="arrow"><span>
+        </span>
+        <div class="dropdown">
+          <span class="dropdown-arrow"></span>
           <ul>
-            <li class="dropdown-btn">Sign in</li>
-            <li>New customer? Start here.</li>
+            <% if !signed_in? %>
+              <li class="dropdown-btn">Sign in</li>
+              <li>New customer? Start here.</li>
+            <% end %>
             <li><a href="#/user/1">Your Account</a></li>
-            <li>Your Orders</li>
-            <li>Your Wish List</li>
-            <li>Your Recommendations</li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href='#'>Your Wish List</a></li>
+            <li><a href='#'>Your Recommendations</a></li>
+            <% if signed_in? %>
+              <li><a href='#'>Not <%= current_user.fname %>? Sign out</a></li>
+            <% end %>
           </ul>
         </div>
-      </li>
-      <li>
-        <p class="line2">Cart</p>
-      </li>
-      <li>
+      </a>
+      <a href="#">
+        <span class="line1">Wish</span>
+        <span class="line2">List
+          <span class="arrow"><span>
+        </span>
+      </a>
+      <a href="#">
+        <span class="line1"></span>
+        <span class="line2">Cart</span>
+        <span class="cart-img"></span>
+      </a>
+      <span>
         <%= button_to "Sign out", session_url, method: :delete %>
-      </li>
-    </ul>
+      </span>
+    </div>
   </div>
 </nav>
