@@ -14,3 +14,9 @@ json.cart_items do
     json.extract!(cart_item, :id, :user_id, :product_id, :quantity, :updated_at)
   end
 end
+
+json.ordered_items do
+  json.array!(@user.ordered_items) do |ordered_item|
+    json.extract!(ordered_item, :id, :user_id, :product_id, :quantity, :created_at, :order_id)
+  end
+end

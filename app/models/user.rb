@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
 
   has_many :reviews, class_name: 'Review', foreign_key: :author_id
   has_many :cart_items
+  has_many :ordered_items
 
   attr_reader :password
   after_initialize :ensure_session_token

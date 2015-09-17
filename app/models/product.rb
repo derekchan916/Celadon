@@ -26,6 +26,7 @@ class Product < ActiveRecord::Base
 
   has_many :reviews, class_name: 'Review', foreign_key: :product_id
   has_many :cart_items
+  has_many :ordered_items
 
   def average_star_rating
     ratings = []

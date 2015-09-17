@@ -8,6 +8,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
     'user/:id': 'userShow',
     'user/:id/edit': 'userEdit',
     'user/:id/cart_items': 'cartItemsIndex',
+    'user/:id/ordered_items': 'orderedItemsIndex',
     'product/:id': 'productShow'
   },
 
@@ -44,9 +45,18 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   cartItemsIndex: function(id) {
-    var user = Celadon.users.getOrFetch(id);
+    var user = Celadon.users.getOrFetch(id); //wont need to do this
     var view = new Celadon.Views.CartItemsIndex({
       collection: user.cart_items(),
+      user: user
+    })
+    this._swapView(view);
+  },
+
+  orderedItemsIndex: function(id) {
+    var user = Celadon.users.getOrFetch(id); //wont need to do this
+    var view = new Celadon.Views.OrderedItemsIndex({
+      collection: user.ordered_items(),
       user: user
     })
     this._swapView(view);
