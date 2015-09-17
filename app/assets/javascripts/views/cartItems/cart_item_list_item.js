@@ -13,7 +13,7 @@ Celadon.Views.CartItemListItem = Backbone.View.extend({
   },
 
   render: function() {
-    this.$el.html(this.template({ product: this.model }));
+    this.$el.html(this.template({ product: this.model, cartItem: this.cartItem }));
     return this;
   },
 

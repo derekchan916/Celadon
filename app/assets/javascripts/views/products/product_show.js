@@ -29,21 +29,11 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
         $('#add-cart-message').toggleClass('hidden');
       }
     })
-
-      // var that = this;
-      // var newReview = new Celadon.Models.Review();
-      // newReview.save(attrs, {
-      //   success: function() {
-      //     that.collection.add(newReview);
-      //     Backbone.history.navigate('#/product/' +   that.collection.product.id, { trigger: true })
-      //   }
-      // })
-    // },
   },
 
   render: function() {
     this.$el.html(this.template({ product: this.model }));
-    $('#add-cart-message').addClass('hidden');
+    // $('#add-cart-message').addClass('hidden');
     this.renderReviews();
     return this;
   },
