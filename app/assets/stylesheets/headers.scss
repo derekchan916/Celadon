@@ -1,60 +1,85 @@
+.navbar-ad {
+  background: white;
+}
+
 .navbar {
-  display: block;
   background: #232F3E;
   color: white;
-  border-bottom: 1px solid gray;
-  height: 95px;
+  height: 99px;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 .navbar-logo {
   float: left;
+  padding: 13px 19px 0 27px;
+  width: 146px;
+  height: 26px;
 }
 
 .navbar-logo > .navbar-logo-img {
   color: white;
-  display: block;
   font-weight: bold;
   font-size: 27px;
-  margin-left: 35px;
-  margin-top: 8px;
-  margin-right: 48px;
 }
 
 .search-bar {
+  display: block;
   position: relative;
-  float: left;
-  width: 700px;
-  height: 36px;
-  margin-top: 10px;
+  width: auto;
+  height: 35px;
+  margin-right: 400px;
+  padding: 11px 25px 0 0;
+  overflow: hidden;
 }
 
 .search-bar-input {
-  background: white;
-  height: 100%;
-  width: 640px;
-  border: 1px solid white;
-  border-radius: 5px 0 0 5px;
-  height: inherit;
+  position: absolute;
+  display: block;
+  float: left;
+  height: 35px;
+  width: 700px;
+  padding: 0 6px 10px 6px;
   color: black;
   padding: 0 6px;
 }
 
-.search-bar > input:focus {
+.search-bar-input-bar {
+  background: white;
+  position: relative;
+  padding-left: 5px;
+  display: block;
+  border: 1px solid white;
+  height: 95%;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.search-bar-input > input:focus {
   border: 1px solid #FEBD69;
 }
 
-.search-bar > .search-bar-button {
+.search-bar .search-bar-button {
   display: block;
-  height: 24px;
-  float: right;
+  position: absolute;
+  width: 45px;
+  height: 35px;
+  right: 0px;
+  top: 0px;
   background: #FEBD69;
-  padding: 7px 13px 7px 13px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
+.search-bar-button > .search-bar-img {
+  padding: 6px 0 0 9px;
+  width: 25px;
+}
+///////////////////////////////////
 .navbar-btn {
-  position: absolute;
+  // position: absolute;
   float: right;
   right: 10px;
   top: 20px;
