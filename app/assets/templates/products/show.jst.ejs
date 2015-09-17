@@ -1,3 +1,16 @@
+<div class='purchase-tab'>
+  <span class='purchase-tab-qty'>Qty:
+    <select id='purchase-qty-selection'>
+      <option>1</option>
+      <option>2</option>
+    </select>
+  </span><br>
+  <span class="purchase-tab-details">
+    $<%= product.escape('price') %> + Free Shipping + Free Pokeball
+  </span><br>
+  <button id='add-cart-button'>Add to Cart</button>
+</div>
+
 <div class='poke-image'>
   <img src="<%= product.escape('image_url') %>">
   </div>
