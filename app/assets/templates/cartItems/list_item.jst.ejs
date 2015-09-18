@@ -6,7 +6,8 @@
     <h3><%= product.escape('name') %></h3>
     <p id='cart-product-delete'>Delete</p>
     <p>
-      Price: $<%= product.escape('price') %>
+      Price: $<%= product.escape('price') %><br>
+      Quantity: <%= cartItem.escape('quantity') %>
     </p>
     Added at: <%= cartItem.escape('updated_at') %>
   </div>

@@ -69,6 +69,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
   cartItemsIndex: function(id) {
     // if (!this._requireSignedIn()) { return; }
 
+    // Celadon.currentUser.fetch() // temporariy fix
     var view = new Celadon.Views.CartItemsIndex({
       collection: Celadon.currentUser.cart_items()
     })

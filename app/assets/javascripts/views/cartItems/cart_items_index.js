@@ -45,11 +45,16 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
 
     $.ajax({
       url: "/api/users/1/place_order",
-      type: "GET",
+      type: "POST",
       dataType: "json",
-      success: function(){
-        Backbone.history.navigate('#/user/1/cart_items', { trigger: true })
-        $('#order-message').toggleClass('hidden')
+      success: function(data){
+        Celadon.currentUser.set({
+          current_subtotal: data.current_subtotal,
+          number_of_cart_items: data.number_of_cart_items
+        });
+        Celadon.currentUser.cart_items().set(data.cart_items);
+        Backbone.history.navigate('#/user/1/cart_items', { trigger: true });
+        $('#order-message').toggleClass('hidden');
       }
     })
   },

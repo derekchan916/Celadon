@@ -21,17 +21,13 @@ module Api
     end
 
     def show
-      @user = User.find(params[:id]) #can just do current_user, Thursday's lecture
-      render :show
     end
 
     def update
-      @user = User.find(params[:id]) #same thing can just use current_user
-
-      if @user.update_attributes(user_params)
-        render json: @user
+      if current_user.update_attributes(user_params)
+        render :show
       else
-        render json @user.errors.full_messages, status: :unprocessable_entity
+        render json: current_user.errors.full_messages, status: :unprocessable_entity
       end
     end
 
@@ -48,7 +44,7 @@ module Api
       end
 
       current_user.cart_items.destroy_all
-      render json: {}
+      render :show
     end
 
     private

@@ -25,7 +25,13 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
       quantity: this.$('#purchase-qty-selection').val()
     }
     newCartItem.save(attrs, {
-      success: function() {
+      success: function(data) {
+        Celadon.currentUser.set({
+          current_subtotal: data.get('current_subtotal'),
+          number_of_cart_items: data.get('number_of_cart_items')
+        })
+        Celadon.currentUser.cart_items().set(data.get('cart_items'))
+        that.render();
         $('#add-cart-message').toggleClass('hidden');
       }
     })
