@@ -85,17 +85,17 @@
   margin-top: 2px;
 }
 
-.navbar-btn > a {
+.navbar-btn > .span-button {
   position: relative;
   float: left;
   display: inline-block;
   padding: 0 0 0 10px;
   margin: 0 1px 0 3px;
-  overflow: hidden;
+  // overflow: hidden;
   border: 1px solid transparent;
 }
 
-.navbar-btn > a:hover {
+.navbar-btn > .span-button:hover {
   border-radius: 5px;
   border: 1px solid #838B8B;
   box-shadow: 1px;
@@ -135,6 +135,20 @@
 	border-top: 4px solid #606060;
 }
 
+.arrow > .dropdown {
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: -101px;
+  width: 170px;
+  padding: 10px 15px;
+  background: white;
+  color: #444444;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  // z-index: 5;
+}
+
 .dropdown-arrow {
   position: absolute;
   left: 46%;
@@ -145,23 +159,6 @@
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	border-bottom: 8px solid white;
-}
-
-.navbar-btn > .dropdown {
-  position: absolute;
-  padding: 10px 15px;
-  line-height: 25px;
-  background: white;
-  font-size: 13px;
-  color: #444444;
-  top: 95px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  z-index: 1
-}
-
-.dropdown-btn {
-
 }
 
 .dropdown-btn > .dropdown-btn-link {
@@ -180,6 +177,16 @@
   background: #e4aa5e;
   text-decoration: none;
   color: black;
+}
+
+.dropdown > ul > li {
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.dropdown > ul > li > a {
+  cursor: pointer;
 }
 
 .dropdown > ul > li > a:hover {

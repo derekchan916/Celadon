@@ -1,13 +1,15 @@
 Celadon.Views.Header = Backbone.View.extend({
   template: JST['header'],
 
+  events: {
+    "click #sign-out-link": "signOut",
+    'mouseenter .span-button': 'toggleDropdownOn',
+    'mouseleave .span-button': 'toggleDropdownOff'
+  },
+
   initialize: function(options){
     this.listenTo(Celadon.currentUser, "signIn signOut", this.render);
     this.render();
-  },
-
-  events: {
-    "click #sign-out-link": "signOut"
   },
 
   render: function(){
@@ -22,5 +24,17 @@ Celadon.Views.Header = Backbone.View.extend({
         Backbone.history.navigate("session/new", { trigger: true });
       }
     });
+  },
+
+  toggleDropdownOn: function(e) {
+    e.preventDefault();
+    $('.dropdown').removeClass('hidden');
+    $('.backdrop').addClass('darken');
+  },
+
+  toggleDropdownOff: function(e) {
+    e.preventDefault();
+    $('.dropdown').addClass('hidden');
+    $('.backdrop').removeClass('darken');
   }
 });

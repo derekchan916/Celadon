@@ -66,3 +66,12 @@
  .hidden {
    display: none;
  }
+
+ .darken {
+   background: rgba(0, 0, 0, 0.6);
+   transition: 0.1s;
+ }
+
+ .arrow > .hidden {
+   display: none;
+ }

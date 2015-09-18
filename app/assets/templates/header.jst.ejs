@@ -1,44 +1,44 @@
 <div class="navbar-ad">
 </div>
 <nav class="navbar group" role="navigation">
-  <div class="container group">
-    <div class="navbar-logo">
-      <a class="navbar-logo-img" href="/">Celadon</a>
-    </div>
 
-    <div class="search-bar">
-      <div class="search-bar-input">
-        <input
-          class="search-bar-input-bar"
-          id="search-bar"
-          type="text"
-          name="user-input">
-        <div class="search-bar-button">
-          <img
-            class="search-bar-img"
-            src="assets/css/Magnifying_glass_icon.png">
-        </div>
+  <div class="navbar-logo">
+    <a class="navbar-logo-img" href="/">Celadon</a>
+  </div>
+
+  <div class="search-bar">
+    <div class="search-bar-input">
+      <input
+        class="search-bar-input-bar"
+        id="search-bar"
+        type="text"
+        name="user-input">
+      <div class="search-bar-button">
+        <img
+          class="search-bar-img"
+          src="assets/css/Magnifying_glass_icon.png">
       </div>
     </div>
-    <div class="navbar-btn">
+  </div>
+  <div class="navbar-btn">
 
-      <% if (currentUser.isSignedIn()) { %>
-        <a href="#/user/<%= currentUser.id %>">
-      <% } else { %>
-        <a href="#/session/new">
-      <% } %>
-        <span class="line1">Hello.
-          <% if (currentUser.isSignedIn) { %>
-            <%= currentUser.fname %>
-          <% } else { %>
-             Sign in
-          <% } %>
-        </span>
-        <span class="line2">Your Account
-          <span class="arrow">
+    <% if (currentUser.isSignedIn()) { %>
+      <span class="span-button" id='user-page-btn'>
+    <% } else { %>
+      <span class="span-button" id='session-new-btn'>
+    <% } %>
+      <span class="line1">Hello.
+        <% if (currentUser.isSignedIn) { %>
+          <%= currentUser.fname %>
+        <% } else { %>
+           Sign in
+        <% } %>
+      </span>
+      <span class="line2">Your Account
+        <span class="arrow">
 
-            <div class="dropdown" id="dropdown">
-              <span class="dropdown-arrow"></span>
+          <div class="dropdown hidden" id="dropdown">
+            <span class="dropdown-arrow"></span>
               <ul>
                 <% if (!currentUser.isSignedIn()) { %>
                   <li class="dropdown-btn">
@@ -56,26 +56,25 @@
                   </li>
                 <% } %>
               </ul>
-            </div>
-          </span>
+          </div>
         </span>
-      </a>
+      </span>
+    </span>
 
-      <a href="#">
-        <span class="line1">Wish</span>
-        <span class="line2">List
-          <span class="arrow"><span>
-        </span>
-      </a>
-      <% if (currentUser.isSignedIn()) { %>
-        <a href="#/user/<%= currentUser.escape('id') %>/cart_items">
-      <% } else { %>
-        <a href='#/session/new'>
-      <% } %>
-        <span class="line1"></span>
-        <span class="line2">Cart</span>
-        <span class="cart-img"></span>
-      </a>
-    </div>
+    <span class="span-button">
+      <span class="line1">Wish</span>
+      <span class="line2">List
+        <span class="arrow"></span>
+      </span>
+    </span>
+    <% if (currentUser.isSignedIn()) { %>
+      <span class="span-button" id='to-cart-btn'>
+    <% } else { %>
+      <span class="span-button" id='session-new-btn'>
+    <% } %>
+      <span class="line1"></span>
+      <span class="line2">Cart</span>
+      <span class="cart-img"></span>
+    </span>
   </div>
 </nav>
