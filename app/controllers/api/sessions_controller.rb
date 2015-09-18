@@ -16,7 +16,7 @@ module Api
         params[:user][:email],
         params[:user][:password]
       )
-      
+
       if @user
         sign_in!(@user)
         render :show
@@ -29,6 +29,17 @@ module Api
     def destroy
       sign_out!
       render json: {}
+    end
+
+    def omniauth
+      user = User.find_or_create_by_auth_hash(auth_hash)
+      sign_in!(user)
+      redirect_to root_url
+    end
+
+    private
+    def auth_hash
+      request.env['omniauth.auth']
     end
   end
 end

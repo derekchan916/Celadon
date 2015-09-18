@@ -14,7 +14,7 @@ Create Table for category, area, and vendor
 Update Table for OrderedItems to include price
 
 ## Minimum Viable Product
-Danube is a clone of Amazon built on Rails and Backbone. Users can:
+Celadon is a clone of Amazon built on Rails and Backbone. Users can:
 
 - [ ] Create accounts
 - [ ] Create sessions (log in)

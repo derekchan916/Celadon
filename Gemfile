@@ -39,6 +39,8 @@ gem 'bcrypt-ruby', require: 'bcrypt'
 gem 'figaro'
 gem 'paperclip'
 gem 'aws-sdk', '~> 1.6'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

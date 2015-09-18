@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create, :destroy]
     resources :cart_items, only: [:create, :destroy]
   end
+
+  get "/auth/:provider/callback", to: "api/sessions#omniauth"
 end
