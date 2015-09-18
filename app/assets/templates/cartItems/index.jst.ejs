@@ -1,6 +1,6 @@
 <div class='checkout-bar'>
   <span class='quick-details'>
-    Subtotal( item(s)): $
+    Subtotal( <%= Celadon.currentUser.escape('number_of_cart_items') %> item(s)): $<%= Celadon.currentUser.escape('current_subtotal') %>
   </span>
   <span class='add-cart-message-btn'>
     <button>Place your Order</button>
@@ -8,7 +8,7 @@
   <span class='order-details'>
     <h4>Order Summary</h4>
     <p class='checkout-left detail'>Items:</p>
-    <p class='checkout-right detail'>$$$$</p>
+    <p class='checkout-right detail'>$<%= Celadon.currentUser.escape('current_subtotal') %></p>
     <p class='checkout-left detail'>Shipping & handling:</p>
     <p class='checkout-right detail'>$0.00</p>
     <p class='checkout-left detail'>Shipping & handling:</p>
@@ -16,7 +16,7 @@
     <p class='checkout-left detail'>Taxes:</p>
     <p class='checkout-right detail'>Never</p>
     <p class='checkout-left bold'>Order total:</p>
-    <p class='checkout-right bold'>$$$$</p>
+    <p class='checkout-right bold'>$<%= Celadon.currentUser.escape('current_subtotal') %></p>
   </span>
 </div>
 

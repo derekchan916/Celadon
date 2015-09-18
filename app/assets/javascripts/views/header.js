@@ -3,8 +3,9 @@ Celadon.Views.Header = Backbone.View.extend({
 
   events: {
     "click #sign-out-link": "signOut",
-    'mouseenter .span-button': 'toggleDropdownOn',
-    'mouseleave .span-button': 'toggleDropdownOff'
+    'mouseenter .button1': 'toggleDropdownOn',
+    'mouseleave .button1': 'toggleDropdownOff',
+    'click #to-cart-btn': 'goToCart'
   },
 
   initialize: function(options){
@@ -36,5 +37,12 @@ Celadon.Views.Header = Backbone.View.extend({
     e.preventDefault();
     $('.dropdown').addClass('hidden');
     $('.modal-screen-backdrop').removeClass('darken');
+  },
+
+  goToCart: function(e) {
+    e.preventDefault();
+    Backbone.history.navigate('#/user/' + Celadon.currentUser.id + '/cart_items',
+      { trigger: true }
+    )
   }
 });
