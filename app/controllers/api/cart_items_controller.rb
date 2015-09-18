@@ -1,7 +1,7 @@
 module Api
   class CartItemsController < ApiController
     def create
-      # sleep(1)
+      sleep(1)
       product_id = cart_params[:product_id]
       quantity = cart_params[:quantity]
       cart = current_user.cart_items
@@ -25,7 +25,10 @@ module Api
     def destroy
       @cart_item = CartItem.find(params[:id])
       @cart_item.try(:destroy)
-      render json: {}
+      render json: {
+        subtotal: current_user.current_subtotal,
+        number_of_cart_items: current_user.number_of_cart_items
+      }
     end
 
     private

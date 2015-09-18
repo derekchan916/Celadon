@@ -32,6 +32,7 @@ module Api
     end
 
     def place_order
+      sleep(2)
       current_user.cart_items.each do |cart_item|
         ordered_params = {
           product_id: cart_item.product_id,
