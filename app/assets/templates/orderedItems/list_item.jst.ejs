@@ -1,0 +1,23 @@
+<div class='ordered-product-header'>
+  <div class='ordered-product-header-left'>
+    ORDER PLACED <%= orderedItem.escape('created_at') %>
+    Total $$$
+    Quantity: <%= orderedItem.escape('quantity') %>
+  </div>
+  <div class='ordered-product-header-right'>
+    ORDER # <%= orderedItem.escape('order_id') %>
+  </div>
+</div>
+<div class='ordered-product-img'>
+  <img src="<%= product.escape('image_url') %>">
+</div>
+<div class='ordered-product-content'>
+  <div class='ordered-product-content-left'>
+    <h3><%= product.escape('name') %></h3>
+    <p>
+      Price: $<%= product.escape('price') %>
+  </div>
+  <div class='ordered-product-content-right'>
+    <a href='#/product/<%= product.id %>'>Buy it Again</a>
+  </div>
+</div>

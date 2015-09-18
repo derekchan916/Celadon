@@ -2,7 +2,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
   template: JST['cartItems/index'],
 
   initialize: function(options) {
-    this.user = options.user;
+    this.user = Celadon.currentUser;
     this.listenTo(this.user, 'sync', this.render);
   },
 
@@ -15,7 +15,6 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
   addCartItemSubview: function(cartItem) {
     var product_id = cartItem.get('product_id');
     var product = new Celadon.Models.Product({ id: product_id });
-    product
     var that = this;
     product.fetch({
       success: function() {

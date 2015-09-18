@@ -21,6 +21,11 @@ Celadon.Models.User = Backbone.Model.extend({
       delete payload.cart_items
     }
 
+    if (payload.ordered_items) {
+      this.ordered_items().set(payload.ordered_items, { parse: true })
+      delete payload.ordered_items
+    }
+
     return payload;
   },
 
@@ -38,6 +43,14 @@ Celadon.Models.User = Backbone.Model.extend({
         { user: this })
     }
     return this._cart_items;
+  },
+
+  ordered_items: function() {
+    if (!this._ordered_items) {
+      this._ordered_items = new Celadon.Collections.OrderedItems([],
+        { user: this })
+    }
+    return this._ordered_items;
   }
 });
 

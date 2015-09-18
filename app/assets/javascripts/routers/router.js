@@ -15,7 +15,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   usersNew: function() {
-    // if (!this._requireSignedOut()) { return; }
+    if (!this._requireSignedOut()) { return; }
 
     var model = new Celadon.users.model();
     var view = new Celadon.Views.UserNewForm({
@@ -43,7 +43,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   signIn: function(callback){
-    // if (!this._requireSignedOut(callback)) { return; }
+    if (!this._requireSignedOut(callback)) { return; }
 
     var signInView = new Celadon.Views.SignIn({
       callback: callback
@@ -67,26 +67,28 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   cartItemsIndex: function(id) {
-    var user = Celadon.users.getOrFetch(id); //wont need to do this
+    // if (!this._requireSignedIn()) { return; }
+
     var view = new Celadon.Views.CartItemsIndex({
-      collection: user.cart_items(),
-      user: user
+      collection: Celadon.currentUser.cart_items()
     })
     this._swapView(view);
   },
 
   orderedItemsIndex: function(id) {
-    var user = Celadon.users.getOrFetch(id); //wont need to do this
+    // if (!this._requireSignedIn()) { return; }
+
+    // var user = Celadon.users.getOrFetch(id); //wont need to do this
     var view = new Celadon.Views.OrderedItemsIndex({
-      collection: user.ordered_items(),
-      user: user
+      collection: Celadon.currentUser.ordered_items()
+      // user: user
     })
     this._swapView(view);
   },
 
   _requireSignedIn: function(callback){
     if (!Celadon.currentUser.isSignedIn()) {
-      callback = callback || this._goHome.bind(this);
+      callback = callback || this._signIn.bind(this);
       this.signIn(callback);
       return false;
     }
@@ -106,6 +108,10 @@ Celadon.Routers.Router = Backbone.Router.extend({
 
   _goHome: function(){
     Backbone.history.navigate("", { trigger: true });
+  },
+
+  _signIn: function(){
+    Backbone.history.navigate('#/session/new', { trigger: true })
   },
 
   _swapView: function(view) {
