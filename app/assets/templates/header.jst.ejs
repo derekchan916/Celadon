@@ -16,62 +16,62 @@
         <div class="search-bar-button">
           <img
             class="search-bar-img"
-            src="<%= asset_path('assets/css/Magnifying_glass_icon.png') %>">
+            src="assets/css/Magnifying_glass_icon.png">
         </div>
       </div>
     </div>
     <div class="navbar-btn">
-      <% if signed_in? %>
-        <a href="#/user/<%= current_user.id %>">
-      <% else %>
-        <a href="/session/new">
-      <% end %>
+
+      <% if (currentUser.isSignedIn()) { %>
+        <a href="#/user/<%= currentUser.id %>">
+      <% } else { %>
+        <a href="#/session/new">
+      <% } %>
         <span class="line1">Hello.
-          <% if signed_in? %>
-            <%= current_user.fname %>
-          <% else %>
+          <% if (currentUser.isSignedIn) { %>
+            <%= currentUser.fname %>
+          <% } else { %>
              Sign in
-          <% end %>
+          <% } %>
         </span>
         <span class="line2">Your Account
           <span class="arrow">
 
-            <div class="dropdown hidden" id="dropdown">
+            <div class="dropdown" id="dropdown">
               <span class="dropdown-arrow"></span>
               <ul>
-                <% if !signed_in? %>
+                <% if (!currentUser.isSignedIn()) { %>
                   <li class="dropdown-btn">
-                    <a class="dropdown-btn-link" href="/session/new">Sign in</a>
+                    <a class="dropdown-btn-link" href="#/session/new">Sign in</a>
                   </li>
                   <li>New customer? Start here.</li>
-                <% end %>
-                <li><a href="#/user/1">Your Account</a></li>
+                <% } %>
+                <li><a href="#/user/<%= currentUser.id %>">Your Account</a></li>
                 <li><a href="#">Your Orders</a></li>
                 <li><a href='#'>Your Wish List</a></li>
                 <li><a href='#'>Your Recommendations</a></li>
-                <% if signed_in? %>
-                  <li>Not <%= current_user.fname %>?
-                    <%= link_to "Sign out", session_url, method: :delete %>
+                <% if (currentUser.isSignedIn()) { %>
+                  <li>Not <%= currentUser.escape('fname') %>?
+                    <a id="sign-out-link">Sign out</a>
                   </li>
-                <% end %>
+                <% } %>
               </ul>
             </div>
-
-          <span>
+          </span>
         </span>
-
       </a>
+
       <a href="#">
         <span class="line1">Wish</span>
         <span class="line2">List
           <span class="arrow"><span>
         </span>
       </a>
-      <% if signed_in? %>
-        <a href="#/user/<%= current_user.id %>/cart_items">
-      <% else %>
-        <a href='/session/new'>
-      <% end %>
+      <% if (currentUser.isSignedIn()) { %>
+        <a href="#/user/<%= currentUser.escape('id') %>/cart_items">
+      <% } else { %>
+        <a href='#/session/new'>
+      <% } %>
         <span class="line1"></span>
         <span class="line2">Cart</span>
         <span class="cart-img"></span>

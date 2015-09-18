@@ -1,8 +1,23 @@
 module Api
   class UsersController < ApiController
+    wrap_parameters false
+
+    def new
+    end
+
     def index
       @users = User.all
       render json: @users
+    end
+
+    def create
+      @user = User.new(user_params)
+      if @user.save
+        sign_in!(@user)
+        render :show
+      else
+        render json: @user.errors.full_messages, status: :unprocessable_entity
+      end
     end
 
     def show
@@ -22,7 +37,7 @@ module Api
 
     private
     def user_params
-      params.require(:user).permit(:fname, :lname)
+      params.require(:user).permit(:email, :fname, :lname, :password, :image)
     end
   end
 end

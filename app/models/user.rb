@@ -2,8 +2,8 @@ class User < ActiveRecord::Base
   validates :email, :fname, :lname, :session_token, presence: true
   validates :password, length: { minimum: 4, allow_nil: true }
   validates :email, uniqueness: true
-  has_attached_file :image, default_url: "missing.png"
-  validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+  # has_attached_file :image, default_url: "missing.png"
+  # validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   has_many :reviews, class_name: 'Review', foreign_key: :author_id
   has_many :cart_items
@@ -12,9 +12,10 @@ class User < ActiveRecord::Base
   attr_reader :password
   after_initialize :ensure_session_token
 
-  def self.find_by_credentials(user_params)
-    user = User.find_by_email(user_params[:email])
-    user.try(:is_password?, user_params[:password]) ? user : nil
+  def self.find_by_credentials(email, password)
+    user = User.find_by(email: email)
+    return nil if user.nil?
+    user.try(:is_password?, password) ? user : nil
   end
 
   def password=(password)

@@ -1,5 +1,5 @@
-Celadon.Views.UserForm = Backbone.View.extend({
-  template: JST['users/form'],
+Celadon.Views.UserNewForm = Backbone.View.extend({
+  template: JST['users/new_form'],
 
   initialize: function(options) {
     this.listenTo(this.model, 'sync', this.render)
@@ -18,11 +18,13 @@ Celadon.Views.UserForm = Backbone.View.extend({
     e.preventDefault();
     var attrs = $(e.currentTarget).serializeJSON();
     var that = this;
+    
     this.model.set(attrs.user);
     this.model.save({}, {
       success: function() {
+        Celadon.currentUser.fetch()
         that.collection.add(that.model, { merge: true });
-        Backbone.history.navigate('#/user/' + that.model.get('id'), { trigger: true });
+        Backbone.history.navigate('', { trigger: true });
       }
     })
   }
