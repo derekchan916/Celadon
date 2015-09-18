@@ -47,7 +47,7 @@
                   <li>New customer? Start here.</li>
                 <% } %>
                 <li><a href="#/user/<%= currentUser.id %>">Your Account</a></li>
-                <li><a href="#">Your Orders</a></li>
+                <li><a href="#/user/<%= currentUser.id %>/ordered_items">Your Orders</a></li>
                 <li><a href='#'>Your Wish List</a></li>
                 <li><a href='#'>Your Recommendations</a></li>
                 <% if (currentUser.isSignedIn()) { %>

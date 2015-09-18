@@ -1,6 +1,12 @@
 Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
   template: JST['cartItems/index'],
 
+  events: {
+    'click #checkout-btn': 'toggleConfirmationPage',
+    'click #cancel-confirmation': 'toggleConfirmationPage',
+    'click #place-order-btn': 'placeOrder'
+  },
+
   initialize: function(options) {
     this.user = Celadon.currentUser;
     this.listenTo(this.user, 'sync', this.render);
@@ -23,6 +29,27 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
           cartItem: cartItem
         });
         that.addSubview('ul.cart-items', cartItemListItem);
+      }
+    })
+  },
+
+  toggleConfirmationPage: function(e) {
+    e.preventDefault();
+    if ( !this.collection.length ) { return; }
+    $('.modal-checkout').toggleClass('hidden')
+  },
+
+  placeOrder: function(e) {
+    e.preventDefault();
+    var that = this
+
+    $.ajax({
+      url: "/api/users/1/place_order",
+      type: "GET",
+      dataType: "json",
+      success: function(){
+        Backbone.history.navigate('#/user/1/cart_items', { trigger: true })
+        $('#order-message').toggleClass('hidden')
       }
     })
   },

@@ -1,10 +1,18 @@
+<div class='add-cart-message hidden' id='order-message'>
+  <span class='order-message-sentence'>
+    You have successfully placed an order!
+  </span>
+</div>
+
 <div class='checkout-bar'>
   <span class='quick-details'>
     Subtotal( <%= Celadon.currentUser.escape('number_of_cart_items') %> item(s)): $<%= Celadon.currentUser.escape('current_subtotal') %>
   </span>
   <span class='add-cart-message-btn'>
-    <button>Place your Order</button>
+    <button id="checkout-btn">Checkout</button>
   </span>
+
+
   <span class='order-details'>
     <h4>Order Summary</h4>
     <p class='checkout-left detail'>Items:</p>
@@ -22,3 +30,12 @@
 
 <h3>Shopping Cart</h3>
 <ul class="cart-items"></ul>
+
+<div class="modal-checkout hidden">
+  <div class="modal-checkout-screen darken"></div>
+  <div class="confirmation-page">
+    Are you sure you sure?
+    <button class="place-order" id='place-order-btn'>Place Order</button>
+    <button class="cancel" id='cancel-confirmation'>Cancel</button>
+  </div>
+</div>
