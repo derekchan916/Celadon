@@ -29,12 +29,12 @@ Celadon.Views.Header = Backbone.View.extend({
   toggleDropdownOn: function(e) {
     e.preventDefault();
     $('.dropdown').removeClass('hidden');
-    $('.backdrop').addClass('darken');
+    $('.modal-screen-backdrop').addClass('darken');
   },
 
   toggleDropdownOff: function(e) {
     e.preventDefault();
     $('.dropdown').addClass('hidden');
-    $('.backdrop').removeClass('darken');
+    $('.modal-screen-backdrop').removeClass('darken');
   }
 });
