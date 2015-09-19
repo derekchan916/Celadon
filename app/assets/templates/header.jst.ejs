@@ -28,10 +28,10 @@
       <span class="span-button button1" id='session-new-btn'>
     <% } %>
       <span class="line1">Hello.
-        <% if (currentUser.isSignedIn) { %>
+        <% if (currentUser.isSignedIn()) { %>
           <%= currentUser.escape('fname') %>
         <% } else { %>
-           Sign in
+          Sign in
         <% } %>
       </span>
       <span class="line2">Your Account

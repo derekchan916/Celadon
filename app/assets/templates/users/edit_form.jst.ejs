@@ -2,18 +2,20 @@
 <form>
   First Name:
   <input
+    id="user-fname"
     type="text"
     name="user[fname]"
     value="<%= user.escape('fname') %>"><br>
   Last Name:
   <input
+    id="user-lname"
     type="text"
     name="user[lname]"
     value="<%= user.escape('lname') %>"><br>
   Image
   <input
     type="file"
-    name="post[image]"
+    name="user[image]"
     id="input-post-image"><br>
   <img src="" id="preview-post-image" width="100"><br>
   <button>Submit</button>

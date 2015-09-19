@@ -5,9 +5,8 @@
 [heroku]:
 
 ## Updated List
-Current User for reviews on Rails side
 Change the price to floating number
-Check to see if there is already that product in the cart, add it if there is.
+Update Order history to update through jbuilder
 Make sure after you purchase something it gets deleted from the product list?
   To do this, change the products, no levels, no stats etc. But have stock.
 Create Table for category, area, and vendor

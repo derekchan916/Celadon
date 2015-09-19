@@ -18,7 +18,7 @@ Celadon.Views.UserNewForm = Backbone.View.extend({
     e.preventDefault();
     var attrs = $(e.currentTarget).serializeJSON();
     var that = this;
-    
+
     this.model.set(attrs.user);
     this.model.save({}, {
       success: function() {

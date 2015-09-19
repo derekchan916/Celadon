@@ -20,6 +20,7 @@ Celadon.Views.Header = Backbone.View.extend({
 
   signOut: function(e){
     e.preventDefault();
+    $('.modal-screen-backdrop').removeClass('darken');
     Celadon.currentUser.signOut({
       success: function(){
         Backbone.history.navigate("session/new", { trigger: true });

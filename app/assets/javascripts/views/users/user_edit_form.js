@@ -17,40 +17,24 @@ Celadon.Views.UserEditForm = Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault();
-    var attrs = $(e.currentTarget).serializeJSON();
-    var that = this;
-
-    this.model.set(attrs.user);
-    this.model.save({}, {
+    var formData = new FormData();
+    formData.append('user[fname]', this.$('#user-fname').val());
+    formData.append('user[lname]', this.$('#user-lname').val());
+    formData.append('user[image]', this.$('#input-post-image')[0].files[0]);
+    
+    this.model.saveFormData(formData, {
       success: function() {
         that.collection.add(that.model, { merge: true });
         Backbone.history.navigate('#/user/' + that.model.get('id'), { trigger: true });
       }
     })
-
-    // event.preventDefault();
-    //
-    // var title = this.$("#input-post-title").val();
-    // var file = this.$("#input-post-image")[0].files[0];
-    //
-    // var formData = new FormData();
-    // formData.append("post[title]", title);
-    // formData.append("post[image]", file);
-    //
-    // var that = this;
-    // this.model.saveFormData(formData, {
-    //   success: function(){
-    //     that.collection.add(that.model);
-    //     Backbone.history.navigate("", { trigger: true });
-    //   }
-    // });
   },
 
-  fileInputChange: function(event){
-    console.log(event.currentTarget.files[0]);
+  fileInputChange: function(e){
+    console.log(e.currentTarget.files[0]);
 
     var that = this;
-    var file = event.currentTarget.files[0];
+    var file = e.currentTarget.files[0];
     var reader = new FileReader();
 
     reader.onloadend = function(){
