@@ -1,32 +1,18 @@
 class Product < ActiveRecord::Base
-  TYPES = [
-    "fire",
-    "electric",
-    "normal",
-    "ghost",
-    "psychic",
-    "water",
-    "bug",
-    "dragon",
-    "grass",
-    "fighting",
-    "ice",
-    "flying",
-    "poison",
-    "ground",
-    "rock",
-    "steel"
-  ].sort
-
-  validates :national_id, :name, :price, :level, :attack, :defense,
-    :poke_type, :moves, :image_url, presence: true
+  validates :national_id, :name, :price, :attack, :defense, :image_url, :description, presence: true
   validates :national_id, uniqueness: true
-  validates :price, :level, :attack, :defense, numericality: true
-  validates :poke_type, inclusion: { in: TYPES }
+  validates :price, :attack, :defense, numericality: true
 
   has_many :reviews, class_name: 'Review', foreign_key: :product_id
   has_many :cart_items
   has_many :ordered_items
+  has_many :pokemoves
+  has_many :moves, through: :pokemoves, source: :move
+  has_many :categories
+  has_many :types, through: :categories, source: :type
+  has_many :move_types, through: :moves, source: :type
+  has_one :evolution_stage, class_name: "Evolution", foreign_key: :product_id
+  has_one :evolution, through: :evolution_stage, source: :evolution
 
   def average_star_rating
     ratings = []

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150918192547) do
+ActiveRecord::Schema.define(version: 20150919202136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,34 @@ ActiveRecord::Schema.define(version: 20150918192547) do
   add_index "cart_items", ["product_id"], name: "index_cart_items_on_product_id", using: :btree
   add_index "cart_items", ["user_id"], name: "index_cart_items_on_user_id", using: :btree
 
+  create_table "categories", force: :cascade do |t|
+    t.integer  "product_id", null: false
+    t.integer  "type_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "categories", ["product_id"], name: "index_categories_on_product_id", using: :btree
+  add_index "categories", ["type_id"], name: "index_categories_on_type_id", using: :btree
+
+  create_table "evolutions", force: :cascade do |t|
+    t.integer  "product_id",   null: false
+    t.integer  "evolution_id", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "evolutions", ["product_id"], name: "index_evolutions_on_product_id", using: :btree
+
+  create_table "moves", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.integer  "type_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "moves", ["type_id"], name: "index_moves_on_type_id", using: :btree
+
   create_table "ordered_items", force: :cascade do |t|
     t.integer  "product_id", null: false
     t.integer  "user_id",    null: false
@@ -38,21 +66,27 @@ ActiveRecord::Schema.define(version: 20150918192547) do
 
   add_index "ordered_items", ["user_id"], name: "index_ordered_items_on_user_id", using: :btree
 
+  create_table "pokemoves", force: :cascade do |t|
+    t.integer  "move_id",    null: false
+    t.integer  "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string   "national_id", null: false
     t.string   "name",        null: false
     t.integer  "price",       null: false
     t.integer  "discount"
-    t.integer  "level",       null: false
     t.integer  "attack",      null: false
     t.integer  "defense",     null: false
-    t.string   "poke_type",   null: false
     t.string   "description"
-    t.string   "moves",                    array: true
     t.string   "image_url",   null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "products", ["price"], name: "index_products_on_price", using: :btree
 
   create_table "reviews", force: :cascade do |t|
     t.integer  "author_id",   null: false
@@ -66,6 +100,14 @@ ActiveRecord::Schema.define(version: 20150918192547) do
 
   add_index "reviews", ["author_id"], name: "index_reviews_on_author_id", using: :btree
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id", using: :btree
+
+  create_table "types", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "types", ["name"], name: "index_types_on_name", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",              null: false
@@ -86,5 +128,14 @@ ActiveRecord::Schema.define(version: 20150918192547) do
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
   add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid", unique: true, using: :btree
   add_index "users", ["session_token"], name: "index_users_on_session_token", using: :btree
+
+  create_table "views", force: :cascade do |t|
+    t.integer  "product_id", null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "views", ["product_id"], name: "index_views_on_product_id", using: :btree
 
 end
