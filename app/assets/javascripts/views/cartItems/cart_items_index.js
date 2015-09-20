@@ -53,6 +53,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
           number_of_cart_items: data.number_of_cart_items
         });
         Celadon.currentUser.cart_items().set(data.cart_items);
+        Celadon.currentUser.ordered_items().set(data.ordered_items)
         Backbone.history.navigate('#/user/1/cart_items', { trigger: true });
         $('#order-message').toggleClass('hidden');
       }

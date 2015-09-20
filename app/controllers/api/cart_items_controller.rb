@@ -9,8 +9,12 @@ module Api
       if cart.any? {|cart_item| cart_item.product_id == product_id}
 
         cart_item = cart.find_by(product_id: product_id)
-        cart_item.update(quantity: cart_item.quantity + quantity.to_i)
-        render :show
+        ## WHY does it not work if I switch "find_by(product_id: product_id) with first"
+        if cart_item.update!(quantity: cart_item.quantity + quantity.to_i)
+          render :show
+        else
+          render json: cart_item.errors.full_messages, status: :unprocessable_entity
+        end
       else
         cart_item = cart.new(cart_params)
 

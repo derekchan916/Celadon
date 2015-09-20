@@ -7,6 +7,26 @@ Celadon.Models.Product = Backbone.Model.extend({
       delete payload.reviews
     }
 
+    if (payload.moves) {
+      var moves = []
+
+      payload.moves.forEach(function(move) {
+        moves.push(" " + move.name)
+      })
+
+      payload.moves = moves;
+    }
+
+    if (payload.poke_types) {
+      var category_types = []
+
+      payload.poke_types.forEach(function(type) {
+        category_types.push(" " + type.name)
+      })
+
+      payload.poke_types = category_types;
+    }
+
     return payload;
   },
 

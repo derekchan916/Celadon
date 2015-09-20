@@ -11,6 +11,11 @@ Make sure after you purchase something it gets deleted from the product list?
   To do this, change the products, no levels, no stats etc. But have stock.
 Create Table for category, area, and vendor
 Update Table for OrderedItems to include price
+Capitalize the moves and types
+Change reviews to just you know what
+add two pokemont an existing pokemon
+fix place order screen
+
 
 ## Minimum Viable Product
 Celadon is a clone of Amazon built on Rails and Backbone. Users can:

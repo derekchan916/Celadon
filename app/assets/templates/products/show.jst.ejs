@@ -16,6 +16,10 @@
     <select id='purchase-qty-selection'>
       <option>1</option>
       <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
     </select>
   </span><br>
   <span class="purchase-tab-details">
@@ -36,9 +40,10 @@
     </p>
   </div>
   <div class='poke-content-content'>
-    Level: <%= product.escape('level') %><br>
     Attack: <%= product.escape('attack') %><br>
-    Defense: <%= product.escape('defense') %>
+    Defense: <%= product.escape('defense') %><br>
+    Moves: <%= product.escape('moves') %><br>
+    Type: <%= product.escape('poke_types') %>
   </div>
   <div id="reviews">
     <h3>Customer Reviews</h3>

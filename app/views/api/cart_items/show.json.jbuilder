@@ -11,6 +11,7 @@ end
 
 json.cart_items do
   json.array!(current_user.cart_items) do |cart_item|
+    puts "third stage #{cart_item.quantity}" ###############
     json.extract!(cart_item, :id, :user_id, :product_id, :quantity, :updated_at)
   end
 end
