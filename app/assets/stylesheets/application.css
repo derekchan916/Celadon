@@ -81,3 +81,95 @@
  .arrow > .hidden {
    display: none;
  }
+
+ .type-indicator {
+   margin: 3px 0px;
+   border-radius: 3px;
+   color: white;
+   font-size: 10px;
+   width: 70px;
+   height: 16px;
+ }
+
+ .type-indicator > a {
+   display: block;
+   line-height: normal;
+   margin: 3px 0;
+   text-align: center;
+ }
+
+ .type-indicator:hover {
+   background: rgba(0, 0, 0, 0.6);
+ }
+
+ .Poison {
+   background: #B97FC9;
+ }
+
+ .Grass {
+   background: #96C64D;
+ }
+
+ .Fire {
+   background: #F07722;
+ }
+
+ .Ice {
+   background: #51C4E7;
+ }
+
+ .Psychic {
+   background: #EA62B2;
+ }
+
+ .Flying {
+   background: #BDB9B8;
+ }
+
+ .Water {
+   background: #4592C4;
+ }
+
+ .Bug {
+   background: #729F3F;
+ }
+
+ .Normal {
+   background: #A4ACAF;
+ }
+
+ .Electric {
+   background: #EED535;
+ }
+
+ .Ground {
+   background: #AB9842;
+ }
+
+ .Fighting {
+   background: #D56723;
+ }
+
+ .Rock {
+   background: #A38C21;
+ }
+
+ .Steel {
+   background: #9EB7B8;
+ }
+
+ .Ghost {
+   background: #7B62A3;
+ }
+
+ .Fairy {
+   background: #FDB9E9;
+ }
+
+ .Dragon {
+   background: #5818F2;
+ }
+
+ .Dark {
+   background: gray;
+ }

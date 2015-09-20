@@ -20,12 +20,34 @@
       </div>
     </div>
   </div>
-  <div class="navbar-btn">
+  <div class="navbar-btn-left">
+    <span class="span-button button0" data="button0">
+      <span class="line1">Shop by</span>
+      <span class="line2">Category
+        <span class="arrow">
+          <div class="dropdown hidden">
+            <span class="dropdown-arrow type-dropdown"></span>
+              <ul>
+                <% Celadon.types.each(function(type){ %>
+                  <li>
+                    <a href="#"><%= type.escape('name') %></a>
+                    <span class="<%= type.escape('name') %> type-indicator navbar-type">
+                      <a href='#'><%= type.escape('name') %></a>
+                    </span>
+                  </li>
+                <% }) %>
+              </ul>
+          </div>
+        </span>
+      </span>
+    </span>
+  </div>
+  <div class="navbar-btn-right">
 
     <% if (currentUser.isSignedIn()) { %>
-      <span class="span-button button1" id='user-page-btn'>
+      <span class="span-button button1" data="button1" id='user-page-btn'>
     <% } else { %>
-      <span class="span-button button1" id='session-new-btn'>
+      <span class="span-button button1" data="button1" id='session-new-btn'>
     <% } %>
       <span class="line1">Hello.
         <% if (currentUser.isSignedIn()) { %>
@@ -37,7 +59,7 @@
       <span class="line2">Your Account
         <span class="arrow">
 
-          <div class="dropdown hidden" id="dropdown">
+          <div class="dropdown hidden">
             <span class="dropdown-arrow"></span>
               <ul>
                 <% if (!currentUser.isSignedIn()) { %>
@@ -61,10 +83,17 @@
       </span>
     </span>
 
-    <span class="span-button">
+    <span class="span-button button2" data="button2">
       <span class="line1">Wish</span>
       <span class="line2">List
-        <span class="arrow"></span>
+        <span class="arrow">
+          <div class="dropdown hidden">
+            <span class="dropdown-arrow type-dropdown"></span>
+              <ul>
+                  <li><a href="#">Coming soon...</a></li>
+              </ul>
+          </div>
+        </span>
       </span>
     </span>
     <% if (currentUser.isSignedIn()) { %>

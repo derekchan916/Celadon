@@ -84,13 +84,17 @@
   width: 25px;
 }
 
-.navbar-btn {
-  float: right;
-  padding: 6px 7px 5px 32px;
-  margin-top: 2px;
+.navbar-btn-left {
+  float: left;
+  padding: 6px 27px 0 15px;
 }
 
-.navbar-btn > .span-button {
+.navbar-btn-right {
+  float: right;
+  padding: 6px 7px 5px 32px;
+}
+
+.span-button {
   cursor: pointer;
   position: relative;
   float: left;
@@ -101,13 +105,13 @@
   border: 1px solid transparent;
 }
 
-.navbar-btn > .span-button:hover {
+.span-button:hover {
   border-radius: 5px;
   border: 1px solid #838B8B;
   box-shadow: 1px;
 }
 
-.navbar-btn .line1 {
+.line1 {
   font-size: 12px;
   color: #ccc;
   height: 14px;
@@ -119,7 +123,7 @@
   padding-right: 11px;
 }
 
-.navbar-btn .line2 {
+.line2 {
   color: white;
   font-size: 14px;
   line-height: 15px;
@@ -130,7 +134,7 @@
   // display: inline-block;
 }
 
-.navbar-btn .arrow {
+.arrow {
   position: relative;
   display: inline-block;
   width: 0;
@@ -138,7 +142,7 @@
   margin: 0 0 2px 5px;
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	border-top: 4px solid #606060;
+	border-top: 4px solid #ccc;
 }
 
 .arrow > .dropdown {
@@ -185,9 +189,13 @@
   color: black;
 }
 
+.type-dropdown > a {
+  line-height: 0px;
+}
+
 .dropdown > ul > li {
   font-weight: 300;
-  line-height: 25px;
+  line-height: 22px;
   font-size: 13px;
 }
 
@@ -198,6 +206,10 @@
 .dropdown > ul > li > a:hover {
   color: #E47911;
   text-decoration: underline;
+}
+
+.navbar-type {
+  float: right
 }
 
 .search-bar-img {

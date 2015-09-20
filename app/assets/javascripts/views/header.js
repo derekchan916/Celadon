@@ -3,13 +3,14 @@ Celadon.Views.Header = Backbone.View.extend({
 
   events: {
     "click #sign-out-link": "signOut",
-    'mouseenter .button1': 'toggleDropdownOn',
-    'mouseleave .button1': 'toggleDropdownOff',
+    'mouseenter .span-button': 'toggleDropdownOn',
+    'mouseleave .span-button': 'toggleDropdownOff',
     'click #to-cart-btn': 'goToCart'
   },
 
   initialize: function(options){
     this.listenTo(Celadon.currentUser, "signIn signOut", this.render);
+    this.listenTo(Celadon.types, "sync", this.render);
     this.render();
   },
 
@@ -30,13 +31,15 @@ Celadon.Views.Header = Backbone.View.extend({
 
   toggleDropdownOn: function(e) {
     e.preventDefault();
-    $('.dropdown').removeClass('hidden');
+    $target = $(e.currentTarget).attr('data')
+    $('.' + $target + ' .dropdown').removeClass('hidden');
     $('.modal-screen-backdrop').addClass('darken');
   },
 
   toggleDropdownOff: function(e) {
     e.preventDefault();
-    $('.dropdown').addClass('hidden');
+    $target = $(e.currentTarget).attr('data')
+    $('.' + $target + ' .dropdown').addClass('hidden');
     $('.modal-screen-backdrop').removeClass('darken');
   },
 

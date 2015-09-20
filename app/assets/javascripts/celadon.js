@@ -9,6 +9,8 @@ window.Celadon = {
     Celadon.products.fetch();
     Celadon.users = new Celadon.Collections.Users();
     Celadon.users.fetch();
+    Celadon.types = new Celadon.Collections.Types();
+    Celadon.types.fetch();
 
     this.currentUser = new Celadon.Models.CurrentUser();
     this.currentUser.fetch();
