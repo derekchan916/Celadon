@@ -32,6 +32,10 @@
   background: #ECEEF1;
 }
 
+.review-create > button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .modal-screen {
   position: fixed;
   z-index: 2;
@@ -102,4 +106,31 @@
 .modal-form .cancel:hover {
   background: transparent;
   color: #3D3D3D;
+}
+
+.poke-content-review-list {
+  margin: 20px 0;
+  width: 100%;
+  float: right;
+  color: #111111;
+  font-size: 14px;
+}
+
+.poke-content-review-list li {
+  margin-bottom: 25px;
+}
+
+.poke-content-review-list p {
+  display: block;
+}
+
+.poke-content-review-list .review-body {
+  margin-top: 10px;
+  width: 800px;
+  word-wrap:break-word;
+}
+
+.poke-content-review-list .bold-title {
+  color: black;
+  font-weight: bold;
 }

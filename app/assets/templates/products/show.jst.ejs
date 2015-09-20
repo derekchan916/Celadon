@@ -56,7 +56,7 @@
     <p class='description-body'><%= product.escape('description') %></p>
   </div>
   <div class='poke-content-reviews'>
-    <div id="reviews group">
+    <div>
       <h3>Customer Reviews</h3>
       <div class="review-summary">
         Number of reviews: <%= product.escape('number_of_reviews') %><br>
@@ -66,6 +66,8 @@
         Share your thoughts with other customers
         <button class='review-create-btn'>Write a customer review</button>
       </div>
+    </div>
+    <div class='poke-content-review-list' id="reviews">
     </div>
   </div>
 </div>
