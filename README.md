@@ -12,6 +12,8 @@ add two pokemont an existing pokemon
 fix place order screen
 Sort Bys
 Ask about images
+Date: AJAX Twitter
+add discount prices
 
 
 ## Minimum Viable Product

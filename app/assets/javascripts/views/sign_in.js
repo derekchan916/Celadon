@@ -1,5 +1,6 @@
 Celadon.Views.SignIn = Backbone.View.extend({
   template: JST['sign_in'],
+  className: 'sign-in-sheet',
 
   initialize: function(options){
     this.callback = options.callback;

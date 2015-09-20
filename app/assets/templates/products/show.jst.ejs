@@ -28,32 +28,44 @@
   <button id='add-cart-button'>Add to Cart</button>
 </div>
 
-<div class='poke-image'>
-  <img src="<%= product.escape('image_url') %>">
+<div class='main-content group'>
+  <div class='poke-image'>
+    <img src="<%= product.escape('image_url') %>">
   </div>
   <div class='poke-content'>
-  <div class='poke-content-header'>
-    <h3><%= product.escape('name') %></h3>
-    <p>
-      Date found: <%= product.escape('created_at') %><br>
-      Price: $<%= product.escape('price') %>
-    </p>
-  </div>
-  <div class='poke-content-content'>
-    Attack: <%= product.escape('attack') %><br>
-    Defense: <%= product.escape('defense') %><br>
-    Moves: <%= product.escape('moves') %><br>
-    Type: <%= product.escape('poke_types') %>
-  </div>
-  <div id="reviews">
-    <h3>Customer Reviews</h3>
-    <div class="review-summary">
-      Number of reviews: <%= product.escape('number_of_reviews') %><br>
-      <%= product.escape('average_star_rating') %> out of 5 stars
+    <div class='poke-content-header'>
+      <h3><%= product.escape('name') %></h3>
     </div>
-    <div id="review-create">
-      Share your thoughts with other customers
-      <button class='review-create-btn'>Write a customer review</button>
+    <div class='poke-subheader'>
+      <p class='price-name'>Price: </p>
+      <p class='price'>$<%= product.escape('price') %></p><br>
+      <p class='price-name'>Date found: </p>
+      <p class='date-found'><%= product.escape('created_at') %></p>
+    </div>
+    <div class='poke-content-content'>
+      Attack: <%= product.escape('attack') %><br>
+      Defense: <%= product.escape('defense') %><br>
+      Moves: <%= product.escape('moves') %><br>
+      Type: <%= product.escape('poke_types') %>
+      <br><p class='in-stock'>In Stock.</p>
+    </div>
+
+  </div>
+  <div class='poke-content-description'>
+    <h3 class='description-header'>Product Description</h3>
+    <p class='description-body'><%= product.escape('description') %></p>
+  </div>
+  <div class='poke-content-reviews'>
+    <div id="reviews group">
+      <h3>Customer Reviews</h3>
+      <div class="review-summary">
+        Number of reviews: <%= product.escape('number_of_reviews') %><br>
+        <%= product.escape('average_star_rating') %> out of 5 stars
+      </div>
+      <div class="review-create" id="review-create">
+        Share your thoughts with other customers
+        <button class='review-create-btn'>Write a customer review</button>
+      </div>
     </div>
   </div>
 </div>

@@ -64,7 +64,7 @@
               <ul>
                 <% if (!currentUser.isSignedIn()) { %>
                   <li class="dropdown-btn">
-                    <a class="dropdown-btn-link" href="#/session/new">Sign in</a>
+                    <a class="dropdown-btn-link sign-in-btn" href="#/session/new">Sign in</a>
                   </li>
                   <li>New customer? Start here.</li>
                 <% } %>
@@ -73,8 +73,7 @@
                 <li><a href='#'>Your Wish List</a></li>
                 <li><a href='#'>Your Recommendations</a></li>
                 <% if (currentUser.isSignedIn()) { %>
-                  <li>Not <%= currentUser.escape('fname') %>?
-                    <a id="sign-out-link">Sign out</a>
+                  <li><a id="sign-out-link">Not <%= currentUser.escape('fname') %>? Sign out</a>
                   </li>
                 <% } %>
               </ul>

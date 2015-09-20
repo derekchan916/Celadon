@@ -14,7 +14,8 @@
  *= require_self
  */
 
- html, body, header, ul, li, input, a, button {
+ html, body, header, ul, li, input, a, button, h1, h2, h3, h4, h5, label, div,
+ span, p {
    margin: 0;
    padding: 0;
    border: 0;
@@ -28,12 +29,17 @@
    background: transparent;
  }
 
+ p {
+   display: inline;
+ }
+
  ul {
    list-style: none;
  }
 
  img {
    display: block;
+   width: 100%;
    height: auto;
  }
 
@@ -58,6 +64,14 @@
    clear: both;
  }
 
+ h2 {
+   font-size: 28px;
+ }
+
+ h3 {
+   font-size: 20px;
+ }
+
  body {
    font-family: arial,sans-serif;
  }
@@ -70,7 +84,7 @@
    background: rgba(0, 0, 0, 0.6);
    transition: 0.2s;
    position: fixed;
-   z-index: 1;
+   z-index: 4;
    top: 0;
    bottom: 0;
    left: 0;
@@ -100,6 +114,24 @@
 
  .type-indicator:hover {
    background: rgba(0, 0, 0, 0.6);
+ }
+
+ .sign-in-btn {
+   display: inline-block;
+   color: black;
+   text-align: center;
+   padding: 5px 10px;
+   /*width: 84%;*/
+   margin: 0 auto;
+   border: 1px solid #E47911;
+   border-radius: 5px;
+   background: #FEBD69;
+ }
+
+ .sign-in-btn:hover {
+   background: #e4aa5e;
+   text-decoration: none;
+   color: black;
  }
 
  .Poison {

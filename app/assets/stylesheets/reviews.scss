@@ -1,3 +1,37 @@
+.poke-content-reviews {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  float: left;
+}
+
+.poke-content-reviews h3 {
+  color: #CC6600;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.review-summary {
+  float: left;
+  width: 250px;
+  font-size: 14px;
+}
+
+.review-create {
+  width: 300px;
+  float: left;
+  font-size: 14px;
+}
+
+.review-create > button {
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid #BABABA;
+  padding: 5px 10px;
+  text-align: center;
+  background: #ECEEF1;
+}
+
 .modal-screen {
   position: fixed;
   z-index: 2;
@@ -10,7 +44,7 @@
 }
 
 .modal-review-form {
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 50%;
   margin-left: -220px;
