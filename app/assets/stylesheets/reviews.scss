@@ -63,30 +63,51 @@
   background: #eee;
 }
 
-.modal-form input {
-  position: block;
-  width: 80%;
-  border-radius: 3px;
-  margin: 10px;
-  margin-left: 0px;
-  outline: none;
+.modal-review-form p {
+  display: block;
+  margin-top: 10px;
 }
 
-.modal-form textarea {
+.modal-review-form input {
   position: block;
-  width: 80%;
+  background: white;
+  width: 280px;
+  height: 25px;
+  padding: 0px 3px;
+  border: 1px solid #838B8B;
+  border-radius: 3px;
+  // margin: 10px;
+  margin-left: 0px;
+  outline: none;
+  font-size: 12px;
+}
+
+.modal-review-form input:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+.modal-review-form textarea {
+  position: block;
+  float: left;
+  width: 286px;
   height: 80px;
   border-radius: 3px;
   margin: 10px;
   margin-left: 0px;
-  border: none;
   outline: 0;
   border: 1px solid #838B8B;
+  font-size: 12px;
 }
 
-.modal-form button {
+.modal-review-form textarea:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+.modal-review-form button {
   float: left;
-  background: #5aac44;
+  background: #CC6600;
   padding: 5px 18px;
   border-radius: 3px;
   font-weight: 400;
@@ -94,7 +115,11 @@
   color: white;
 }
 
-.modal-form .cancel {
+.modal-review-form button:hover {
+  opacity: 0.8;
+}
+
+.modal-review-form .cancel {
   margin: 10px;
   float: left;
   box-shadow: none;
@@ -103,7 +128,7 @@
   cursor: pointer;
 }
 
-.modal-form .cancel:hover {
+.modal-review-form .cancel:hover {
   background: transparent;
   color: #3D3D3D;
 }
