@@ -17,11 +17,12 @@ Celadon.Views.UserEditForm = Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault();
+    var that = this;
     var formData = new FormData();
     formData.append('user[fname]', this.$('#user-fname').val());
     formData.append('user[lname]', this.$('#user-lname').val());
     formData.append('user[image]', this.$('#input-post-image')[0].files[0]);
-    
+
     this.model.saveFormData(formData, {
       success: function() {
         that.collection.add(that.model, { merge: true });

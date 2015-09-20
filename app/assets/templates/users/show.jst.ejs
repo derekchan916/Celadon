@@ -1,4 +1,5 @@
 <p>
   <%= user.escape('fname') %> <%= user.escape('lname') %><br>
+  <imc src="<%= user.escape('image_url') %>"><br>
   <a href="#/user/<%= user.escape('id') %>/edit">Edit account</a>
 </p>

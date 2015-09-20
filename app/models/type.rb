@@ -1,5 +1,5 @@
 class Type < ActiveRecord::Base
-  TYPES = ["bug" ,"normal",	"fire", "fighting", "water", "flying",	"grass", "poison",	"electric", "ground",	"psychic", "rock",	"ice", "bug",	"dragon", "ghost",	"dark", "steel",	"fairy"]
+  TYPES = ["Bug" ,"Normal",	"Fire", "Fighting", "Water", "Flying",	"Grass", "Poison",	"Electric", "Ground",	"Psychic", "Rock",	"Ice", "Bug",	"Dragon", "Ghost",	"Dark", "Steel",	"Fairy"]
   validates :name, inclusion: { in: TYPES }
 
   has_many :moves

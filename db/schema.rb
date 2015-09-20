@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150919202136) do
+ActiveRecord::Schema.define(version: 20150920043624) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,7 +76,6 @@ ActiveRecord::Schema.define(version: 20150919202136) do
   create_table "products", force: :cascade do |t|
     t.string   "national_id", null: false
     t.string   "name",        null: false
-    t.integer  "price",       null: false
     t.integer  "discount"
     t.integer  "attack",      null: false
     t.integer  "defense",     null: false
@@ -84,9 +83,8 @@ ActiveRecord::Schema.define(version: 20150919202136) do
     t.string   "image_url",   null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.float    "price"
   end
-
-  add_index "products", ["price"], name: "index_products_on_price", using: :btree
 
   create_table "reviews", force: :cascade do |t|
     t.integer  "author_id",   null: false
