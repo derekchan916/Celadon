@@ -1,9 +1,9 @@
-<div class='add-cart-message hidden' id='add-cart-message'>
+<div class='add-cart-message hidden group' id='add-cart-message'>
   <span class='checkmark'>
-    Added to Cart
+    <img class="checkmark-img" src="assets/css/dark-green-check-mark-hi.png">Added to Cart
   </span>
   <span class='quick-details'>
-    Cart subtotal ($<%= Celadon.currentUser.escape('current_subtotal') %>)
+    Cart subtotal: <p class="price-tag">$<%= Celadon.currentUser.escape('current_subtotal') %></p>
   </span>
   <span class='add-cart-message-btn'>
     <button>Continue Shopping</button>
@@ -11,21 +11,23 @@
   </span>
 </div>
 
-<div class='purchase-tab'>
-  <span class='purchase-tab-qty'>Qty:
-    <select id='purchase-qty-selection'>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-    </select>
-  </span><br>
-  <span class="purchase-tab-details">
-    $<%= product.escape('price') %> + Free Shipping + Free Pokeball
-  </span><br>
-  <button id='add-cart-button'>Add to Cart</button>
+<div class='content-right'>
+  <div class='purchase-tab'>
+    <span class='purchase-tab-qty'>Qty:
+      <select id='purchase-qty-selection'>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+    </span><br>
+    <span class="purchase-tab-details">
+      <p>$<%= product.escape('price') %></p> + Free Shipping + Free Pokéball
+    </span><br>
+    <button class="sign-in-btn" id='add-cart-button'>Add to Cart</button>
+  </div>
 </div>
 
 <div class='main-content group'>
