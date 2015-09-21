@@ -5,11 +5,9 @@
 [heroku]:
 
 ## Updated List
-Change the price to floating number
 Create Table for category, area, and vendor
 Update Table for OrderedItems to include price
-add two pokemont an existing pokemon
-fix place order screen
+add two pokemont an existing pokemon fix place order screen
 Sort Bys
 Ask about images
 Date: AJAX Twitter
