@@ -1,5 +1,6 @@
 Celadon.Views.UserNewForm = Backbone.View.extend({
   template: JST['users/new_form'],
+  className: 'sign-in-sheet',
 
   initialize: function(options) {
     this.listenTo(this.model, 'sync', this.render)

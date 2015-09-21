@@ -181,6 +181,16 @@
   color: black;
 }
 
+.start-here {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.start-here:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
 .type-dropdown > a {
   line-height: 0px;
 }

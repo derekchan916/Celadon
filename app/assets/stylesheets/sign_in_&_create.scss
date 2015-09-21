@@ -19,7 +19,7 @@
 
 .sign-in-sheet > form > label > p {
   margin: 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .sign-in-sheet > form > label > input {
@@ -72,4 +72,20 @@
 
 .sign-in-sheet > div > .create-btn:hover {
   background: rgba(0, 0, 0, 0.1);
+}
+
+.link-to-sign {
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.link-to-sign > a {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.link-to-sign > a:hover {
+  color: #c45500;
+  text-decoration: underline;
 }

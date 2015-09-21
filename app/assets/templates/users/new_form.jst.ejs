@@ -1,17 +1,26 @@
-<h3>Create Account</h3>
-<form>
-  Your first name<br>
-  <input type="text" name="user[fname]"><br>
-  Your last name<br>
-  <input type="text" name="user[lname]"><br>
-  Email<br>
-  <input name="user[email]" type="text"><br>
-  Password<br>
-  <input
-    name="user[password]"
-    type="password"
-    placeholder="at least 6 characters"><br>
+<h2>Create Account</h2>
 
-  <button>Create your Celadon account</button><br>
-  <span>Already have an account? <a href="#/session/new">Sign in</a></span>
+<form>
+  <label><p>Your first name</p>
+    <input type="text" name="user[fname]">
+  </label><br>
+
+  <label><p>Your last name</p>
+    <input type="text" name="user[lname]">
+  </label><br>
+
+  <label><p>Email</p>
+    <input name="user[email]" type="text"><br>
+  </label><br>
+
+  <label><p>Password</p>
+    <input
+      name="user[password]"
+      type="password"
+      placeholder="at least 6 characters">
+    </label><br>
+
+  <button class="sign-in-btn">Create your Celadon account</button>
 </form>
+
+<span class="link-to-sign">Already have an account? <a href="#/session/new">Sign in</a></span>
