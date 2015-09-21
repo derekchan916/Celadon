@@ -55,7 +55,6 @@ end
     subtotal = 0
 
     self.cart_items.each do |cart_item|
-
       subtotal += (cart_item.product.price * cart_item.quantity)
     end
 
