@@ -5,8 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require 'byebug'
+
 ActiveRecord::Base.transaction do
+  # Product.destroy_all
+  # Type.destroy_all
+  # User.destroy_all
+  # CartItem.destroy_all
+  # OrderedItem.destroy_all
+  # Category.destroy_all
+  # Evolution.destroy_all
+  # Move.destroy_all
+  # Pokemove.destroy_all
+  # Review.destroy_all
+  # View.destroy_all
+
   product = {
     "1"=>{
       "name"=>"Bulbasaur",
