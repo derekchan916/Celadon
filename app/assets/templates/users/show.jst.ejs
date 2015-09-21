@@ -1,5 +1,20 @@
-<p>
-  <%= user.escape('fname') %> <%= user.escape('lname') %><br>
-  <img src="<%= user.escape('image_url') %>"><br>
-  <a href="#/user/<%= user.escape('id') %>/edit">Edit account</a>
-</p>
+<div class="user-information">
+  <img src="<%= user.escape('image_url') %>">
+  <div class="user-content">
+    <div><%= user.escape('fname') %> <%= user.escape('lname') %>'s Celadon</div>
+    <p><%= user.escape('email') %></p>
+    <p>
+      <a href="#/user/<%= user.id %>/ordered_items">
+        View your ordered items
+      </a>
+    </p>
+    <p>
+      <a href="#/user/<%= user.id %>/cart_items">
+        View your cart
+      </a>
+    </p>
+    <p>
+      <a href="#/user/<%= user.escape('id') %>/edit">Edit account</a>
+    </p>
+  </div>
+</div>
