@@ -1,30 +1,29 @@
-<div class='add-cart-message hidden' id='order-message'>
-  <span class='order-message-sentence'>
-    You have successfully placed an order!
+<div class='checkout-message group' id='order-message'>
+  <img class="checkmark" src="/assets/css/dark-green-check-mark-hi.png">
+  <span class='order-message-sentence'>You have successfully placed an order!
   </span>
 </div>
 
 <div class='checkout-bar'>
   <span class='quick-details'>
-    Subtotal( <%= Celadon.currentUser.escape('number_of_cart_items') %> item(s)): $<%= Celadon.currentUser.escape('current_subtotal') %>
+    Subtotal (<%= Celadon.currentUser.escape('number_of_cart_items') %> item(s)):
+    <span class="money">$<%= Celadon.currentUser.escape('current_subtotal') %></span>
   </span>
-  <span class='add-cart-message-btn'>
-    <button id="checkout-btn">Checkout</button>
+  <span class='add-cart-message-btn sign-in-btn'>
+    <button id="checkout-btn">Proceed to checkout</button>
   </span>
 
 
-  <span class='order-details'>
+  <span class='order-details group'>
     <h4>Order Summary</h4>
     <p class='checkout-left detail'>Items:</p>
     <p class='checkout-right detail'>$<%= Celadon.currentUser.escape('current_subtotal') %></p>
     <p class='checkout-left detail'>Shipping & handling:</p>
     <p class='checkout-right detail'>$0.00</p>
-    <p class='checkout-left detail'>Shipping & handling:</p>
-    <p class='checkout-right detail'>$0.00</p>
     <p class='checkout-left detail'>Taxes:</p>
     <p class='checkout-right detail'>Never</p>
-    <p class='checkout-left bold'>Order total:</p>
-    <p class='checkout-right bold'>$<%= Celadon.currentUser.escape('current_subtotal') %></p>
+    <p class='checkout-left bold'>Estimated order total:</p>
+    <p class='checkout-right bold money'>$<%= Celadon.currentUser.escape('current_subtotal') %></p>
   </span>
 </div>
 
@@ -43,8 +42,8 @@
 <div class="modal-checkout hidden">
   <div class="modal-checkout-screen darken"></div>
   <div class="confirmation-page">
-    Are you sure you sure?
-    <button class="place-order" id='place-order-btn'>Place Order</button>
+    <span class="confirmation-page-header">Are you sure you sure?</span>
+    <button class="place-order sign-in-btn" id='place-order-btn'>Place Order</button>
     <button class="cancel" id='cancel-confirmation'>Cancel</button>
   </div>
 </div>

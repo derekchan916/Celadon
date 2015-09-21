@@ -3,8 +3,8 @@ Celadon.Views.Header = Backbone.View.extend({
 
   events: {
     "click #sign-out-link": "signOut",
-    'mouseenter .span-button': 'toggleDropdownOn',
-    'mouseleave .span-button': 'toggleDropdownOff',
+    'mouseenter .button-able-hover': 'toggleDropdownOn',
+    'mouseleave .button-able-hover': 'toggleDropdownOff',
     'click #to-cart-btn': 'goToCart'
   },
 

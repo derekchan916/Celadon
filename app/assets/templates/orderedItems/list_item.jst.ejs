@@ -1,23 +1,24 @@
-<div class='ordered-product-header'>
+<div class='ordered-product-header group'>
   <div class='ordered-product-header-left'>
-    ORDER PLACED <%= orderedItem.escape('created_at') %>
-    Total $$$
-    Quantity: <%= orderedItem.escape('quantity') %>
-  </div>
-  <div class='ordered-product-header-right'>
     ORDER # <%= orderedItem.escape('order_id') %>
   </div>
 </div>
-<div class='ordered-product-img'>
-  <img src="<%= product.escape('image_url') %>">
-</div>
-<div class='ordered-product-content'>
+
+<div class='ordered-product-content group'>
   <div class='ordered-product-content-left'>
-    <h3><%= product.escape('name') %></h3>
-    <p>
-      Price: $<%= product.escape('price') %>
+    <div class='ordered-date'>
+      ORDER PLACED <%= orderedItem.escape('created_at') %>
+    </div>
+    <div class='ordered-product-img'>
+      <img src="<%= product.escape('image_url') %>">
+    </div>
+    <h4><a href="#/product/<%= product.id %>"><%= product.escape('name') %></a></h4>
+    <div class='ordered-product-header-left'>
+      <span class='money'>$<%= product.escape('price') %></span><br>
+      Quantity: <%= orderedItem.escape('quantity') %>
+    </div>
   </div>
   <div class='ordered-product-content-right'>
-    <a href='#/product/<%= product.id %>'>Buy it Again</a>
+    <a class='sign-in-btn' href='#/product/<%= product.id %>'>Buy it Again</a>
   </div>
 </div>

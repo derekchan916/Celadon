@@ -2,6 +2,7 @@
   float: left;
   margin: 20px 20px 40px 20px;
   width: 1000px;
+  border-bottom: 1px solid #ccc;
 }
 
 .cart-content > h3 {
@@ -45,6 +46,11 @@
   // width: 100%;
 }
 
+.poke-content-header {
+  height: 100px;
+  position: relative;
+}
+
 .poke-content-header > h3 {
   width: 834px;
 }
@@ -71,27 +77,92 @@
   font-size: 16px;
 }
 
+.poke-content-header > span {
+  display: block;
+  font-size: 13px;
+  color: #555555;
+}
 
+.poke-content-header > .delete-cart-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #0066c0;
+  cursor: pointer;
+  font-size: 13px;
+}
 
+.poke-content-header > .delete-cart-item:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
 
-
-
-
-
+.poke-content-header > .in-stock {
+  color: #008A00;
+  font-size: 13px;
+}
 
 .order-details {
   width: 300px;
-  // position: fixed;
   right: 0px;
   float: right;
 }
 
 .checkout-bar {
+  float: right;
+  position: absolute;
+  margin: 65px 30px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   width: 300px;
-  // position: fixed;
   right: 0px;
   float: right;
+  background: #F3F3F3;
 }
+
+.checkout-bar > .quick-details {
+  display: block;
+  font-weight: bold;
+  margin: 20px 20px 0 20px;
+}
+
+.checkout-bar > .add-cart-message-btn {
+  font-size: 13px;
+  width: 238px;
+  cursor: pointer;
+  margin: 30px 20px 30px 20px;
+}
+
+.order-details {
+  width: 260px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #ccc;
+  background: white;
+  font-size: 13px;
+  padding: 20px;
+}
+
+.order-details > h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.checkout-left {
+  width: 140px;
+  float: left;
+}
+
+.checkout-right {
+  float: right;
+}
+
+.order-details > .bold {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 
 .confirmation-page {
   position: absolute;
@@ -107,22 +178,62 @@
   border: 1px solid #000;
   cursor: default;
   background: #eee;
+  display: block;
+
 }
 
+.confirmation-page-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+}
+
+
 .confirmation-page > button {
+  margin: 40px auto;
+  width: 338px;
 
 }
 
 .confirmation-page .cancel {
-  margin: 10px;
+  margin: 5px;
   float: left;
   box-shadow: none;
   color: #838B8B;
   background: transparent;
   cursor: pointer;
+  font-size: 13px;
 }
 
-.checkout-bar {
-  position: fixed;
-  float: right;
+.confirmation-page .cancel:hover{
+  color: #ccc;
+}
+
+.checkout-message {
+  display: block;
+  border: 1px solid #ccc;
+  background: #F3F3F3;
+  width: 1100px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+.checkout-message .checkmark {
+  float: left;
+  background: #FAFAFA;
+  width: 90px;
+  padding: 22px 20px;
+  border-right: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00B050;
+}
+
+.order-message-sentence {
+  display: block;
+  margin: 40px;
+  text-align: center;
+  font-weight: bold;
 }

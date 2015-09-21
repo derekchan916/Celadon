@@ -209,3 +209,9 @@
  .Dark {
    background: gray;
  }
+
+ .money {
+   font-size: 16px;
+   font-weight: bold;
+   color: #B12704;
+ }

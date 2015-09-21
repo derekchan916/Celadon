@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="navbar-btn-left">
-    <span class="span-button button0" data="button0">
+    <span class="span-button button0 button-able-hover" data="button0">
       <span class="line1">Shop by</span>
       <span class="line2">Category
         <span class="arrow">
@@ -45,9 +45,9 @@
   <div class="navbar-btn-right">
 
     <% if (currentUser.isSignedIn()) { %>
-      <span class="span-button button1" data="button1" id='user-page-btn'>
+      <span class="span-button button1 button-able-hover" data="button1" id='user-page-btn'>
     <% } else { %>
-      <span class="span-button button1" data="button1" id='session-new-btn'>
+      <span class="span-button button1 button-able-hover" data="button1" id='session-new-btn'>
     <% } %>
       <span class="line1">Hello.
         <% if (currentUser.isSignedIn()) { %>
@@ -82,7 +82,7 @@
       </span>
     </span>
 
-    <span class="span-button button2" data="button2">
+    <span class="span-button button2 button-able-hover" data="button2">
       <span class="line1">Wish</span>
       <span class="line2">List
         <span class="arrow">

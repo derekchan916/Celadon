@@ -1,5 +1,6 @@
 Celadon.Views.OrderedItemsIndex = Backbone.CompositeView.extend({
   template: JST['orderedItems/index'],
+  className: 'ordered-show',
 
   initialize: function(options) {
     this.user = Celadon.currentUser;
