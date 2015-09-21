@@ -1,6 +1,6 @@
 Celadon.Views.CartItemListItem = Backbone.View.extend({
   tagName: 'li',
-  className: 'cart-item',
+  className: 'cart-item group',
 
   template: JST['cartItems/list_item'],
 

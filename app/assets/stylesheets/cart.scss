@@ -1,0 +1,128 @@
+.cart-content {
+  float: left;
+  margin: 20px 20px 40px 20px;
+  width: 1000px;
+}
+
+.cart-content > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.cart-product-img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+.price-quantity {
+  // float: right;
+  color: #555555;
+}
+
+.quantity-column {
+  float: right;
+  margin-left: 300px;
+}
+
+.price-column {
+  float: right;
+}
+
+.price-quantity > span {
+  font-size: 14px;
+}
+
+.cart-product-content {
+  float: left;
+  // width: 100%;
+}
+
+.poke-content-header > h3 {
+  width: 834px;
+}
+
+.poke-content-header > h3 > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.poke-content-header > h3 > a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+.poke-content-header .price-column {
+  font-size: 16px;
+  font-weight: bold;
+  color: #B12704;
+}
+
+.poke-content-header .quantity-column {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+.order-details {
+  width: 300px;
+  // position: fixed;
+  right: 0px;
+  float: right;
+}
+
+.checkout-bar {
+  width: 300px;
+  // position: fixed;
+  right: 0px;
+  float: right;
+}
+
+.confirmation-page {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -220px;
+  width: 360px;
+  height: 300px;
+  padding: 20px;
+  background: #fff;
+  z-index: 6;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: default;
+  background: #eee;
+}
+
+.confirmation-page > button {
+
+}
+
+.confirmation-page .cancel {
+  margin: 10px;
+  float: left;
+  box-shadow: none;
+  color: #838B8B;
+  background: transparent;
+  cursor: pointer;
+}
+
+.checkout-bar {
+  position: fixed;
+  float: right;
+}

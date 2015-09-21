@@ -3,12 +3,18 @@
 </div>
 <div class='cart-product-content'>
   <div class='poke-content-header'>
-    <h3><%= product.escape('name') %></h3>
-    <p id='cart-product-delete'>Delete</p>
-    <p>
-      Price: $<%= product.escape('price') %><br>
-      Quantity: <%= cartItem.escape('quantity') %>
+    <h3>
+      <a href='#/product/<%= product.id %>'><%= product.escape('name') %></a>
+      <span class="quantity-column">
+        <%= cartItem.escape('quantity') %>
+      </span>
+      <span class="price-column">
+        $<%= product.escape('price') %>
+      </span>
+    </h3>
+
     </p>
     Added at: <%= cartItem.escape('updated_at') %>
+    <p id='cart-product-delete'>Delete</p>
   </div>
 </div>
