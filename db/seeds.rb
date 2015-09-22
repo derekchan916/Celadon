@@ -449,6 +449,62 @@ It is said that Nidoking's tail is capable of toppling a metal transmission towe
          "Mega Punch"
       ],
     },
+    "35"=>{
+      "name"=>"Clefairy",
+      "attack"=>45,
+      "defense"=>48,
+      "description"=>"Clefairy is a bipedal, pink Pokémon with a chubby, vaguely star-shaped body. A small, pointed tooth protrudes from the upper left corner of its mouth. It has wrinkles beside its black, oval eyes, dark pink, oval markings on its cheeks, two small wings, and large, pointed ears with brown tips. A tuft of fur curls over its forehead, much like its large, upward-curling tail. Each stocky arm has two small claws and a thumb on each hand, and each of its feet has a single toenail.
+Clefairy is very shy and rarely shows itself to humans. On the rare occasions it does come down from its mountain home, it can be seen dancing under the light of the full moon. Once the sun starts to rise, it returns home where it sleeps nestled with other Clefairy. Though incapable of flight, Clefairy's wings can store moonlight and allow it to float. The anime has shown that Clefairy is actually an extraterrestrial Pokémon.
+",
+      "poke_type"=>["Fairy"],
+      "moves"=>[
+        "Pound",
+        "Double Slap"
+      ],
+      "evolution"=>"Clefable",
+    },
+    "36"=>{
+      "name"=>"Clefable",
+      "attack"=>70,
+      "defense"=>73,
+      "description"=>"Clefable is tall, pink Pokémon with a vaguely star-shaped body. It has long, pointed ears with dark brown tips and black, oval eyes with wrinkles on either side. A curled lock of fur hangs over its forehead, much like its large, upward-curling tail. It has dark pink, three-pointed wings on its back. Its hands have three fingers each, and its feet have two clawed toes and dark pink soles. It has a long, tightly curled tail.
+  Clefable is a timid creature that flees when it senses people approaching, and is one of the world's rarest Pokémon. Its sensitive ears can distinctly hear a pin drop from half a mile away. Because of its acute hearing, it prefers to live in quiet, mountainous areas of which they are protective. Using a bouncy gait, it is able to walk on water and sometimes appears to be flying using its small wings.
+  ",
+      "poke_type"=>["Fairy"],
+      "moves"=>[
+        "Sing",
+        "Double Slap",
+        "Metronome"
+      ],
+    },
+    "37"=>{
+      "name"=>"Vulpix",
+      "attack"=>41,
+      "defense"=>40,
+      "description"=>"Vulpix is a small, quadruped, fox-like Pokémon. It has red-brown pelt, brown, pupil-less eyes, large, pointed ears with dark brown insides, and six orange tails with curled tips. The tails grow hot as evolution approaches for this Pokémon. Vulpix also has curled locks of orange fur with bangs on top of its head. At birth, Vulpix has only one white tail, which apparently splits and grows more beautiful and warmer as it grows older. Vulpix has a cream underbelly, and brown feet with lighter brown paw pads.
+Vulpix has a flame inside its body that never goes out, and is capable of manipulating fire to such precision as to create floating wisps of flame. When the temperature outside increases, it will expel flames from its mouths to prevent its body from overheating. Vulpix is known to feign injury to escape from opponents too powerful for it to defeat. Vulpix can be found most commonly in grassy plains.
+In the anime",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+        "Ember",
+        "Confuse Ray",
+        "Quick Attack"
+      ],
+    },
+    "143"=>{
+      "name"=>"Aaron Wong",
+      "attack"=>110,
+      "defense"=>65,
+      "description"=>"Aaron Wong is a huge, bipedal, dark blue-green Pokémon with a cream-colored face, belly, and feet. Its body is composed of mostly its belly, where most of its fat reserves accumulate. Its head is large, with small, pointed ears and two pointed teeth protruding from its lower jaw. It has large, hind feet with three claws and a circular brown paw pad, and its arms and five foreclaws are short.
+Aaron Wong is often found in mountains and forests. It wakes up only to eat and seldom for exercises. It is not a picky eater, as its strong stomach allows it to eat even moldy food without feeling any ill effects. When hungry, it is not satisfied until it consumes 900 pounds of food. Aaron Wong is docile enough to let children and small Pokémon bounce on its large stomach.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Tackle",
+         "Headbutt",
+         "Snore",
+         "Body Slam"
+      ],
+    },
   }
 
   moves = [
@@ -569,6 +625,7 @@ It is said that Nidoking's tail is capable of toppling a metal transmission towe
     ["Self-Destruct","Normal"],
     ["Sharpen","Normal"],
     ["Sing","Normal"],
+    ["Snore","Normal"],
     ["Skull Bash","Normal"],
     ["Sky Attack","Flying"],
     ["Slam","Normal"],
@@ -625,6 +682,8 @@ It is said that Nidoking's tail is capable of toppling a metal transmission towe
     elsif num.length == 2
       num = "0#{num}"
       national_id = num
+    elsif num.length == 3
+      national_id = "#{num}"
     end
 
     price = stats["attack"] + stats["defense"] * 2.45
