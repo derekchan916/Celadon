@@ -26,6 +26,8 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
       success: function() {
         that.collection.add(newReview);
         Backbone.history.navigate('#/product/' + that.collection.product.id, { trigger: true })
+      }, error: function(errors) {
+        alert("One post, One product.")
       }
     })
   },
