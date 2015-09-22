@@ -11,7 +11,8 @@ Celadon.Routers.Router = Backbone.Router.extend({
     'user/:id/edit': 'userEdit',
     'user/:id/cart_items': 'cartItemsIndex',
     'user/:id/ordered_items': 'orderedItemsIndex',
-    'product/:id': 'productShow'
+    'product/:id': 'productShow',
+    'search': 'search'
   },
 
   usersNew: function() {
@@ -88,6 +89,12 @@ Celadon.Routers.Router = Backbone.Router.extend({
       collection: Celadon.currentUser.ordered_items()
       // user: user
     })
+    this._swapView(view);
+  },
+
+  search: function () {
+    var view = new Celadon.Views.Search();
+
     this._swapView(view);
   },
 

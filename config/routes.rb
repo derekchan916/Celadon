@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       post :place_order, on: :member
     end
 
+    get "/search", to: "searches#search"
+
     resources :products, only: [:index, :show]
     resources :reviews, only: [:create, :destroy]
     resources :cart_items, only: [:create, :destroy]
