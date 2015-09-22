@@ -1,7 +1,9 @@
 Celadon.Views.Header = Backbone.View.extend({
-  template: JST['header'],
+  templateHeader: JST['header'],
+  templateSearch: JST.search,
 
   events: {
+    "change #search-bar": "search",
     "click #sign-out-link": "signOut",
     'mouseenter .button-able-hover': 'toggleDropdownOn',
     'mouseleave .button-able-hover': 'toggleDropdownOff',
@@ -9,14 +11,40 @@ Celadon.Views.Header = Backbone.View.extend({
   },
 
   initialize: function(options){
-    this.listenTo(Celadon.currentUser, "signIn signOut", this.render);
-    this.listenTo(Celadon.types, "sync", this.render);
-    this.render();
+    this.listenTo(Celadon.currentUser, "signIn signOut", this.renderHeader);
+    this.listenTo(Celadon.types, "sync", this.renderHeader);
+
+    Celadon.searchResults = new Celadon.Collections.SearchResults();
+    Celadon.searchResults.pageNum = 1;
+    this.listenTo(Celadon.searchResults, "sync", this.renderSearch);
+
+    this.renderHeader();
   },
 
-  render: function(){
-    this.$el.html(this.template({ currentUser: Celadon.currentUser }))
+  renderHeader: function(){
+    this.$el.html(this.templateHeader({ currentUser: Celadon.currentUser }))
     return this;
+  },
+
+  renderSearch: function() {
+    Backbone.history.navigate('#search', { trigger: true })
+    // console.log('rendering')
+    // this.$el.html(this.templateSearch({ results: this.searchResults }));
+    // return this;
+  },
+
+  search: function(e) {
+    console.log("this works")
+    e.preventDefault();
+    Celadon.searchResults.pageNum = 1;
+    Celadon.searchResults.query = this.$("#search-bar").val()
+    this.$('#search-bar').val('');
+    Celadon.searchResults.fetch({
+      data: {
+        query: Celadon.searchResults.query,
+        page: 1
+      }
+    })
   },
 
   signOut: function(e){

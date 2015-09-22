@@ -5,7 +5,6 @@ Celadon.Collections.SearchResults = Backbone.Collection.extend({
     if (payload.total_count) {
       this.total_count = payload.total_count;
     }
-
     return payload.results;
   },
 

@@ -725,6 +725,8 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     end
   end
 
+  Product.create!(national_id: "175", name: "Leah Lin", attack: 1, defense: 0, price: 2, image_url: "product_snaps/175.png", description: "Togepi is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Togepi does not shed its shell. The egg has red and blue shapes on it. Togepi has stubby hands and round feet with two toes each. Togepi has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
+Togepi is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Togepi are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Togepi can most commonly be found living within the forests.")
 
   User.create(email: "derekchan916", fname: "Derek", lname: "Chan", password: "derekchan916")
 
