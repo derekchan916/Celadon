@@ -571,8 +571,8 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
       "name"=>"Leah Lin",
       "attack"=>2,
       "defense"=>1,
-      "description"=>"Togepi is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Togepi does not shed its shell. The egg has red and blue shapes on it. Togepi has stubby hands and round feet with two toes each. Togepi has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
-    Togepi is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Togepi are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Togepi can most commonly be found living within the forests.",
+      "description"=>"Leah is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Leah does not shed its shell. The egg has red and blue shapes on it. Leah has stubby hands and round feet with two toes each. Leah has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
+    Leah is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Leah are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Leah can most commonly be found living within the forests.",
       "poke_type"=>["Vegan"],
       "moves"=>[
         "Struggle",
@@ -772,12 +772,14 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
   types.each do |type|
     Type.create!(name: type)
   end
+  Type.create!(name: "Vegan")
   #CREATING CATEGORIES
   product.map do |num, stats|
     stats["poke_type"].each do |category|
       puts category
       type_id = Type.find_by(name: category).id
-      Category.create!(product_id: num.to_i, type_id: type_id)
+      product_instance = Product.find_by(name: stats["name"])
+      Category.create!(product_id: product_instance.id, type_id: type_id)
     end
   end
   #CREATING MOVES
@@ -791,7 +793,8 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     stats["moves"].each do |move|
       move_id = Move.find_by(name: move).id
       puts move
-      Pokemove.create!(product_id: num.to_i, move_id: move_id)
+      product_move_instance = Product.find_by(name: stats["name"])
+      Pokemove.create!(product_id: product_move_instance.id, move_id: move_id)
     end
   end
   #CREATING EVOLUTIONS
@@ -808,6 +811,10 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
 
   Review.create(author_id: 1, product_id: 1, star_rating: 5, title: "Pretty Good", body: "This little fella was Pretty good.")
   Review.create(author_id: 2, product_id: 1, star_rating: 2, title: "Mehhhhh", body: "Wasn't THAAAT great... was only ok.")
+
+  # product_id = Product.find_by(name: "Leah Lin")
+  # type_id = Type.find_by(name: "Vegan")
+  # Category.create!(product_id: product_id, type_id: type_id)
 
   CartItem.create(user_id: 1, product_id: 1)
   OrderedItem.create(user_id: 1, product_id: 1, quantity: 1)
