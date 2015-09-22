@@ -17,6 +17,8 @@ class Product < ActiveRecord::Base
   has_one :evolution_stage, class_name: "Evolution", foreign_key: :product_id
   has_one :evolution, through: :evolution_stage, source: :evolution
 
+  ratyrate_rateable "restaurant"
+
   def average_star_rating
     ratings = []
     self.reviews.each do |review|

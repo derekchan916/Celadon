@@ -17,6 +17,14 @@
   font-size: 14px;
 }
 
+.average-star-rating {
+}
+
+.average-star-rating > img {
+  display: inline-block;
+  width: 20px;
+}
+
 .review-create {
   width: 300px;
   float: left;
@@ -66,6 +74,11 @@
 .modal-review-form p {
   display: block;
   margin-top: 10px;
+}
+
+.star-rate-input > img {
+  display: inline-block;
+  width: 20px;
 }
 
 .modal-review-form input {
@@ -158,4 +171,9 @@
 .poke-content-review-list .bold-title {
   color: black;
   font-weight: bold;
+}
+
+.user-star-rating > img {
+  display: inline-block;
+  width: 17px;
 }

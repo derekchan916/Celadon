@@ -8,6 +8,15 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
 
   render: function() {
     this.$el.html(this.template())
+
+    this.$el.find('#star-rate').raty('destroy');
+    this.$el.find('#star-rate').raty({
+      path: '/assets/',
+      half: false,
+      targetType: 'score',
+      targetKeep: true,
+      scoreName: 'review[star_rating]'
+    });
     return this
   },
 
@@ -18,10 +27,11 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
       product_id: this.collection.product.id,
       title: this.$('input').val(),
       body: this.$('textarea').val(),
-      star_rating: this.$('select').val()
+      star_rating: parseInt($(e.currentTarget).parent().serializeJSON().review.star_rating)
     }
     var that = this;
     var newReview = new Celadon.Models.Review();
+    debugger
     newReview.save(attrs, {
       success: function() {
         that.collection.add(newReview);

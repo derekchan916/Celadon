@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   has_many :cart_items
   has_many :ordered_items
 
+  ratyrate_rater
+
   attr_reader :password
   after_initialize :ensure_session_token
 

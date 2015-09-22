@@ -4,7 +4,8 @@
       By <%= review.escape('fname') %> <%= review.escape('lname') %> on <%= review.escape('date') %>
     </p>
     <p class='title'>
-      <%= review.escape('star_rating') %> stars. <p class='bold-title'><%= review.escape('title') %></p>
+      <div class="user-star-rating" id="user-star-rating"></div>
+      <p class='bold-title'><%= review.escape('title') %></p>
     </p>
   </div>
   <div class="review-body">

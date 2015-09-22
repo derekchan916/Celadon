@@ -15,6 +15,8 @@
 //= require jquery.serializeJSON
 //= require underscore
 //= require backbone
+//= require jquery.raty
+//= require ratyrate
 //= require celadon
 //= require_tree ./utils
 //= require_tree ../templates

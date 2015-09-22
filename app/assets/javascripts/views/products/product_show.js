@@ -39,6 +39,17 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
 
   render: function() {
     this.$el.html(this.template({ product: this.model }));
+
+    var that = this;
+    this.$el.find('#average-star-rating').raty('destroy');
+    this.$el.find('#average-star-rating').raty({
+      path: '/assets/',
+      half: false,
+      score: that.model.escape('average_star_rating'),
+      readOnly: true,
+      scoreName: 'product[average-rating]'
+    });
+
     this.renderReviews();
     return this;
   },
