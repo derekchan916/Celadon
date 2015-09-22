@@ -11,6 +11,11 @@
 			<img class="search-img" src='<%= result.escape("image_url") %>'>
 		</article>
 	<% }) %>
-	<a class="prev-page" href="javascript:void(0)">Prev</a>
-	<a class="next-page" href="javascript:void(0)">Next</a>
+
+	<% if (results.pageNum > 1) { %>
+		<a class="prev-page" href="javascript:void(0)">Prev</a>
+	<% } %>
+	<% if (results.pageNum < results.total_count) { %>
+		<a class="next-page" href="javascript:void(0)">Next</a>
+	<% } %>
 </section>
