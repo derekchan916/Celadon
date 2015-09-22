@@ -1,9 +1,6 @@
 class Product < ActiveRecord::Base
   include PgSearch
   multisearchable against: [:name, :national_id]
-  pg_search_scope :kinda_spelled_like,
-                  :against => :name,
-                  :using => :trigram
 
   validates :national_id, :name, :price, :attack, :defense, :image_url, :description, presence: true
   validates :national_id, uniqueness: true

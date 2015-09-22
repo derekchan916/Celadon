@@ -28,9 +28,6 @@ Celadon.Views.Header = Backbone.View.extend({
 
   renderSearch: function() {
     Backbone.history.navigate('#search', { trigger: true })
-    // console.log('rendering')
-    // this.$el.html(this.templateSearch({ results: this.searchResults }));
-    // return this;
   },
 
   search: function(e) {
