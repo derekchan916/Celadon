@@ -9,7 +9,6 @@
 ActiveRecord::Base.transaction do
   # Product.destroy_all
   # Type.destroy_all
-  # User.destroy_all
   # CartItem.destroy_all
   # OrderedItem.destroy_all
   # Category.destroy_all

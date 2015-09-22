@@ -26,6 +26,8 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   userShow: function(id) {
+    // if (!this._requireSignedIn()) { return; }
+
     var user = Celadon.users.getOrFetch(id);
     var view = new Celadon.Views.UserShow({
       model: user
@@ -34,6 +36,8 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   userEdit: function(id) {
+    // if (!this._requireSignedIn()) { return; }
+
     var user = Celadon.users.getOrFetch(id);
     var view = new Celadon.Views.UserEditForm({
       model: user,
@@ -43,7 +47,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   signIn: function(callback){
-    if (!this._requireSignedOut(callback)) { return; }
+    // if (!this._requireSignedOut(callback)) { return; }
 
     var signInView = new Celadon.Views.SignIn({
       callback: callback

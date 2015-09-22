@@ -42,13 +42,17 @@
       <p class='price-name'>Price: </p>
       <p class='price'>$<%= product.escape('price') %></p><br>
       <p class='price-name'>Date found: </p>
-      <p class='date-found'><%= product.escape('created_at') %></p>
+      <p class='date-found'><%= product.escape('date') %></p>
     </div>
     <div class='poke-content-content'>
       Attack: <%= product.escape('attack') %><br>
       Defense: <%= product.escape('defense') %><br>
-      Moves: <%= product.escape('moves') %><br>
-      Type: <%= product.escape('poke_types') %>
+      Moves: <%= product.escape('moves').split(",").join(", ") %><br>
+      Type:
+      <% product.escape('poke_types').split(",").forEach(function(type) { %>
+        <span class="<%= type %> type-indicator"><%= type %></span>
+      <% }) %>
+
       <br><p class='in-stock'>In Stock.</p>
     </div>
 

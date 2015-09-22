@@ -29,7 +29,7 @@
   font-size: 24px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
-  width: 500px;
+  width: 100%;
 }
 
 .poke-subheader {
@@ -63,6 +63,11 @@
   font-size: 18px;
 }
 
+.poke-content-content .type-indicator {
+  padding: 3px 20px;
+  font-size: 12px;
+}
+
 .poke-content-description {
   margin-top: 20px;
   border-top: 1px solid #ccc;
@@ -90,7 +95,8 @@
 }
 
 .purchase-tab {
-  position: relative;
+  position: absolute;
+  width: 200px;
   border: 1px solid #ccc;
   padding: 18px 18px;
   float:right;
