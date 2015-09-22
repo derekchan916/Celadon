@@ -43,6 +43,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'pg_search'
 gem 'kaminari'
+gem 'ratyrate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

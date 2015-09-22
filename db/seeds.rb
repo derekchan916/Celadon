@@ -491,6 +491,68 @@ In the anime",
         "Quick Attack"
       ],
     },
+    "38"=>{
+      "name"=>"Ninetales",
+      "attack"=>76,
+      "defense"=>75,
+      "description"=>"This fox-like, quadruped Pokémon is covered with a thick, luxurious golden-white fur. It has nine, long tails, each of which is tipped with pale orange. There is a fluffy crest atop its head, and a small mane around its neck. Ninetales has gleaming red eyes that are said to give it the ability to control minds. Its ears are pointed, and it has long, slender legs with three-toed paws.
+Ninetales is a very vengeful Pokémon that has been known to curse those who mistreat it. This intelligent Pokémon is able to understand human speech easily. It can live for 1,000 years, due to the energy within its nine tails, each of which is said to have a different mystical power. It can be found living in grasslands.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+         "Ember",
+         "Confuse Ray",
+         "Quick Attack"
+      ],
+    },
+    "39"=>{
+      "name"=>"Jigglypuff",
+      "attack"=>45,
+      "defense"=>20,
+      "description"=>"Jigglypuff is a round, pink ball with pointed ears and large, blue eyes. It has rubbery, balloon-like skin and small, stubby arms and somewhat long feet. On top of its head is a curled tuft of fur. As seen in Pokémon Stadium, it is filled with air, as a defeated Jigglypuff, deflates until it is flat. By drawing extra air into its body, it is able to float as demonstrated in Super Smash Bros.
+Jigglypuff uses its eyes to mesmerize opponents. Once it achieves this, it will inflate its lungs and begin to sing a soothing lullaby. If the opponent resists falling asleep, Jigglypuff will endanger its own life by continuing to sing until its lungs run out of air. It is able to adjust the wavelength of its voice to match the brain waves of someone in a deep sleep. This helps ensure drowsiness in its opponents. Jigglypuff can mostly be found in lush green plains and grassy meadows.",
+      "poke_type"=>["Normal","Fairy"],
+      "moves"=>[
+        "Sing",
+        "Pound"
+      ],
+    },
+    "40"=>{
+      "name"=>"Wigglytuff",
+      "attack"=>70,
+      "defense"=>45,
+      "description"=>"Wigglytuff resembles a pink blob with stubby arms and legs. There is a fluffy, curled tuft of fur on its head, and it has long, rabbit-like ears and large, blue eyes. A layer of tears covers its eyes, quickly washing away any debris. It is covered in pink fur with a white underbelly and ear tips. This fine layer of fur is so soft that those who touch it, including other Wigglytuff, will not want to stop. Its body is soft and rubbery, allowing it to inflate by inhaling. While it is inflated, it is able to move by bouncing or floating. Wigglytuff can be found in vivid green plains and grassy fields. Some Wigglytuff love eating Perfect Apples, as shown in Pokémon Mystery Dungeon: Explorers of Time and Explorers of Darkness.
+",
+      "poke_type"=>["Normal","Fairy"],
+      "moves"=>[
+        "Sing",
+        "Pound"
+      ],
+    },
+    "41"=>{
+      "name"=>"Zubat",
+      "attack"=>45,
+      "defense"=>35,
+      "description"=>"Zubat is a blue, bat-like Pokémon. While it lacks eyes, it has pointed ears with purple insides and a mouth with four pointed teeth. There are two pointed teeth on both the upper and lower jaws, and a male will have larger pointed teeth than the female. It has purple wing membranes support by two, elongated fingers, and two long, thin, tails.
+Zubat lives in abundance in caves. It has evolved to have neither eyes nor nostrils, instead navigating through dark environments with echolocation. As demonstrated in the anime, it will leave its abode at night with a mass of other Zubat in order to seek prey. During the daytime, Zubat sleeps hanging upside down in caves, forests, or under the eaves of old buildings, avoiding sunlight at all costs. Daylight causes Zubat to become unhealthy, and prolonged exposure can even burn its skin. However, captured and trained Zubat have been recorded as being much more tenacious in the daytime, even when directly exposed to sunbeams.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Bite",
+         "Wing Attack"
+      ],
+    },
+    "42"=>{
+      "name"=>"Golbat",
+      "attack"=>80,
+      "defense"=>70,
+      "description"=>"Golbat is a large, blue bat-like Pokémon with purple wing membranes. It has small eyes with slit pupils and a massive mouth containing four fangs; females have smaller fangs than males. While its mouth seems to be otherwise empty, Golbat occasionally displays a long, purple tongue. Its pointed ears are tiny, and it has short legs with long, thin feet.
+It feeds on the blood of both Pokémon and humans, and is capable of drinking over ten ounces of blood in one sitting. Golbat drinks so much blood, that its blood type will change to that of its victim following a feed. It is also gluttonous, occasionally gorging itself to the extent that it becomes too heavy to fly. Golbat is nocturnal, and can be found quite easily in caves.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Poison Fang",
+         "Bite",
+         "Wing Attack"
+      ],
+    },
     "143"=>{
       "name"=>"Aaron Wong",
       "attack"=>110,
@@ -503,6 +565,19 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
          "Headbutt",
          "Snore",
          "Body Slam"
+      ],
+    },
+    "175"=>{
+      "name"=>"Leah Lin",
+      "attack"=>2,
+      "defense"=>1,
+      "description"=>"Togepi is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Togepi does not shed its shell. The egg has red and blue shapes on it. Togepi has stubby hands and round feet with two toes each. Togepi has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
+    Togepi is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Togepi are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Togepi can most commonly be found living within the forests.",
+      "poke_type"=>["Vegan"],
+      "moves"=>[
+        "Struggle",
+        "Splash",
+
       ],
     },
   }
@@ -603,6 +678,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Poison Gas","Poison"],
     ["Poison Powder","Poison"],
     ["Poison Sting","Poison"],
+    ["Poison Fang", "Poison"],
     ["Pound","Normal"],
     ["Psybeam","Psychic"],
     ["Psychic","Psychic"],
@@ -666,6 +742,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Transform","Normal"],
     ["Tri Attack","Normal"],
     ["Twineedle","Bug"],
+    ["Half Vegan", "Normal"],
     ["Vice Grip","Normal"],
     ["Vine Whip","Grass"],
     ["Water Gun","Water"],
@@ -691,7 +768,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     Product.create!(national_id: national_id, name: stats["name"], attack: stats["attack"], defense: stats["defense"], price: price, image_url: image_url, description: stats["description"])
   end
   #CREATING TYPES
-  types = ["Bug" ,"Normal",	"Fire", "Fighting", "Water", "Flying",	"Grass", "Poison",	"Electric", "Ground",	"Psychic", "Rock",	"Ice", "Bug",	"Dragon", "Ghost",	"Dark", "Steel",	"Fairy"]
+  types = ["Bug" ,"Normal",	"Fire", "Fighting", "Water", "Flying",	"Grass", "Poison",	"Electric", "Ground",	"Psychic", "Rock",	"Ice", "Bug",	"Dragon", "Ghost",	"Dark", "Steel", "Fairy"]
   types.each do |type|
     Type.create!(name: type)
   end
@@ -724,9 +801,6 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
       Evolution.create!(product_id: num.to_i, evolution_id: evolution_id)
     end
   end
-
-  Product.create!(national_id: "175", name: "Leah Lin", attack: 1, defense: 0, price: 2, image_url: "product_snaps/175.png", description: "Togepi is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Togepi does not shed its shell. The egg has red and blue shapes on it. Togepi has stubby hands and round feet with two toes each. Togepi has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
-Togepi is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Togepi are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Togepi can most commonly be found living within the forests.")
 
   User.create(email: "derekchan916", fname: "Derek", lname: "Chan", password: "derekchan916")
 
