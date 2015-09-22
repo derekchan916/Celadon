@@ -1,22 +1,37 @@
-<h3>Edit your account</h3>
-<form>
-  First Name:
-  <input
-    id="user-fname"
-    type="text"
-    name="user[fname]"
-    value="<%= user.escape('fname') %>"><br>
-  Last Name:
-  <input
-    id="user-lname"
-    type="text"
-    name="user[lname]"
-    value="<%= user.escape('lname') %>"><br>
-  Image
-  <input
-    type="file"
-    name="user[image]"
-    id="input-post-image"><br>
-  <img src="" id="preview-post-image" width="100"><br>
-  <button>Submit</button>
-</form>
+<div class="edit-form user-information">
+  <img src="<%= user.escape('image_url') %>" id="preview-post-image" width="100">
+  <div class="user-content">
+    <div>Edit your account</div>
+    <form class="edit-form-inner">
+      <div class="edit-form-input-section">
+        <span class="edit-form-label">
+          First Name
+        </span>
+        <input
+          id="user-fname"
+          type="text"
+          name="user[fname]"
+          value="<%= user.escape('fname') %>">
+      </div>
+      <div class="edit-form-input-section">
+        <span class="edit-form-label">
+          Last Name
+        </span>
+        <input
+          id="user-lname"
+          type="text"
+          name="user[lname]"
+          value="<%= user.escape('lname') %>">
+      </div>
+      <span class="edit-form-image">
+        Image
+        <input
+          type="file"
+          name="user[image]"
+          id="input-post-image">
+      </span>
+      <br>
+      <button class="sign-in-btn">Submit</button>
+    </form>
+  </div>
+</div>
