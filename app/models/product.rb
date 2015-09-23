@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  include DateFormatable
+
   include PgSearch
   multisearchable against: [:name, :national_id]
 

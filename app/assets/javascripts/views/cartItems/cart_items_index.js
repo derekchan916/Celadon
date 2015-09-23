@@ -13,7 +13,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
   },
 
   renderCartItems: function() {
-    this.collection.each(function(cartItem) {
+    this.collection.sort().each(function(cartItem) {
       this.addCartItemSubview(cartItem);
     }.bind(this));
   },

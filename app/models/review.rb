@@ -1,4 +1,6 @@
 class Review < ActiveRecord::Base
+  include DateFormatable
+
   validates :author_id, :product_id, :star_rating, :title, :body, presence: true
   validates :star_rating, numericality: true, inclusion: { in: (0..5) }
   validates :author_id, uniqueness: { scope: :product_id,

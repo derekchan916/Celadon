@@ -1,4 +1,6 @@
 class OrderedItem < ActiveRecord::Base
+  include DateFormatable
+
   validates :product_id, :user_id, :quantity, :order_id, presence: true
   validates :product_id, :user_id, :quantity, numericality: true
 
