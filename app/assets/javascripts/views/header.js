@@ -31,7 +31,6 @@ Celadon.Views.Header = Backbone.View.extend({
   },
 
   search: function(e) {
-    console.log("this works")
     e.preventDefault();
     Celadon.searchResults.pageNum = 1;
     Celadon.searchResults.query = this.$("#search-bar").val()

@@ -42,7 +42,7 @@
       <p class='price-name'>Price: </p>
       <p class='price'>$<%= product.escape('price') %></p><br>
       <p class='price-name'>Date found: </p>
-      <p class='date-found'><%= product.escape('date') %></p>
+      <p class='date-found'><%= product.escape('created_at') %></p>
     </div>
     <div class='poke-content-content'>
       Attack: <%= product.escape('attack') %><br>

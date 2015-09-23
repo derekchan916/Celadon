@@ -1,6 +1,16 @@
 module Api
   class ProductsController < ApiController
     def index
+      if params[:type] == "fetch_by_page"
+        @products = Product.all.page(params[:page])
+        render :index
+      else
+        @products = Product.all
+        render :index
+      end
+    end
+
+    def indexViews
       @products = Product.all
       render :index
     end

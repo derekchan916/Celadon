@@ -4,7 +4,9 @@ Celadon.Views.HomePage = Backbone.CompositeView.extend({
   initialize: function(options){
     NUMBER_OF_SHOW = 5;
     this.allProducts = options.allProducts
+    this.allProductsBasedViews = options.allProductsBasedViews
     this.listenTo(this.allProducts, 'sync', this.render)
+    this.listenTo(this.allProductsBasedViews, 'sync', this.render)
   },
 
   renderAllProducts: function() {
@@ -21,7 +23,7 @@ Celadon.Views.HomePage = Backbone.CompositeView.extend({
   },
 
   renderMostViewedProducts: function() {
-    this.allProducts.sort().slice(0, NUMBER_OF_SHOW).forEach(function(product) {
+    this.allProductsBasedViews.sort().slice(0, NUMBER_OF_SHOW).forEach(function(product) {
       this.addMostViewedProductsSubview(product);
     }.bind(this))
   },

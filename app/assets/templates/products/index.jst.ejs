@@ -4,11 +4,20 @@
     <h3>All Available Products</h3>
     <ul class="search-results-full all-poke-list"></ul>
     <span>
-
-
-
-
-
+      <nav class="group">
+				<% if (pageNum > 1) { %>
+					<a class="prev-page" href="javascript:void(0)">
+						<span class="prev-arrow"></span>
+						Previous Page
+					</a>
+				<% } %>
+				<% if (pageNum < results.length) { %>
+					<a class="next-page" href="javascript:void(0)">
+						<span class="next-arrow"></span>
+						Next Page
+					</a>
+				<% } %>
+			</nav>
     </span>
   </section>
 </div>

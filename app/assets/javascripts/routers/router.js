@@ -18,7 +18,8 @@ Celadon.Routers.Router = Backbone.Router.extend({
 
   homePage: function() {
     var view = new Celadon.Views.HomePage({
-      allProducts: Celadon.products
+      allProducts: Celadon.products,
+      allProductsBasedViews: Celadon.productsBasedViews
     })
     this._swapView(view);
   },

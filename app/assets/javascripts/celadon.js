@@ -6,7 +6,19 @@ window.Celadon = {
 
   initialize: function() {
     Celadon.products = new Celadon.Collections.Products();
-    Celadon.products.fetch();
+    Celadon.products.pageNum = 1;
+    Celadon.products.fetch({
+      data: {
+        type: "fetch_by_page",
+        pageNum: Celadon.products.pageNum
+      }
+    });
+    Celadon.productsBasedViews = new Celadon.Collections.Products();
+    Celadon.productsBasedViews.fetch({
+      data: {
+        type: "fetch_by_all"
+      }
+    })
     Celadon.users = new Celadon.Collections.Users();
     Celadon.users.fetch();
     Celadon.types = new Celadon.Collections.Types();
