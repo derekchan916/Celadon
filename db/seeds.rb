@@ -553,6 +553,228 @@ It feeds on the blood of both Pokémon and humans, and is capable of drinking ov
          "Wing Attack"
       ],
     },
+    "43"=>{
+      "name"=>"Oddish",
+      "attack"=>55,
+      "defense"=>55,
+      "description"=>"Oddish resembles a blue plant bulb with a round body, beady red eyes, and oval, foot-like roots. Five large, green leaves sprout from its head. As demonstrated in the anime, these leaves are prehensile and can be used to scale vertical surfaces and catch light objects.
+Known by the scientific name Oddium Wanderus, Oddish lives in grasslands and forests. A nocturnal Pokémon, Oddish buries its sensitive body in the ground during the day to avoid the sun and fool predators. If its leaves are pulled in this state, it will respond by shrieking horribly. It starts to move when its leaves begin absorbing moonlight, which it uses to grow. Oddish will wander up to 1000 feet during the night to scatter its seeds and find a nutrient-rich patch of soil in which to plant itself. The more fertile the earth, the glossier its leaves will be. It is thought that its feet become like tree roots while planted.",
+      "poke_type"=>["Grass", "Poison"],
+      "moves"=>[
+        "Absorb",
+        "Sweet Scent",
+        "Acid"
+      ],
+    },
+    "44"=>{
+      "name"=>"Gloom",
+      "attack"=>65,
+      "defense"=>70,
+      "description"=>"Gloom is a blue, bipedal Pokémon with rudimentary hands and feet. It has orange leaves and a reddish-brown flower growing from its head. The flower has large, rounded petals and white spots, and the female displays fewer, but larger, spots. Its eyes are wide and narrow and its lips are thin and purple. It trickles sticky nectar from its mouth with the appearance and consistency of drool. This can be used as a fertilizer for plants. Both this nectar and the flower on Gloom's head release a foul odor strong enough to induce fainting in humans over a mile away. However, it can also attract prey, and even a very small number of humans find it pleasing. This odor is a key ingredient for perfume production. When it is in danger, the odor worsens, but it will not emit its odor if it feels safe. Gloom is very sleepy during the day and prefers shade. Sometimes it will fall asleep while standing up. Gloom's moves are clever and cute in the Contest Spectacular. Gloom lives in grassy plains.",
+      "poke_type"=>["Grass", "Poison"],
+      "moves"=>[
+        "Absorb",
+        "Sweet Scent",
+        "Acid"
+      ],
+    },
+    "45"=>{
+      "name"=>"Vileplume",
+      "attack"=>80,
+      "defense"=>85,
+      "description"=>"Vileplume is a blue, bipedal Pokémon with rudimentary hands and feet. It has beady red eyes and a massive red flower growing from its head. Vileplume's flower is said to have the largest petals in the world, and is almost too heavy for the Pokémon itself to support. The rounded petals of the flower are red and covered with white spots. The female Vileplume has fewer, but larger, spots on its petals. It can shake, flap, or burst its petals into bloom with a bang in order to release clouds of pollen. This pollen is highly allergenic to humans and toxic to other Pokémon; Vileplume uses it to paralyze its prey. Vileplume lives in grassy plains and jungles, where it is often mistaken for native flowers.",
+      "poke_type"=>["Grass", "Poison"],
+      "moves"=>[
+        "Acid",
+        "Giga Drain",
+        "Solar Beam"
+      ],
+    },
+    "46"=>{
+      "name"=>"Paras",
+      "attack"=>70,
+      "defense"=>55,
+      "description"=>"Paras is an orange, insectoid creature resembling the nymph stage of a cicada. Its ovoid body is segmented, and it has six pairs of legs. The foremost pair of legs is the largest and has sharp claws at the tips. There are five specks on its forehead and three teeth on either side of its mouth. It has circular eyes with large pupils.
+Red-and-yellow mushrooms known as tochukaso grow on this Pokémon's back. The mushrooms can be removed at any time, and grow from spores that are doused on this Pokémon's back at birth by the mushroom on its mother's back. Tochukaso are parasitic in nature, drawing their nutrients from the host Paras's body in order to grow and exerting some command over the Pokémon's actions. For example, Paras drains nutrients from tree roots due to commands from the mushrooms. The mushrooms are also popular among collectors and have medicinal uses, usually involving extended life.",
+      "poke_type"=>["Bug"],
+      "moves"=>[
+         "Scratch"
+      ],
+    },
+    "47"=>{
+      "name"=>"Parasect",
+      "attack"=>95,
+      "defense"=>80,
+      "description"=>"Parasect is an orange, insectoid Pokémon that has been completely overtaken by the parasitic mushroom on its back. It has a small head with pure white eyes and a segmented body that is mostly hidden by the mushroom. It has three pairs of legs, with the foremost pair forming large pincers. The fungus growing on its back has a large red cap with yellow spots throughout.
+The insect has been drained of nutrients and is now under the control of the fully-grown tochukaso. Parasect can often be found in caves, and can also thrive in dank forests with a suitable amount of humidity for growing fungi. Swarms of this Pokémon have been known to infest trees. The swarm will drain the tree of nutrients until it dies, and will then move on to a new tree.",
+      "poke_type"=>["Bug"],
+      "moves"=>[
+         "Scratch",
+         "Slash"
+      ],
+    },
+    "48"=>{
+      "name"=>"Venonat",
+      "attack"=>55,
+      "defense"=>50,
+      "description"=>"Venonat has a round body covered in purple fur. Its has a pincer-like mouth, red compound eyes and a pair of white antennas. It has a pair of clodhopper feet and stubby forepaws. Venonat's highly developed eyes help it find suitable prey and can shoot powerful beams. Additionally, poison oozes from all over Venonat's body.
+Venonat can be found in dense forests, where it will sleep in the hole of a tree until nightfall. It sleeps throughout the day because the small insects it feeds on appear only at night. Both Venonat and its prey are attracted to bright lights.",
+      "poke_type"=>["Bug"],
+      "moves"=>[
+         "Tackle",
+         "Confusion"
+      ],
+    },
+    "49"=>{
+      "name"=>"Venomoth",
+      "attack"=>65,
+      "defense"=>60,
+      "description"=>"Venomoth is an insectoid creature with a light purple body. It has bulbous, round eyes with large pupils and a small mandible. Its thorax is paler with several black, zigzagging stripes running across the horizontal length. It has six short legs and a three-point crest on its head. Its two pairs of wings are covered in dust-like, purple scales that vary in color depending on their toxic capability. Dark scales are poisonous, while lighter scales can cause paralysis. These scales are released when Venomoth flutters its wings.
+Venomoth live in dense forests with much undergrowth and little light. As a nocturnal Pokémon, Venomoth comes out at night to hunt of its favorite prey. It prefers to feed on insects that gather around light, and Venomoth is attracted to bright lights itself.
+",
+      "poke_type"=>["Bug"],
+      "moves"=>[
+         "Psybeam",
+         "Psychic",
+         "Confusion",
+         "Gust"
+      ],
+    },
+    "50"=>{
+      "name"=>"Diglett",
+      "attack"=>55,
+      "defense"=>25,
+      "description"=>"Diglett is a tiny, brown Pokémon that seems to be perpetually buried within the earth, leaving only its head visible. It has beady black eyes and a large, round, pink nose. A Diglett in Pokémon Mystery Dungeon: Red Rescue Team and Blue Rescue Team mentions that it has feet, though their size and appearance are unknown. It spends much of its time underground, and has very thin skin. If Diglett is exposed to sunlight, its blood will heat up and cause it to grow weak.
+Diglett digs regularly through the earth at a shallow depth, leaving perfectly tilled soil in its wake. Diglett lives in tunnels and caves under the earth, where it feeds on tree roots. It also sometimes lives in burrows near forests, and has even been shown to live inside of trees.",
+      "poke_type"=>["Ground"],
+      "moves"=>[
+         "Scratch"
+      ],
+    },
+    "51"=>{
+      "name"=>"Dugtrio",
+      "attack"=>80,
+      "defense"=>50,
+      "description"=>"Dugtrio is a set of Diglett triplets sharing a single body. Each head has brown skin, black eyes, and a large, round, pink nose. Dugtrio's three heads think the same thoughts and act cooperatively. In order to make burrowing easier, each head will bob up and down to loosen the soil. Dugtrio can tunnel under the earth at 60 mph (100 km/h) to a depth of 60 miles (100 km), triggering tremors and earthquakes. It is capable of burrowing endlessly.
+Dugtrio lives in tunnels and caves under the earth. As shown in the anime, it sometimes lives in hollow trees in forests. It maintains the soil and plants trees to revitalize wooded areas.",
+      "poke_type"=>["Ground"],
+      "moves"=>[
+         "Scratch",
+         "Slash",
+         "Earthquake"
+      ],
+    },
+    "52"=>{
+      "name"=>"Meowth",
+      "attack"=>45,
+      "defense"=>35,
+      "description"=>"Meowth is a small, feline Pokémon with cream-colored fur that turns brown at the tips of its hind paws and tail. Its ovoid head features four prominent whiskers, wide eyes with slit pupils, two pointed teeth in the upper jaw, and a gold oval coin embedded in its forehead. Its ears are black with brown interiors, and are flanked with an additional pair of long whiskers. Meowth is a quadruped with the ability to walk on its hind legs; while the games always depict Meowth on two legs, the anime states that Meowth normally walks on all fours. It can freely manipulate its claws, retracting them when it wants to move silently. The tip of its tail curls tightly.
+",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Scratch",
+         "Bite"
+      ],
+    },
+    "53"=>{
+      "name"=>"Persian",
+      "attack"=>70,
+      "defense"=>60,
+      "poke_type"=>["Normal"],
+      "description"=>"Persian is a large, quadruped, feline Pokémon. Its fur is pale tan with the exception of its black-rimmed ears. It has a short muzzle with a small, black nose, red eyes with slit pupils, rounded ears, a pair of pointed teeth in its upper jaw, and three whiskers on either side of its face. Its thick whiskers are very sensitive to changes in air movements, enabling it to detect its prey by movement alone. In the center of its forehead is a red jewel. Its long tail has a distinctive curl at the end. Persian communicates with body language, and holds its tail upright to signal its intention to pounce. It has long legs and three-toed paws with retractible claws. Persian's lithe muscles also enable it to walk without making a sound.",
+      "moves"=>[
+         "Scratch",
+         "Bite",
+         "Slash"
+      ],
+    },
+    "54"=>{
+      "name"=>"Psyduck",
+      "attack"=>52,
+      "defense"=>48,
+      "description"=>"Psyduck is a yellow Pokémon that resembles a duck or bipedal platypus. Three tufts of black hair grow on top of its head, and it has a wide, flat, cream-colored beak and vacant eyes. Its legs, arms, and tail are stubby and its webbed feet are cream-colored. There are three claws on both of its hands.
+Psyduck is constantly stunned by its headache and is unable to think very clearly. It usually stands immobile, trying to calm its headache. However, when its headache becomes too severe, it releases tension in the form of strong psychic powers. The use of these powers produces brain waves identical to those seen in sleepers, and the Pokémon is unable to recall these episodes. Psyduck lives in freshwater lakes, small ponds, or rivers in tropical areas.",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Scratch",
+         "Confusion"
+      ],
+    },
+    "55"=>{
+      "name"=>"Golduck",
+      "attack"=>82,
+      "defense"=>78,
+      "description"=>"Golduck is a blue, bipedal, duck-like Pokémon. It has red eyes, a cream-colored beak, and four spikes on the back of its head. There is a small, red gem on its forehead. It has webbed hands and feet, which it uses to swim in rivers and lakes. Its body is especially adapted to have a hydrodynamic shape, and it has a long tail that it uses as a rudder to steer.
+Golduck is a fast swimmer, out-swimming even the most athletic of humans because of its webbed hands and feet. Even rough seas do not hamper this Pokémon’s swimming abilities, and it will sometimes rescue people from shipwrecks. The gem on its foreheads glows when it uses its psychic powers, and occasionally when it swims at full speed. As shown in the manga, it has the ability to give knowledge to its Trainer and fellow Pokémon through telepathy.",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Scratch",
+         "Confusion",
+         "Hydro Pump"
+      ],
+    },
+    "56"=>{
+      "name"=>"Mankey",
+      "attack"=>80,
+      "defense"=>35,
+      "description"=>"Mankey is a primate Pokémon, similar to a New World monkey. It is a bipedal Pokémon with a round body covered in whitish, shaggy fur. Its nose is similar to a pig’s snout, and it has red eyes and triangular ears with brown insides. Mankey's hands, two-toed feet, and the tip of its curved, prehensile tail is brown.
+Mankey specializes in physical fighting, and is very aggressive and short-tempered. When angry, Mankey begins shaking and its breathing turns rough. Its rage peaks quickly, preventing its victim from being able to flee. If Mankey loses sight of its colony, its loneliness causes it to become infuriated. Mankey can be found in the mountains. Mankey lives in treetop colonies, and if one becomes enraged, the whole colony rampages for no reason.",
+      "poke_type"=>["Fighting"],
+      "moves"=>[
+         "Scratch",
+         "Low Kick",
+         "Karate Chop"
+      ],
+    },
+    "57"=>{
+      "name"=>"Primeape",
+      "attack"=>105,
+      "defense"=>60,
+      "description"=>"Primeape is a bipedal Pokémon with a round body covered in whitish, shaggy fur. There is usually has a stress mark on the left side of its forehead, and it has triangular ears with pink insides and a pink, snout-like nose. Its arms and legs are brown and have metal shackles on the wrists and ankles. This is probably indicative of a method of training with weights. The hands have no visible fingers, instead resembling mittens or boxing gloves, and the feet have two toes.
+Primeape is easily angered; even the slightest glance of eye contact will make it furious. When Primeape is furious, its blood circulation is boosted. This makes its muscles stronger, but at the cost of some of its intelligence. It will chase anyone who upsets it and will not stop until it has caught its quarry. Even if it is awoken from sleep, it will groggily chase whatever woke it. Primeape can be found in vibrant forests or on mountains. It has shown some fondness for bananas.",
+      "poke_type"=>["Fighting"],
+      "moves"=>[
+         "Scratch",
+         "Low Kick",
+         "Karate Chop",
+         "Cross Chop"
+      ],
+    },
+    "59"=>{
+      "name"=>"Arcanine",
+      "attack"=>110,
+      "defense"=>80,
+      "description"=>"Growlithe is a quadruped, canine Pokémon. It has orange fur with black stripes along its back and legs. The fur on its muzzle, chest, belly, and tail is cream-colored, as well as an additional tuft of fur on top of its head. Growlithe's coat is noticeably longer on its chest and tail. It has gray eyes, a black nose, and large, round ears. Its forepaws have two visible claws, while its hind paws have three toes each. Each paw has a brown pad.
+Growlithe is a friendly and loyal Pokémon that will fearlessly defend its Trainer and territory from harm, even against larger, stronger enemies. It will fiercely bark at, bite, and chase away any perceived threat, including those who suddenly approach its Trainer. Otherwise, this obedient Pokémon will wait motionlessly until given an order. Growlithe also has a powerful olfactory sense. If it detects an unknown smell in its territory, it roars to flush out the intruder. It is able to smell the emotions of others, and never forgets a scent. However, strong, unpleasant smells can disable its sense of smell for short periods, as seen in the anime. Growlithe can be commonly found in grassy plains and near human settlements.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+         "Bite",
+         "Ember"
+      ],
+    },
+    "60"=>{
+      "name"=>"Poliwag",
+      "attack"=>50,
+      "defense"=>40,
+      "description"=>"Arcanine is a quadruped, canine Pokémon with an orange pelt marked by jagged black stripes. It has diamond-shaped ears with beige insides, black eyes, a round, black nose, and two pointed teeth protruding from its upper jaw. Its head, muzzle, and chest are covered in shaggy, beige fur, except for two oval sections around each eye and ear. Long tufts of fur grow behind its knees and around its ankles. Its underside is black, and it has a billowing, beige tail that is bent in the middle. Each paw has three toes and a round, pink pad.
+Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 miles in 24 hours with a speed and grace reminiscent of flight. Arcanine has long been admired for its beauty and speed, and anyone who hears its bark will grovel before it. The source of its power is a flame blazing wildly inside its body. In the anime, it was shown that it stashes food in its mane and carries it to its nest for its young. Arcanine lives in active volcanoes and on prairies.",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Bubble",
+         "Water Gun"
+      ],
+    },
+    "62"=>{
+      "name"=>"Poliwrath",
+      "attack"=>85,
+      "defense"=>95,
+      "description"=>"Poliwag resembles a blue, spherical tadpole. It has large eyes and pink lips. There is a black and white swirl on its abdomen, which are actually its internal organs showing through its semitransparent skin. The swirl looks clearer after it eats, and the skin is very elastic so that it will not break if the Pokémon is bitten. The direction of the belly spiral differs by area, with the equator being thought to have an effect on this. It has newly developed legs that are poor at walking, and no arms. Its long, mostly transparent tail makes it a powerful swimmer. Because of its ineptitude on land, Poliwag is more likely to be found swimming in small freshwater ponds and lakes. In the anime, Poliwag feeds on salveyo weed, which can only be found on clear lake bottoms.
+",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Water Gun"
+      ],
+    },
     "143"=>{
       "name"=>"Aaron Wong",
       "attack"=>110,
@@ -576,8 +798,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
       "poke_type"=>["Vegan"],
       "moves"=>[
         "Struggle",
-        "Splash",
-
+        "Splash"
       ],
     },
   }
@@ -608,6 +829,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Conversion","Normal"],
     ["Counter","Fighting"],
     ["Crabhammer","Water"],
+    ["Cross Chop","Fighting"],
     ["Cut","Normal"],
     ["Defense Curl","Normal"],
     ["Dig","Ground"],
@@ -634,6 +856,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Focus Energy","Normal"],
     ["Fury Attack","Normal"],
     ["Fury Swipes","Normal"],
+    ["Giga Drain", "Grass"],
     ["Glare","Normal"],
     ["Growl","Normal"],
     ["Growth","Normal"],
@@ -726,6 +949,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Super Fang","Normal"],
     ["Supersonic","Normal"],
     ["Surf","Water"],
+    ["Sweet Scent","Grass"],
     ["Swift","Normal"],
     ["Swords Dance","Normal"],
     ["Tackle","Normal"],
