@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
   include PgSearch
-  multisearchable against: [:name, :national_id, "word"]
+  multisearchable against: [:name, :national_id]
 
   validates :national_id, :name, :price, :attack, :defense, :image_url, :description, presence: true
   validates :national_id, uniqueness: true
@@ -14,8 +14,9 @@ class Product < ActiveRecord::Base
   has_many :categories
   has_many :types, through: :categories, source: :type
   has_many :move_types, through: :moves, source: :type
-  has_one :evolution_stage, class_name: "Evolution", foreign_key: :product_id
-  has_one :evolution, through: :evolution_stage, source: :evolution
+  has_many :views
+  # has_one :evolution_stage, class_name: "Evolution", foreign_key: :product_id
+  # has_one :evolution, through: :evolution_stage, source: :evolution
 
   ratyrate_rateable "restaurant"
 
@@ -30,5 +31,9 @@ class Product < ActiveRecord::Base
 
   def number_of_reviews
     self.reviews.count
+  end
+
+  def number_of_views
+    self.views.count
   end
 end

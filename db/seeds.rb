@@ -775,6 +775,20 @@ Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 
          "Water Gun"
       ],
     },
+    "124"=>{
+      "name"=>"Ariel Hou",
+      "attack"=>-9999,
+      "defense"=>0,
+      "description"=>"Jynx is a bipedal, humanoid Pokémon that resembles a bulky woman. Jynx wears a red gown that hides its feet and has white arms with purple hands. There are golden circles on the chest area of its gown. Jynx has a purple face, pink lips, saucer-like eyes, and long blonde hair. Originally, its face was colored black, causing controversy. Jynx is a female only species with no true male counterpart.
+Jynx has a language with several cry patterns that sounds similar to human speech. However, this language has yet to be deciphered. It prefers to communicate by using dance-like movements. These rhythmic movements often cause people to dance along with it. It puts its enemies to sleep using its signature move, Lovely Kiss. Jynx often is found in urban areas.",
+      "poke_type"=>["Ice","Psychic"],
+      "moves"=>[
+         "Body Slam",
+         "Blizzard",
+         "Ice Punch",
+         "Get Wasted"
+      ],
+    },
     "143"=>{
       "name"=>"Aaron Wong",
       "attack"=>110,
@@ -787,6 +801,19 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
          "Headbutt",
          "Snore",
          "Body Slam"
+      ],
+    },
+    "150"=>{
+      "name"=>"Edmund Wright",
+      "attack"=>9999,
+      "defense"=>9999,
+      "description"=>"Mewtwo is a Pokémon created by science. It is a bipedal, humanoid creature with some feline features. It is primarily gray with a long, purple tail. On top of its head are two short, blunt horns, and it has purple eyes. A tube extends from the back of its skull to the top of its spine, bypassing its neck. It has a defined chest and shoulders, which resemble a breastplate. The three digits on each hand and foot have spherical tips. Its tail is thick at the base, but thins before ending in a small bulb.",
+      "poke_type"=>["Vegan"],
+      "moves"=>[
+         "Own Life",
+         "Swift",
+         "Psychic",
+         "Tea"
       ],
     },
     "175"=>{
@@ -974,6 +1001,9 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
     ["Whirlwind","Normal"],
     ["Wing Attack","Flying"],
     ["Withdraw","Water"],
+    ["Own Life","Normal"],
+    ["Tea", "Normal"],
+    ["Get Wasted", "Poison"]
   ]
   #CREATING PRODUCTS
   product.map do |num, stats|

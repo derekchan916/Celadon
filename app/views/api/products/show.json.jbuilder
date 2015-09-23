@@ -1,6 +1,7 @@
 json.partial!('product', product: @product)
 json.average_star_rating @product.average_star_rating
 json.number_of_reviews @product.number_of_reviews
+json.number_of_views @product.number_of_views
 
 json.reviews do
   json.array!(@product.reviews) do |review|

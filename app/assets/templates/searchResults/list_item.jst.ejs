@@ -14,7 +14,7 @@
       <span class="result-price money">$<%= result.escape('price') %></span>
       <span class="result-date">Date found: <%= result.escape('date') %></span>
       <% result.escape('poke_types').split(",").forEach(function(type) { %>
-        <span class="<%= type %> type-indicator"><%= type %></span>
+        <span class="<%= type %> type-indicator type-bar"><%= type %></span>
       <% }) %>
     </div>
     <div class="result-summary-right group">
