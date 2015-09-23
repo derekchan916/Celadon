@@ -740,12 +740,24 @@ Primeape is easily angered; even the slightest glance of eye contact will make i
          "Cross Chop"
       ],
     },
+    "58"=>{
+      "name"=>"Growlithe",
+      "attack"=>70,
+      "defense"=>45,
+      "description"=>"Growlithe is a quadruped, canine Pokémon. It has orange fur with black stripes along its back and legs. The fur on its muzzle, chest, belly, and tail is cream-colored, as well as an additional tuft of fur on top of its head. Growlithe's coat is noticeably longer on its chest and tail. It has gray eyes, a black nose, and large, round ears. Its forepaws have two visible claws, while its hind paws have three toes each. Each paw has a brown pad.
+Growlithe is a friendly and loyal Pokémon that will fearlessly defend its Trainer and territory from harm, even against larger, stronger enemies. It will fiercely bark at, bite, and chase away any perceived threat, including those who suddenly approach its Trainer. Otherwise, this obedient Pokémon will wait motionlessly until given an order. Growlithe also has a powerful olfactory sense. If it detects an unknown smell in its territory, it roars to flush out the intruder. It is able to smell the emotions of others, and never forgets a scent. However, strong, unpleasant smells can disable its sense of smell for short periods, as seen in the anime. Growlithe can be commonly found in grassy plains and near human settlements.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+        "Bite",
+        "Ember"
+      ],
+    },
     "59"=>{
       "name"=>"Arcanine",
       "attack"=>110,
       "defense"=>80,
-      "description"=>"Growlithe is a quadruped, canine Pokémon. It has orange fur with black stripes along its back and legs. The fur on its muzzle, chest, belly, and tail is cream-colored, as well as an additional tuft of fur on top of its head. Growlithe's coat is noticeably longer on its chest and tail. It has gray eyes, a black nose, and large, round ears. Its forepaws have two visible claws, while its hind paws have three toes each. Each paw has a brown pad.
-Growlithe is a friendly and loyal Pokémon that will fearlessly defend its Trainer and territory from harm, even against larger, stronger enemies. It will fiercely bark at, bite, and chase away any perceived threat, including those who suddenly approach its Trainer. Otherwise, this obedient Pokémon will wait motionlessly until given an order. Growlithe also has a powerful olfactory sense. If it detects an unknown smell in its territory, it roars to flush out the intruder. It is able to smell the emotions of others, and never forgets a scent. However, strong, unpleasant smells can disable its sense of smell for short periods, as seen in the anime. Growlithe can be commonly found in grassy plains and near human settlements.",
+      "description"=>"Arcanine is a quadruped, canine Pokémon with an orange pelt marked by jagged black stripes. It has diamond-shaped ears with beige insides, black eyes, a round, black nose, and two pointed teeth protruding from its upper jaw. Its head, muzzle, and chest are covered in shaggy, beige fur, except for two oval sections around each eye and ear. Long tufts of fur grow behind its knees and around its ankles. Its underside is black, and it has a billowing, beige tail that is bent in the middle. Each paw has three toes and a round, pink pad.
+Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 miles in 24 hours with a speed and grace reminiscent of flight. Arcanine has long been admired for its beauty and speed, and anyone who hears its bark will grovel before it. The source of its power is a flame blazing wildly inside its body. In the anime, it was shown that it stashes food in its mane and carries it to its nest for its young. Arcanine lives in active volcanoes and on prairies.",
       "poke_type"=>["Fire"],
       "moves"=>[
          "Bite",
@@ -756,8 +768,7 @@ Growlithe is a friendly and loyal Pokémon that will fearlessly defend its Train
       "name"=>"Poliwag",
       "attack"=>50,
       "defense"=>40,
-      "description"=>"Arcanine is a quadruped, canine Pokémon with an orange pelt marked by jagged black stripes. It has diamond-shaped ears with beige insides, black eyes, a round, black nose, and two pointed teeth protruding from its upper jaw. Its head, muzzle, and chest are covered in shaggy, beige fur, except for two oval sections around each eye and ear. Long tufts of fur grow behind its knees and around its ankles. Its underside is black, and it has a billowing, beige tail that is bent in the middle. Each paw has three toes and a round, pink pad.
-Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 miles in 24 hours with a speed and grace reminiscent of flight. Arcanine has long been admired for its beauty and speed, and anyone who hears its bark will grovel before it. The source of its power is a flame blazing wildly inside its body. In the anime, it was shown that it stashes food in its mane and carries it to its nest for its young. Arcanine lives in active volcanoes and on prairies.",
+      "description"=>"Poliwag resembles a blue, spherical tadpole. It has large eyes and pink lips. There is a black and white swirl on its abdomen, which are actually its internal organs showing through its semitransparent skin. The swirl looks clearer after it eats, and the skin is very elastic so that it will not break if the Pokémon is bitten. The direction of the belly spiral differs by area, with the equator being thought to have an effect on this. It has newly developed legs that are poor at walking, and no arms. Its long, mostly transparent tail makes it a powerful swimmer. Because of its ineptitude on land, Poliwag is more likely to be found swimming in small freshwater ponds and lakes. In the anime, Poliwag feeds on salveyo weed, which can only be found on clear lake bottoms.",
       "poke_type"=>["Water"],
       "moves"=>[
          "Bubble",
@@ -768,19 +779,115 @@ Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 
       "name"=>"Poliwrath",
       "attack"=>85,
       "defense"=>95,
-      "description"=>"Poliwag resembles a blue, spherical tadpole. It has large eyes and pink lips. There is a black and white swirl on its abdomen, which are actually its internal organs showing through its semitransparent skin. The swirl looks clearer after it eats, and the skin is very elastic so that it will not break if the Pokémon is bitten. The direction of the belly spiral differs by area, with the equator being thought to have an effect on this. It has newly developed legs that are poor at walking, and no arms. Its long, mostly transparent tail makes it a powerful swimmer. Because of its ineptitude on land, Poliwag is more likely to be found swimming in small freshwater ponds and lakes. In the anime, Poliwag feeds on salveyo weed, which can only be found on clear lake bottoms.
-",
-      "poke_type"=>["Water"],
+      "description"=>"Poliwrath is a blue, bipedal Pokémon with muscular arms. It has bulbous eyes that protrude from the top of its head. Its belly is covered by a white and black swirl. There appear to be white gloves on its hands, and it has rounded, digit-less feet. It has powerful muscles in its arms and legs that never tire. When it swims, it uses all the muscles in its body, and is able to swim vast distances with minimal breathing. It is even capable of briefly running on the water's surface. Poliwrath, despite being an excellent swimmer, usually lives on dry land near the water's edge.",
+      "poke_type"=>["Water", "Fighting"],
       "moves"=>[
          "Water Gun"
+      ],
+    },
+    "63"=>{
+      "name"=>"Abra",
+      "attack"=>20,
+      "defense"=>15,
+      "description"=>"Abra is a bipedal Pokémon that is primarily yellow. Its face is kite-shaped, with a small, pale yellow snout and two short, pointed ears with pale yellow interiors. Its wide, narrow eyes are normally closed. Abra's body is segmented with black skin is visible between its joints and along its neck. It has two brown, pauldron-shaped extensions on its shoulders, as well as a brown, fauld-like piece around its chest. It has three fingers and toes, with its fingers considerably shorter than its toes. Its tail is thick and long, with a brown band located near the tip.
+Abra can sense danger by reading minds. When it does, it teleports itself to a safe location so quickly that it creates the illusion of having made copies of itself. By hypnotizing itself, Abra is able to teleport or use any of its other extrasensory abilities at any time. Due to the strain of its telepathic powers, however, Abra sleeps 18 hours each day. If it fails to rest long enough, it will become unable to use its powers. Abra lives in urban areas, but has been observed to teleport to a different location once per hour.",
+      "poke_type"=>["Psychic"],
+      "moves"=>[
+        "Teleport"
+      ],
+    },
+    "64"=>{
+      "name"=>"Kadabra",
+      "attack"=>35,
+      "defense"=>40,
+      "description"=>"Kadabra is a primarily yellow, humanoid Pokémon. It has two large, pointed ears on top of its head, a red star on its forehead, and wide cheeks leading down to a thin snout. Its eyes are deep-set and narrow. Extending from its snout are two mustache-like tufts of fur, with males having longer mustaches than females. Kadabra's torso is segmented with bulky shoulders, a thick, brown chest, and a small abdomen marked by three red, wavy lines. Attached to the Pokémon's abdomen is a large, thick tail encircled with a brown band near its base. Its arms are thin with brown elbows, and end in three-fingered hands with white claws. Its legs have prominent knees and large, three-toed feet, also ending in white claws. Kadabra is always seen carrying a silver spoon, which amplifies its telekinetic powers. It is able to bend its spoon to use Kinesis, its signature move.",
+      "poke_type"=>["Psychic"],
+      "moves"=>[
+        "Teleport",
+        "Psychic"
+      ],
+    },
+    "65"=>{
+      "name"=>"Alakazam",
+      "attack"=>50,
+      "defense"=>45,
+      "description"=>"Alakazam is characterized by its humanoid structure and large mustache. The female Alakazam has a significantly shorter mustache than the male. Its snout is long and thin, and it has long, ear-like spikes extending from the back of its head. It has brown armor-like sections over its chest, shoulders, forearms and knees, which cover its yellow skeletal body. There are three toes on each foot, each of which has a white claw. It wields a silver spoon in each hand, each of which acts as an amplifier for its psychic abilities. Alakazam is able to lower the accuracy of its opponents by bending the spoons it wields, using its signature move Kinesis.
+As Mega Alakazam, this Pokémon gains a large white beard and its mustache becomes larger and white. The armor-like sections become bulkier, with its upper body section becoming slightly shorter to reveal its thin stomach. The head becomes diamond-shaped. It keeps its four ear-like spikes, and gains a large, oval, red organ in the center of its forehead. The organ is said to emit psychic power.[1] Its lower legs become longer and slimmer and its feet become skinnier and resemble talons. It gains three additional spoons, which it levitates in the air.",
+      "poke_type"=>["Psychic"],
+      "moves"=>[
+         "Confusion",
+         "Psybeam",
+         "Psychic"
+      ],
+    },
+    "69"=>{
+      "name"=>"Bellsprout",
+      "attack"=>75,
+      "defense"=>35,
+      "description"=>"Bellsprout is a plant-based Pokémon with a stem-like brown body. This stem is long, thin and very flexible, making it capable of swerving rapidly to avoid many attacks or moving with blinding speed to capture prey. Its roots resemble feet, and it uses them as such. It will plant these feet in the ground to replenish water, but it is unable to flee while it is rooted. It has one green leaf on each side of its body. Its yellow head is bell-shaped and has what appear to be pink lips at the end. Bellsprout prefers hot and humid places, living in forests as well as tropical jungles.",
+      "poke_type"=>["Grass", "Poison"],
+      "moves"=>[
+         "Vine Whip"
+      ],
+    },
+    "71"=>{
+      "name"=>"Victreebel",
+      "attack"=>105,
+      "defense"=>65,
+      "description"=>"Victreebel has a bell-shaped body with a gaping mouth that has two sharp teeth. Its semicircular eyes appear directly under its mouth and it has several dark green spots on its body. Covering Victreebel's mouth is a leaf with a long, brown, yellow-tipped vine growing out of it. The vine is flicked to mimic an animal in order to attract prey. Victreebel also produces a sweet scent to further aid in luring its victims. Acid that has dissolved numerous prey animals becomes sweeter and even more effective at attracting prey.
+It can be found in small groups and is territorial. In the manga, Victreebel has been shown to hoard food, usually small birds and rodents, and collect Leaf Stones to perform evolution rituals at night to help Weepinbell become more Victreebel. Victreebel lives in forests, as well as tropical jungles.",
+      "poke_type"=>["Grass", "Poison"],
+      "moves"=>[
+         "Vine Whip",
+         "Razor Leaf"
+      ],
+    },
+    "72"=>{
+      "name"=>"Tentacool",
+      "attack"=>40,
+      "defense"=>35,
+      "poke_type"=>["Water"],
+      "description"=>"Tentacruel is a large, primarily blue jellyfish-like Pokémon. It has two large, red crystal spheres encrusted in its upper body that can refract sunlight and store energy. The round lower body, from which Tentacruel’s eyes are visible, appears black. It can extend up to 80 tentacles out of its body. Most of these tentacles are hidden, leaving up to 14 exposed. It has two blue beak-like appendages.
+Tentacruel’s tentacles can be freely elongated and shortened, and can absorb water to stretch to some length. The tentacles are normally kept short, but on hunts, they are extended to ensnare and immobilize prey. It weaks the prey by dosing it with a harsh toxin. Its red orbs glow when it grows excited or agitated, and it may alert others to danger by stridently flashing them. Tentacruel can be found throughout the ocean.",
+      "moves"=>[
+         "Poison Sting",
+         "Constrict",
+         "Acid",
+         "Bubble Beam"
+      ],
+    },
+    "73"=>{
+      "name"=>"Tentacruel",
+      "attack"=>70,
+      "defense"=>65,
+      "description"=>"Tentacruel is a large, primarily blue jellyfish-like Pokémon. It has two large, red crystal spheres encrusted in its upper body that can refract sunlight and store energy. The round lower body, from which Tentacruel’s eyes are visible, appears black. It can extend up to 80 tentacles out of its body. Most of these tentacles are hidden, leaving up to 14 exposed. It has two blue beak-like appendages.
+Tentacruel’s tentacles can be freely elongated and shortened, and can absorb water to stretch to some length. The tentacles are normally kept short, but on hunts, they are extended to ensnare and immobilize prey. It weaks the prey by dosing it with a harsh toxin. Its red orbs glow when it grows excited or agitated, and it may alert others to danger by stridently flashing them. Tentacruel can be found throughout the ocean.",
+      "poke_type"=>["Water", "Poison"],
+      "moves"=>[
+         "Hydro Pump",
+         "Constrict",
+         "Acid",
+         "Bubble Beam"
+      ],
+    },
+    "74"=>{
+      "name"=>"Geodude",
+      "attack"=>80,
+      "defense"=>100,
+      "description"=>"Geodude is a gray boulder Pokémon. It has bulging, rocky eyebrows and trapezoidal, brown eyes. Its arms are muscular with five-fingered hands. Geodude uses its arms to climb steadily up steep mountain paths. Geodude is proud of its sturdy body and will bash against others of its kind in a contest of sorts to prove whose body is harder. The longer it lives, the more chipped and worn its body becomes.
+Geodude can be most often found on mountain trails, fields, under rocks, or in caves. It will sit still in these areas, which is why it is often mistaken for rocks. It is often stepped on, and will sometimes swing its arms in anger when this occurs. When Geodude sleeps deeply, it buries itself halfway into the ground. Once buried, it will not awaken even if someone steps on it. In the morning, Geodude rolls downhill in search of food.",
+      "poke_type"=>["Rock", "Ground"],
+      "moves"=>[
+         "Tackle",
+         "Rock Throw"
       ],
     },
     "124"=>{
       "name"=>"Ariel Hou",
       "attack"=>-9999,
       "defense"=>0,
-      "description"=>"Jynx is a bipedal, humanoid Pokémon that resembles a bulky woman. Jynx wears a red gown that hides its feet and has white arms with purple hands. There are golden circles on the chest area of its gown. Jynx has a purple face, pink lips, saucer-like eyes, and long blonde hair. Originally, its face was colored black, causing controversy. Jynx is a female only species with no true male counterpart.
-Jynx has a language with several cry patterns that sounds similar to human speech. However, this language has yet to be deciphered. It prefers to communicate by using dance-like movements. These rhythmic movements often cause people to dance along with it. It puts its enemies to sleep using its signature move, Lovely Kiss. Jynx often is found in urban areas.",
+      "description"=>"Ariel is a bipedal, humanoid Pokémon that resembles a bulky woman. Ariel wears a red gown that hides its feet and has white arms with purple hands. There are golden circles on the chest area of its gown. Ariel has a purple face, pink lips, saucer-like eyes, and long blonde hair. Originally, its face was colored black, causing controversy. Ariel is a female only species with no true male counterpart.
+Ariel has a language with several cry patterns that sounds similar to human speech. However, this language has yet to be deciphered. It prefers to communicate by using dance-like movements. These rhythmic movements often cause people to dance along with it. It puts its enemies to sleep using its signature move, Lovely Kiss. Ariel often is found in urban areas.",
       "poke_type"=>["Ice","Psychic"],
       "moves"=>[
          "Body Slam",
@@ -807,7 +914,7 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
       "name"=>"Edmund Wright",
       "attack"=>9999,
       "defense"=>9999,
-      "description"=>"Mewtwo is a Pokémon created by science. It is a bipedal, humanoid creature with some feline features. It is primarily gray with a long, purple tail. On top of its head are two short, blunt horns, and it has purple eyes. A tube extends from the back of its skull to the top of its spine, bypassing its neck. It has a defined chest and shoulders, which resemble a breastplate. The three digits on each hand and foot have spherical tips. Its tail is thick at the base, but thins before ending in a small bulb.",
+      "description"=>"Edmund is a Pokémon created by science. It is a bipedal, humanoid creature with some feline features. It is primarily gray with a long, purple tail. On top of its head are two short, blunt horns, and it has purple eyes. A tube extends from the back of its skull to the top of its spine, bypassing its neck. It has a defined chest and shoulders, which resemble a breastplate. The three digits on each hand and foot have spherical tips. Its tail is thick at the base, but thins before ending in a small bulb.",
       "poke_type"=>["Vegan"],
       "moves"=>[
          "Own Life",

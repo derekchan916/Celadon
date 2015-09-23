@@ -4,7 +4,8 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    '': 'productIndex',
+    '': 'homePage',
+    'products': 'productIndex',
     'users/new': 'usersNew',
     'session/new': 'signIn',
     'user/:id': 'userShow',
@@ -13,6 +14,13 @@ Celadon.Routers.Router = Backbone.Router.extend({
     'user/:id/ordered_items': 'orderedItemsIndex',
     'product/:id': 'productShow',
     'search': 'search'
+  },
+
+  homePage: function() {
+    var view = new Celadon.Views.HomePage({
+      allProducts: Celadon.products
+    })
+    this._swapView(view);
   },
 
   usersNew: function() {
