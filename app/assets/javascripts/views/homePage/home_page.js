@@ -14,15 +14,29 @@ Celadon.Views.HomePage = Backbone.CompositeView.extend({
   },
 
   addAllProductsSubview: function(product) {
-    var pokeListItem = new Celadon.Views.AllProductsList({
+    var pokeListItem = new Celadon.Views.ProductsList({
       model: product
     });
     this.addSubview('.all-product-views', pokeListItem);
   },
 
+  renderMostViewedProducts: function() {
+    this.allProducts.sort().slice(0, NUMBER_OF_SHOW).forEach(function(product) {
+      this.addMostViewedProductsSubview(product);
+    }.bind(this))
+  },
+
+  addMostViewedProductsSubview: function(product) {
+    var pokeListItem = new Celadon.Views.ProductsList({
+      model: product
+    });
+    this.addSubview('.most-viewed-products', pokeListItem);
+  },
+
   render: function() {
     this.$el.html(this.template());
     this.renderAllProducts();
+    this.renderMostViewedProducts();
     return this;
   }
 })

@@ -36,4 +36,8 @@ class Product < ActiveRecord::Base
   def number_of_views
     self.views.count
   end
+
+  def number_of_uniq_views
+    self.views.select(:user_id).distinct.count
+  end
 end

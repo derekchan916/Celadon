@@ -2,6 +2,10 @@ Celadon.Collections.Products = Backbone.Collection.extend({
   url: '/api/products',
   model: Celadon.Models.Product,
 
+  comparator: function(product) {
+    return -product.get("number_of_views")
+  },
+
   getOrFetch: function(id) {
     var that = this;
     var product = this.get(id);
