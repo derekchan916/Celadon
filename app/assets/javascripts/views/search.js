@@ -17,7 +17,7 @@ Celadon.Views.Search = Backbone.CompositeView.extend({
   },
 
   addResultSubview: function(result) {
-    var resultView = new Celadon.Views.ResultListItem({
+    var resultView = new Celadon.Views.ProductListItem({
       model: result
     })
     this.addSubview('.search-results-full', resultView);

@@ -1,3 +1,30 @@
-Name: <a href='#/product/<%= product.escape('id') %>'>
-  <%= product.escape('name') %></a><br>
-Price: $<%= product.escape('price') %>
+<div class="individual-list group">
+  <div class="result-image">
+    <a href="#/product/<%= result.id %>">
+      <img src="<%= result.escape('image_url') %>">
+    </a>
+  </div>
+  <div class="result-all-content group">
+    <div class="result-header">
+      <a href="#/product/<%= result.id %>">
+        <%= result.escape('name') %>
+      </a>
+    </div>
+    <div class="result-summary-left">
+      <span class="result-price money">$<%= result.escape('price') %></span>
+      <span class="result-date">Date found: <%= result.escape('date') %></span>
+      <% result.escape('poke_types').split(",").forEach(function(type) { %>
+        <span class="<%= type %> type-indicator type-bar"><%= type %></span>
+      <% }) %>
+    </div>
+    <div class="result-summary-right group">
+      <span class="result-rating" id="result-rating"></span>
+      <span class="description-header-results">
+        Product Description
+      </span>
+      <span class="result-description-thing">
+        <%= result.escape('description') %>
+      </span>
+    </div>
+  </div>
+</div>
