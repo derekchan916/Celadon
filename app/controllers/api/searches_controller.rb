@@ -5,7 +5,6 @@ class Api::SearchesController < ApplicationController
       .includes(:searchable)
       .page(params[:page])
 
-
     render :index
   end
 end

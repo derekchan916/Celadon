@@ -1,8 +1,7 @@
-Celadon.Views.Search = Backbone.View.extend({
+Celadon.Views.Search = Backbone.CompositeView.extend({
   template: JST.search,
 
   events: {
-    // "change #search-bar": "search",
     "click .next-page": "nextPage",
     "click .prev-page": "prevPage"
   },
@@ -11,9 +10,22 @@ Celadon.Views.Search = Backbone.View.extend({
     this.listenTo(Celadon.searchResults, "sync", this.render);
   },
 
+  renderLists: function() {
+    Celadon.searchResults.each(function(result) {
+      this.addResultSubview(result);
+    }.bind(this))
+  },
+
+  addResultSubview: function(result) {
+    var resultView = new Celadon.Views.ResultListItem({
+      model: result
+    })
+    this.addSubview('.search-results-full', resultView);
+  },
+
   render: function() {
     this.$el.html(this.template({ results: Celadon.searchResults }));
-
+    this.renderLists();
     return this;
   },
 

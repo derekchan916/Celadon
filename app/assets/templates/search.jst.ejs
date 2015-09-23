@@ -1,21 +1,31 @@
-<h1>Search Results</h1>
-
-<section class="results">
+<div class="advertisement5"></div>
+<div class="results-page">
 	<nav>
-		Displaying page number <%= results.pageNum %> out
-		of <%= results.total_count %> results
+		<% if (results.total_count > 0) { %>
+			Displaying page number <%= results.pageNum %> out
+			of <%= results.total_count %> results for <p>"<%= Celadon.searchResults.query %>"</p>
+		<% } else { %>
+			Try again
+		<% } %>
 	</nav>
-
-	<% results.each(function (result) { %>
-		<article>
-			<img class="search-img" src='<%= result.escape("image_url") %>'>
-		</article>
-	<% }) %>
-
-	<% if (results.pageNum > 1) { %>
-		<a class="prev-page" href="javascript:void(0)">Prev</a>
-	<% } %>
-	<% if (results.pageNum < results.total_count) { %>
-		<a class="next-page" href="javascript:void(0)">Next</a>
-	<% } %>
-</section>
+	<section class="results">
+		<ul class="search-results-full"></ul>
+		<span>
+			<nav class="group">
+				<% if (results.pageNum > 1) { %>
+					<a class="prev-page" href="javascript:void(0)">
+						<span class="prev-arrow"></span>
+						Previous Page
+					</a>
+				<% } %>
+				<% if (results.pageNum < results.total_count) { %>
+					<a class="next-page" href="javascript:void(0)">
+						<span class="next-arrow"></span>
+						Next Page
+					</a>
+				<% } %>
+			</nav>
+		</span>
+	</section>
+</div>
+<div class="advertisment6"></div>

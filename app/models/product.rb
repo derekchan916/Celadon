@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
   include PgSearch
-  multisearchable against: [:name, :national_id]
+  multisearchable against: [:name, :national_id, "word"]
 
   validates :national_id, :name, :price, :attack, :defense, :image_url, :description, presence: true
   validates :national_id, uniqueness: true

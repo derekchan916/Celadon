@@ -7,11 +7,11 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
 
   renderLists: function() {
     this.collection.each(function(product) {
-      this.addproductSubview(product);
+      this.addProductSubview(product);
     }.bind(this));
   },
 
-  addproductSubview: function(product) {
+  addProductSubview: function(product) {
     var pokeListItem = new Celadon.Views.ProductListItem({
       model: product
     });
