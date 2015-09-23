@@ -22,16 +22,16 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault();
+    debugger
     var that = this;
     var attrs = {
       product_id: this.collection.product.id,
-      title: this.$('input').val(),
+      title: this.$('#title-input').val(),
       body: this.$('textarea').val(),
       star_rating: parseInt($(e.currentTarget).parent().serializeJSON().review.star_rating)
     }
     var that = this;
     var newReview = new Celadon.Models.Review();
-    debugger
     newReview.save(attrs, {
       success: function() {
         that.collection.add(newReview);

@@ -6,7 +6,7 @@ window.Celadon = {
 
   initialize: function() {
     Celadon.products = new Celadon.Collections.Products();
-    Celadon.products.pageNum = 1;
+    // Celadon.products.pageNum = 1; 
     Celadon.products.fetch({
       data: {
         type: "fetch_by_page",

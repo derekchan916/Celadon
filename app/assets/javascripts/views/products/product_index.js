@@ -7,6 +7,7 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   },
 
   initialize: function(options) {
+    this.collection.pageNum = 1;
     this.listenTo(this.collection, 'sync', this.render);
   },
 
@@ -24,6 +25,7 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   },
 
   render: function() {
+
     this.$el.html(this.template({
       results: this.collection,
       pageNum: this.collection.pageNum
