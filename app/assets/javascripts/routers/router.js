@@ -5,6 +5,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
 
   routes: {
     '': 'homePage',
+    '_=_': 'homePage',
     'products': 'productIndex',
     'users/new': 'usersNew',
     'session/new': 'signIn',
@@ -36,29 +37,27 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   userShow: function(id) {
-    // if (!this._requireSignedIn()) { return; }
+    var callback = this.userShow.bind(this, id);
+    if (!this._requireSignedIn(callback)) { return; }
 
-    var user = Celadon.users.getOrFetch(id);
     var view = new Celadon.Views.UserShow({
-      model: user
+      model: Celadon.currentUser
     })
     this._swapView(view);
   },
 
   userEdit: function(id) {
-    // if (!this._requireSignedIn()) { return; }
+    var callback = this.userEdit.bind(this, id);
+    if (!this._requireSignedIn(callback)) { return; }
 
-    var user = Celadon.users.getOrFetch(id);
     var view = new Celadon.Views.UserEditForm({
-      model: user,
+      model: Celadon.currentUser,
       collection: Celadon.users
     })
     this._swapView(view);
   },
 
   signIn: function(callback){
-    // if (!this._requireSignedOut(callback)) { return; }
-
     var signInView = new Celadon.Views.SignIn({
       callback: callback
     });
@@ -81,9 +80,9 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   cartItemsIndex: function(id) {
-    // if (!this._requireSignedIn()) { return; }
+    var callback = this.cartItemsIndex.bind(this, id);
+    if (!this._requireSignedIn(callback)) { return; }
 
-    // Celadon.currentUser.fetch() // temporariy fix
     var view = new Celadon.Views.CartItemsIndex({
       collection: Celadon.currentUser.cart_items()
     })
@@ -91,12 +90,11 @@ Celadon.Routers.Router = Backbone.Router.extend({
   },
 
   orderedItemsIndex: function(id) {
-    // if (!this._requireSignedIn()) { return; }
+    var callback = this.orderedItemsIndex.bind(this, id);
+    if (!this._requireSignedIn(callback)) { return; }
 
-    // var user = Celadon.users.getOrFetch(id); //wont need to do this
     var view = new Celadon.Views.OrderedItemsIndex({
       collection: Celadon.currentUser.ordered_items()
-      // user: user
     })
     this._swapView(view);
   },

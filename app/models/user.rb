@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
 
   has_many :reviews, class_name: 'Review', foreign_key: :author_id
   has_many :cart_items
+  # has_many :cart_products, through: :cart_items, source: :product
   has_many :ordered_items
 
   ratyrate_rater

@@ -1,13 +1,13 @@
 <div class='ordered-product-header group'>
   <div class='ordered-product-header-left'>
-    ORDER # <%= orderedItem.escape('order_id') %>
+    ORDER # <%= product.escape('order_id') %>
   </div>
 </div>
 
 <div class='ordered-product-content group'>
   <div class='ordered-product-content-left'>
     <div class='ordered-date'>
-      ORDER PLACED <%= orderedItem.escape('created_at') %>
+      ORDER PLACED <%= product.escape('created_at') %>
     </div>
     <div class='ordered-product-img'>
       <img src="<%= product.escape('image_url') %>">
@@ -15,7 +15,7 @@
     <h4><a href="#/product/<%= product.id %>"><%= product.escape('name') %></a></h4>
     <div class='ordered-product-header-left'>
       <span class='money'>$<%= product.escape('price') %></span><br>
-      Quantity: <%= orderedItem.escape('quantity') %>
+      Quantity: <%= product.escape('quantity') %>
     </div>
   </div>
   <div class='ordered-product-content-right'>

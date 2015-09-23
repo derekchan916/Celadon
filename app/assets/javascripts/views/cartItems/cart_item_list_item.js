@@ -8,18 +8,18 @@ Celadon.Views.CartItemListItem = Backbone.View.extend({
     'click #cart-product-delete': 'deleteCartItem'
   },
 
-  initialize: function(options) {
-    this.cartItem = options.cartItem
-  },
+  // initialize: function(options) {
+  //   this.cartItem = options.cartItem
+  // },
 
   render: function() {
-    this.$el.html(this.template({ product: this.model, cartItem: this.cartItem }));
+    this.$el.html(this.template({ product: this.model }));
     return this;
   },
 
   deleteCartItem: function(e) {
     e.preventDefault;
-    this.cartItem.destroy({
+    this.model.destroy({
       success: function(model, data) {
         Celadon.currentUser.set({
           current_subtotal: data.subtotal,

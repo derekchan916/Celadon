@@ -6,7 +6,7 @@ window.Celadon = {
 
   initialize: function() {
     Celadon.products = new Celadon.Collections.Products();
-    // Celadon.products.pageNum = 1; 
+    // Celadon.products.pageNum = 1;
     Celadon.products.fetch({
       data: {
         type: "fetch_by_page",
@@ -24,8 +24,8 @@ window.Celadon = {
     Celadon.types = new Celadon.Collections.Types();
     Celadon.types.fetch();
 
-    this.currentUser = new Celadon.Models.CurrentUser();
-    this.currentUser.fetch();
+    Celadon.currentUser = new Celadon.Models.CurrentUser();
+    Celadon.currentUser.fetch();
     this.header = new Celadon.Views.Header({ el: '#main-header'})
 
     var router = new Celadon.Routers.Router({

@@ -22,7 +22,6 @@ Celadon.Views.ReviewForm = Backbone.View.extend({
 
   submit: function(e) {
     e.preventDefault();
-    debugger
     var that = this;
     var attrs = {
       product_id: this.collection.product.id,

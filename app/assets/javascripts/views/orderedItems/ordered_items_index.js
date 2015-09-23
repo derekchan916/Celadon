@@ -14,18 +14,10 @@ Celadon.Views.OrderedItemsIndex = Backbone.CompositeView.extend({
   },
 
   addOrderedItemSubview: function(orderedItem) {
-    var product_id = orderedItem.get('product_id');
-    var product = new Celadon.Models.Product({ id: product_id });
-    var that = this;
-    product.fetch({
-      success: function() {
-        var orderedItemListItem = new Celadon.Views.OrderedItemListItem({
-          model: product,
-          orderedItem: orderedItem
-        });
-        that.addSubview('ul.ordered-items', orderedItemListItem);
-      }
+    var orderedItemListItem = new Celadon.Views.OrderedItemListItem({
+      model: orderedItem
     })
+    this.addSubview('ul.ordered-items', orderedItemListItem);
   },
 
   render: function() {

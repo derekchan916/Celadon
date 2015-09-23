@@ -4,14 +4,9 @@ Celadon.Views.OrderedItemListItem = Backbone.View.extend({
 
   template: JST['orderedItems/list_item'],
 
-  initialize: function(options) {
-    this.orderedItem = options.orderedItem
-  },
-
   render: function() {
     this.$el.html(this.template({
-      product: this.model,
-      orderedItem: this.orderedItem
+      product: this.model
     }));
     return this;
   }

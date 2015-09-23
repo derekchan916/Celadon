@@ -6,13 +6,13 @@
     <h3>
       <a href='#/product/<%= product.id %>'><%= product.escape('name') %></a>
       <span class="quantity-column">
-        <%= cartItem.escape('quantity') %>
+        <%= product.escape('quantity') %>
       </span>
       <span class="price-column">
         $<%= product.escape('price') %>
       </span>
     </h3>
-    <span>Added on: <%= cartItem.escape('updated_at') %></span>
+    <span>Added on: <%= product.escape('updated_at') %></span>
     <p class="in-stock">In Stock.</p>
     <p class="delete-cart-item" id='cart-product-delete'>Delete</p>
   </div>
