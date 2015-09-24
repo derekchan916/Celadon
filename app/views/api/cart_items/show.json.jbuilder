@@ -11,6 +11,8 @@ end
 json.cart_items do
   json.array!(current_user.cart_items(true)) do |cart_item|
     json.extract!(cart_item, :id, :user_id, :product_id, :quantity, :updated_at)
+    json.extract!(cart_item.product, :name, :price)
+    json.image_url asset_path(cart_item.product.image_url)
   end
 end
 

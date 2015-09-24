@@ -45,7 +45,7 @@ module Api
       end
 
       current_user.cart_items.destroy_all
-      render :show
+      render "api/sessions/show"
     end
 
     private

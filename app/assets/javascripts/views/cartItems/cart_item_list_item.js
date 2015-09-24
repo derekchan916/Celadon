@@ -8,10 +8,6 @@ Celadon.Views.CartItemListItem = Backbone.View.extend({
     'click #cart-product-delete': 'deleteCartItem'
   },
 
-  // initialize: function(options) {
-  //   this.cartItem = options.cartItem
-  // },
-
   render: function() {
     this.$el.html(this.template({ product: this.model }));
     return this;

@@ -1,3 +1,4 @@
+
 Celadon.Routers.Router = Backbone.Router.extend({
   initialize: function(options){
     this.$rootEl = options.$rootEl
@@ -50,8 +51,10 @@ Celadon.Routers.Router = Backbone.Router.extend({
     var callback = this.userEdit.bind(this, id);
     if (!this._requireSignedIn(callback)) { return; }
 
+    user = new Celadon.Models.User({ id: id })
+    user.fetch()
     var view = new Celadon.Views.UserEditForm({
-      model: Celadon.currentUser,
+      model: user,
       collection: Celadon.users
     })
     this._swapView(view);
@@ -82,7 +85,6 @@ Celadon.Routers.Router = Backbone.Router.extend({
   cartItemsIndex: function(id) {
     var callback = this.cartItemsIndex.bind(this, id);
     if (!this._requireSignedIn(callback)) { return; }
-
     var view = new Celadon.Views.CartItemsIndex({
       collection: Celadon.currentUser.cart_items()
     })

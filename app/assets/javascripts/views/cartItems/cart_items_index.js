@@ -22,7 +22,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
     var cartItemListItem = new Celadon.Views.CartItemListItem({
       model: cartItem
     })
-    
+
     this.addSubview('ul.cart-items', cartItemListItem);
   },
 
@@ -45,6 +45,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
           current_subtotal: data.current_subtotal,
           number_of_cart_items: data.number_of_cart_items
         });
+        debugger
         Celadon.currentUser.cart_items().set(data.cart_items);
         Celadon.currentUser.ordered_items().set(data.ordered_items)
         Backbone.history.navigate('#/user/1/cart_items', { trigger: true });

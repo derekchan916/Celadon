@@ -2,10 +2,10 @@ module Api
   class ProductsController < ApiController
     def index
       if params[:type] == "fetch_by_page"
-        @products = Product.all.includes(:reviews).includes(:cart_items).includes(:ordered_items).includes(:pokemoves).includes(:moves).includes(:types).includes(:move_types).includes(:views).page(params[:page])
+        @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :pokemoves, :moves, :types, :move_types, :views).page(params[:page])
         render :index
       else
-        @products = Product.all.includes(:reviews).includes(:cart_items).includes(:ordered_items).includes(:pokemoves).includes(:moves).includes(:types).includes(:move_types).includes(:views)
+        @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :pokemoves, :moves, :types, :move_types, :views)
         render :index
       end
     end

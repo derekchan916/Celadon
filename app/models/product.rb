@@ -32,11 +32,11 @@ class Product < ActiveRecord::Base
   end
 
   def number_of_reviews
-    self.reviews.count
+    self.reviews.to_a.count
   end
 
   def number_of_views
-    self.views.count
+    self.views.to_a.count
   end
 
   # def number_of_uniq_views

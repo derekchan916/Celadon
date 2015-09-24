@@ -220,3 +220,21 @@
    font-weight: bold;
    color: #B12704;
  }
+
+ .block {
+   position: absolute;
+   background: #fff;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+ }
+
+/*@key {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+
+  }
+}*/

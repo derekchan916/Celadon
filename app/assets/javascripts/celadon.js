@@ -7,10 +7,14 @@ window.Celadon = {
   initialize: function() {
     Celadon.products = new Celadon.Collections.Products();
     // Celadon.products.pageNum = 1;
+    // $("body").append("<div class='block'><i></div>");
     Celadon.products.fetch({
       data: {
         type: "fetch_by_page",
         pageNum: Celadon.products.pageNum
+      },
+      success: function(){
+        Backbone.history.start();
       }
     });
     Celadon.productsBasedViews = new Celadon.Collections.Products();
@@ -31,7 +35,6 @@ window.Celadon = {
     var router = new Celadon.Routers.Router({
       $rootEl: $('#main')
     })
-    Backbone.history.start();
   },
 };
 

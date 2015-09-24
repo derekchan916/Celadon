@@ -24,7 +24,8 @@ Celadon.Views.UserEditForm = Backbone.View.extend({
     formData.append('user[image]', this.$('#input-post-image')[0].files[0]);
 
     this.model.saveFormData(formData, {
-      success: function() {
+      success: function(data) {
+        Celadon.currentUser.set({ image_url: data.escape('image_url')});
         that.collection.add(that.model, { merge: true });
         Backbone.history.navigate('#/user/' + that.model.get('id'), { trigger: true });
       }
@@ -32,8 +33,6 @@ Celadon.Views.UserEditForm = Backbone.View.extend({
   },
 
   fileInputChange: function(e){
-    console.log(e.currentTarget.files[0]);
-
     var that = this;
     var file = e.currentTarget.files[0];
     var reader = new FileReader();
