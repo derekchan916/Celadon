@@ -5,7 +5,7 @@ window.Celadon = {
   Routers: {},
 
   initialize: function() {
-    // $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
+    $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
     Celadon.products = new Celadon.Collections.Products();
     Celadon.products.fetch({
       data: {
@@ -13,6 +13,8 @@ window.Celadon = {
         pageNum: Celadon.products.pageNum
       },
       success: function(){
+
+
         Backbone.history.start();
       }
     });
@@ -30,6 +32,9 @@ window.Celadon = {
     Celadon.currentUser = new Celadon.Models.CurrentUser();
     Celadon.currentUser.fetch({
       success: function() {
+        setTimeout(function(){
+          $("body").find(".poke-block").remove();
+        },0);
         // Celadon.productsRecommended = new Celadon.Collections.Products();
         // Celadon.productsRecommended.fetch({
         //   data: {

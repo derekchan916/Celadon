@@ -4,33 +4,9 @@ module Api
       if params[:type] == "fetch_by_page"
         @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views).page(params[:page])
 
-        # SELECT
-        #   COUNT(product.name) AS number_of_reviews
-        # FROM
-        #   products
-        # JOIN
-        #   reviews ON reviews.product_id = products.id
-        # GROUP BY
-        #   product.name
-
         render :index
       elsif params[:type] == "fetch_by_views"
         @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views)
-        #
-        # Product.JOIN()
-        # SELECT
-        #   product.name, COUNT(name) AS count
-        # FROM
-        #   products
-        # JOIN
-        #   views ON views.product_id = products.id
-        # WHERE
-        #
-        # GROUP BY
-        #   products.name;
-        # render :index
-      # else
-        # @products = Product.all
       end
     end
 
