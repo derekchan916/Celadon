@@ -1108,6 +1108,160 @@ Electrode tends to live in power plants where fresh electricity is being generat
          "Swift"
       ],
     },
+    "104"=>{
+      "name"=>"Cubone",
+      "attack"=>50,
+      "defense"=>95,
+      "description"=>"Cubone is a small, bipedal Pokémon with a golden brown hide that covers most of its body, including both dorsal spikes. Its belly is a very light brown. Two small claws, one on each hand, serve as its thumbs, and two large nails make up its toes. On its head, Cubone wears the skull of its dead mother as a helmet. Because of this, much of its actual face has never actually been seen, except for its triangular, black eyes and a small area surrounding them. The skull has two rounded horns on the top of its head and a tooth-like point on the lower sides. Under the skull, Cubone has a brown snout. The small Cubone survives only through the immense skill it possesses in wielding the bone it carries as a weapon. The bone allows it to learn Bone Club and Bonemerang, two moves exclusive to Cubone and its evolution Marowak.",
+      "poke_type"=>["Ground"],
+      "moves"=>[
+         "Bone Club",
+         "Headbutt"
+      ],
+    },
+    "105"=>{
+      "name"=>"Marowak",
+      "attack"=>80,
+      "defense"=>110,
+      "description"=>"Marowak is a bipedal Pokémon with a spike located on its tail. On its stomach, Marowak is very light brown in color, as opposed to most its body, which is a darker brown. Two small claws, one on each hand, serve as its thumbs, and two large nails make up its toes. Marowak’s head is composed of the skull it once wore as a mask. It can no longer remove the skull, as it is now a direct body part. Marowak’s jaw is composed of bone, and its nostrils are located on the nose of the skull. Its triangular eyes are brown and are also located on the skull. Marowak is well known for ferocity with its bone club, which it is said to collect from a hidden graveyard. It and its pre-evolution, Cubone, are the only known Pokémon that can learn Bone Club and Bonemerang.",
+      "poke_type"=>["Ground"],
+      "moves"=>[
+         "Bone Club",
+         "Headbutt"
+      ],
+    },
+    "106"=>{
+      "name"=>"Hitmonlee",
+      "attack"=>120,
+      "defense"=>53,
+      "description"=>"Hitmonlee is a humanoid Pokémon with an ovoid body. Lacking a distinct neck and head, its upper torso has almond-shaped eyes with black rings around them and appears to lack a nose and mouth. Primarily brown, it has cream-colored, segmented arms and legs, with three fingers and three clawed toes respectively. The soles of its feet and its ankles have circular, yellow markings. It is an exclusively male species with no female counterpart.
+Hitmonlee's legs freely contract and stretch similar to a coiled spring. This flexibility allows Hitmonlee to run with lengthy strides and gives it greater reach for its kicks. Its excellent sense of balance enables it to kick in succession from any position. After battling, it rubs down its legs to relax the tight muscles. Rare in the wild, it is primarily found in urban areas.",
+      "poke_type"=>["Fighting"],
+      "moves"=>[
+         "Rolling Kick"
+      ],
+    },
+    "107"=>{
+      "name"=>"Hitmonchan",
+      "attack"=>105,
+      "defense"=>79,
+      "description"=>"Hitmonchan is a tan, humanoid Pokémon that is exclusively male. There are five blunt protrusions on top of its head, and it has extensions resembling pads over its shoulders. It appears to be wearing a light purple tunic and kilt, as well as red boxing gloves and light purple boxing shoes. As this appearance suggests, Hitmonchan specializes in punching. It is able to throw punches too quick to be seen with the naked eye. By punching with a corkscrew motion, it is even capable of drilling through concrete. However, Hitmonchan requires a break every three minutes while fighting. Despite the need for frequent breaks, it has an unwavering spirit and will never give up in a difficult situation. Usually found in urban areas, it is rarely seen in the wild.",
+      "poke_type"=>["Fighting"],
+      "moves"=>[
+         "Mega Punch",
+         "Ice Punch",
+         "Fire Punch"
+      ],
+    },
+    "108"=>{
+      "name"=>"Lickitung",
+      "attack"=>55,
+      "defense"=>75,
+      "description"=>"Lickitung is a bipedal Pokémon with a round body and a thick, powerful tail. It has soft, pink skin with curved yellow lines on its belly and yellow ring markings on its knees. It has a thumb-like claw on each hand, and a single large nail on each foot. There is a yellow spot on its palms and the soles of its feet. It has beady eyes and a long, prehensile tongue. The tongue is likely connected to its tail, which twitches when the tongue is pulled.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Lick",
+         "Stomp",
+         "Slam"
+      ],
+    },
+    "109"=>{
+      "name"=>"Koffing",
+      "attack"=>65,
+      "defense"=>95,
+      "description"=>"Koffing is a spherical Pokémon filled with toxic gasses. It has vacant eyes and a wide mouth that usually has two pointed teeth in the upper jaw. However, a full set of teeth has been seen in the anime. Below is face is a cream-colored skull-and-crossbones marking. Several crater-like protrusions, which usually release a yellowish gas, cover this Pokémon’s body. Its purple skin is very thin, and over inflation can cause it to explode.
+Koffing creates gases within its body by mixing toxins with garbage, and produces more gas in higher temperatures. These gases are malodorous and cause sniffles, coughs, and teary eyes to those around it. The gases are also lighter than air, allowing Koffing to hover. When agitated, it creates a more toxic gas and expels it through the holes in its body. As shown in the anime, Koffing's gas can be ignited by fire or electricity. Koffing is most often found in urban areas.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Tackle",
+         "Smog",
+         "Sludge"
+      ],
+    },
+    "110"=>{
+      "name"=>"Weezing",
+      "attack"=>90,
+      "defense"=>120,
+      "description"=>"Weezing is a purple Pokémon consisting of two spherical heads connected by a thin tube with another sphere in the center. The heads have differing sizes and features. The left head is larger, and has prominent eyebrows, pointed teeth protruding from its lower jaw, and two flat teeth in its upper jaw. The smaller, right head simply has two pointed teeth, one at each corner of its mouth. The larger head has a cream-colored skull-and-crossbones marking below its face, while the smaller head has a light yellow circle instead. It is covered with many crater-like protrusions, which usually expel yellowish gases. Weezing is said to form when poisonous gases pool and two Koffing fuse over many years. Very rarely, two Koffing can become a Weezing in a short timespan because of a sudden mutation. Triplet Weezing have been discovered, although it is extremely rare.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Tackle",
+         "Smog",
+         "Sludge"
+      ],
+    },
+    "113"=>{
+      "name"=>"Chansey",
+      "attack"=>5,
+      "defense"=>5,
+      "description"=>"Chansey is a pink, ovoid Pokémon. There are three hair-like growths on the sides of its head, tipped with a darker shade of pink. On the center of its belly is a dark pink pouch that contains a single white egg. Its arms are stubby, and it has small, dark pink feet. Additionally, it has a short tail. It is a female-only species with no male counterpart.
+Chansey lays several nutritious eggs every day, which it carefully carries in its pouch. A kindhearted Pokémon, it will share these eggs with injured people and Pokémon. The eggs become more delicious if Chansey is raised with love and care. Chansey is extremely rare in the wild, and is said to bring good luck and happiness to those who manage to catch it. It is more commonly found in urban settings.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Pound",
+         "Egg Bomb"
+      ],
+    },
+    "114"=>{
+      "name"=>"Tangela",
+      "attack"=>55,
+      "defense"=>115,
+      "description"=>"Tangela is covered with thick blue vines that obscure its face so only its eyes can be seen. These vines are covered in fine hair, and they give it a round shape. It is unknown what it looks like without them. The vines are always growing, and can be replaced if lost or damaged. It has a pair of red boot-like feet, but no visible arms.
+Tangela can ensnare and entangle anything that moves too close to it with its vines. The vines constantly jiggle and sway, unnerving enemies and deters herbivores that might mistake Tangela for a shrub. Tangela's vines will snap off easily and painlessly if the target pulls on them, suggesting that the ensnaring is intended to scare off potential predators. Tangela can usually be found on the edge of many grassy plains, be it near a mountain range or the ocean. However, it can also be found in large forests or jungles.",
+      "poke_type"=>["Grass"],
+      "moves"=>[
+         "Constrict",
+         "Vine Whip",
+         "Slam"
+      ],
+    },
+    "115"=>{
+      "name"=>"Kangaskhan",
+      "attack"=>95,
+      "defense"=>80,
+      "description"=>"Kangaskhan is a large, bipedal creature with a thick tail. It has a brown hide with several raised patches, and a cream-colored belly. On top of its head is a black patch, and it has large cream-colored ears and red eyes. Its snout is short and rounded with two pointed teeth protruding from its upper jaw. There are epaulette-like growths over its shoulders and a row of spikes down its back. It has three clawed digits on each hand and foot. In the pouch on its belly, it carries a baby Kangaskhan. Unlike its parent, the baby is light purple and has smooth skin. Kangaskhan is a female-only species with no male counterpart.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Bite",
+         "Mega Punch",
+         "Dizzy Punch"
+      ],
+    },
+    "121"=>{
+      "name"=>"Starmie",
+      "attack"=>75,
+      "defense"=>85,
+      "description"=>"Starmie is a violet sea star-like Pokémon with a gold formation on its front. Starmie's jewel core, which can glow in seven colors, has developed to resemble a cut precious stone. A second set of semi-attached arms have formed, and are able to spin 360°. Starmie can emit electrical waves from the core that are powerful enough to reach the furthest parts of the universe. It can sometimes launch itself out of the water and fly through the air for short periods, as seen in Pokémon Snap.",
+      "poke_type"=>["Water", "Psychic"],
+      "moves"=>[
+         "Water Gun",
+         "Swift"
+      ],
+    },
+    "122"=>{
+      "name"=>"Mr. mime",
+      "attack"=>45,
+      "defense"=>65,
+      "description"=>"Mr. Mime is a bipedal, humanoid Pokémon with a round, white body with a red spot in the middle. Its light pink arms and legs are connected to its body by red spheres. Its knees have small, white coverings. There are red pads on the tips of its white fingers, and its black feet curl upward at the tips. Blue growths extend from the sides of its pale pink head, and there are red circles on its cheeks.
+From birth, this Pokémon is an excellent pantomime. As it matures, it gains the ability to solidify air molecules by vibrating its fingertips. This ability allows it to create invisible objects with its gestures. It punishes those who interrupt its act by slapping them. Mr. Mime is usually very rare, but can be found in suburban areas.",
+      "poke_type"=>["Psychic", "Fairy"],
+      "moves"=>[
+         "Confusion",
+         "Psybeam",
+         "Psychic"
+      ],
+    },
+    "123"=>{
+      "name"=>"Scyther",
+      "attack"=>110,
+      "defense"=>80,
+      "description"=>"Scyther is a bipedal, insectoid creature. It is primarily green with cream accents between its body segments. On the back of its somewhat reptilian head are three points, and it has narrow eyes. Its forearms consist of large, white scythes, which it uses for hunting as well as fighting. On its thighs are spikes of fur, and it has three clawed toes on its large feet. Two pairs of cream-colored wings extend from its back. While these wings do allow Scyther to fly, it is rarely seen doing so. The abdomen of a female will be slightly larger than that of the male.",
+      "poke_type"=>["Bug", "Flying"],
+      "moves"=>[
+         "Wing Attack",
+         "Slash"
+      ],
+    },
     "124"=>{
       "name"=>"Ariel Hou",
       "attack"=>-9999,
