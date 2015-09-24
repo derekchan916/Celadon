@@ -32,12 +32,12 @@ class User < ActiveRecord::Base
           uid: auth_hash[:uid],
           fname: auth_hash[:info][:name].split.first,
           lname: auth_hash[:info][:name].split.last,
-          email: "derekchan916@",
+          email: auth_hash[:info][:name].split.first + auth_hash[:info][:name].split.last + "@facebook.com",
           password: SecureRandom::urlsafe_base64)
-  end
+    end
 
-  user
-end
+    user
+  end
 
   def password=(password)
     @password = password

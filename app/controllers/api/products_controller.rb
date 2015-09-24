@@ -5,7 +5,6 @@ module Api
         @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views)
 
         if params[:categories]
-          puts "THIS IS HITTING THISSSS"
           @products = @products.joins(:categories, :types).where(types: {name: params[:categories]}).uniq
         end
         @products = @products.page(params[:page]).per(15)

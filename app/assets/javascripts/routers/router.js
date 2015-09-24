@@ -10,6 +10,7 @@ Celadon.Routers.Router = Backbone.Router.extend({
     'products': 'productIndex',
     'users/new': 'usersNew',
     'session/new': 'signIn',
+    'products/:filter': 'productsFilter',
     'user/:id': 'userShow',
     'user/:id/edit': 'userEdit',
     'user/:id/cart_items': 'cartItemsIndex',
@@ -72,6 +73,14 @@ Celadon.Routers.Router = Backbone.Router.extend({
       collection: Celadon.products
     })
     this._swapView(view);
+  },
+
+  productsFilter: function(filter) {
+    var view = new Celadon.Views.ProductsIndex({
+      collection: Celadon.products,
+      filter: filter
+    })
+    this._swapView(view)
   },
 
   productShow: function(id) {

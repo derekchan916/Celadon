@@ -50,7 +50,7 @@
       Moves: <%= product.escape('moves').split(",").join(", ") %><br>
       Type:
       <% product.escape('poke_types').split(",").forEach(function(type) { %>
-        <span class="<%= type %> type-indicator"><%= type %></span>
+        <a class="<%= type %> type-indicator" href="#/products/<%= type %>"><%= type %></a>
       <% }) %>
 
       <br><p class='in-stock'>In Stock.</p>

@@ -31,11 +31,12 @@
             <span class="dropdown-arrow type-dropdown"></span>
               <ul>
                 <% Celadon.types.each(function(type){ %>
-                  <li>
-                    <a href="#"><%= type.escape('name') %></a>
-                    <span class="<%= type.escape('name') %> type-indicator navbar-type">
-                      <a href='#'><%= type.escape('name') %></a>
-                    </span>
+                  <li class="tabs">
+                    <a href="#/products/<%= type.escape('name') %>"><%= type.escape('name') %>
+                      <span class="<%= type.escape('name') %> type-indicator navbar-type">
+                        <%= type.escape('name') %>
+                      </span>
+                    </a>
                   </li>
                 <% }) %>
               </ul>

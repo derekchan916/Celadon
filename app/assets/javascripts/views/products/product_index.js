@@ -11,6 +11,10 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
     this.collection.pageNum = 1;
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(Celadon.types, "sync", this.render);
+    if (options.filter) {
+      this.filter = options.filter;
+      this.filterList(event);
+    }
   },
 
   renderLists: function() {
@@ -38,12 +42,17 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   filterList: function(e) {
     e.preventDefault();
     var that = this
-    // debugger
     var $result = this.$('input:checked')
     this.collection = new Celadon.Collections.Products();
-    this.collection.categories = $.map($result, function(input) {
-      return $(input).val()
-    })
+    if (this.filter) {
+      this.collection.categories = [this.filter];
+      this.filter = null;
+    } else {
+      this.collection.categories = $.map($result, function(input) {
+        return $(input).val()
+      })
+    }
+
     this.collection.pageNum = 1;
     this.collection.fetch({
       data: {
