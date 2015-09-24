@@ -4,7 +4,7 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   events: {
     "click .next-page": "nextPage",
     "click .prev-page": "prevPage",
-    "submit .filter-list": "filterList"
+    "click .checkbox-input": "filterList"
   },
 
   initialize: function(options) {

@@ -1678,7 +1678,7 @@ Despite its bulky build, Dragonite is capable of flying faster than the speed of
     Product.create!(national_id: national_id, name: stats["name"], attack: stats["attack"], defense: stats["defense"], price: price, image_url: image_url, description: stats["description"])
   end
   #CREATING TYPES
-  types = ["Bug" ,"Normal",	"Fire", "Fighting", "Water", "Flying",	"Grass", "Poison",	"Electric", "Ground",	"Psychic", "Rock",	"Ice", "Bug",	"Dragon", "Ghost",	"Dark", "Steel", "Fairy"]
+  types = ["Bug" ,"Normal",	"Fire", "Fighting", "Water", "Flying",	"Grass", "Poison",	"Electric", "Ground",	"Psychic", "Rock",	"Ice",	"Dragon", "Ghost",	"Dark", "Steel", "Fairy"]
   types.each do |type|
     Type.create!(name: type)
   end

@@ -33,7 +33,6 @@ module Api
 
     def omniauth
       user = User.find_or_create_by_auth_hash(auth_hash)
-      fail
       sign_in!(user)
       redirect_to root_url
     end

@@ -3,7 +3,8 @@
   <form class="filter-list">
     <span class="form-header">Categories</span>
     <% Celadon.types.each(function(type){ %>
-      <input type="checkbox"
+      <input class="checkbox-input"
+             type="checkbox"
              name="category"
              value="<%= type.escape('name') %>"
              <% if (categories) { %>
@@ -15,7 +16,6 @@
              <% } %>
              >  <%= type.escape('name') %><br>
      <% }) %>
-    <button>Submit</button>
   </form>
 </div>
 <div class="results-page">
