@@ -1,3 +1,5 @@
+# json.total_count @search_results.total_count
+
 json.array!(@products) do |product|
   json.partial!('product', product: product)
 

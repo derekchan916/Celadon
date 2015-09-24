@@ -2,8 +2,7 @@
 <div class="results-page">
 	<nav>
 		<% if (results.total_count > 0) { %>
-			Displaying page number <%= results.pageNum %> out
-			of <%= results.total_count %> results for <p>"<%= Celadon.searchResults.query %>"</p>
+			Displaying page number <%= results.pageNum %> for <p>"<%= Celadon.searchResults.query %>"</p>
 		<% } else { %>
 			No results, please search again
 		<% } %>

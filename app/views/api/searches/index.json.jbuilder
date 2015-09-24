@@ -1,6 +1,6 @@
 json._page @search_results.current_page
+json.total_count @search_results.total_count
 
-json.total_count @search_results.count
 json.results @search_results.map(&:searchable) do |model|
 
   json.partial! "api/products/product", product: model

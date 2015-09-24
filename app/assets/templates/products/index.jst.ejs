@@ -29,7 +29,7 @@
 						Previous Page
 					</a>
 				<% } %>
-				<% if (pageNum < (results.length)) { %>
+				<% if (pageNum < (results.total_count / 15)) { %>
 					<a class="next-page" href="javascript:void(0)">
 						<span class="next-arrow"></span>
 						Next Page

@@ -32,9 +32,9 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   },
 
   render: function() {
-    // debugger
     this.$el.html(this.template({
       results: this.collection,
+      total_count: this.collection.total_count,
       pageNum: this.collection.pageNum,
       categories: this.collection.categories
     }));
