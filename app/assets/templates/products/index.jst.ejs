@@ -3,8 +3,18 @@
   <form class="filter-list">
     <span class="form-header">Categories</span>
     <% Celadon.types.each(function(type){ %>
-      <input type="checkbox" name="category" value="<%= type.escape('name') %>"> <%= type.escape('name') %><br>
-    <% }) %>
+      <input type="checkbox"
+             name="category"
+             value="<%= type.escape('name') %>"
+             <% if (categories) { %>
+               <% categories.forEach(function(category) { %>
+                 <% if (category === type.escape('name') ) { %>
+                   <%= "checked" %>
+                 <% } %>
+               <% }) %>
+             <% } %>
+             >  <%= type.escape('name') %><br>
+     <% }) %>
     <button>Submit</button>
   </form>
 </div>
