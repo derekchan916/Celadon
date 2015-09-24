@@ -882,6 +882,232 @@ Geodude can be most often found on mountain trails, fields, under rocks, or in c
          "Rock Throw"
       ],
     },
+    "76"=>{
+      "name"=>"Golem",
+      "attack"=>110,
+      "defense"=>130,
+      "description"=>"Golem is a turtle-like bipedal Pokémon with plated, green rocks as its shell. Golem grows bigger by shedding its skin once a year. The discarded shell immediately hardens when exposed to air, crumbling away and returning to the soil. Golem has a head protruding out of the center of the shell, short arms that have three claws, and two legs with five-clawed feet that have four claws in front and one in back. It has red eyes and a flat snout with two pointed teeth in its lower jaw. As shown in the Pocket Monsters Carddass Trading Cards Golem's shell is hollow.
+The anime has shown that Golem is able to withdraw its head, arms, and legs into its shell and roll at high speeds. Golem is dangerous when doing this, as it is unable to see and may crash into or run over anything in its path. To prevent it from rolling into the homes of people downhill, grooves are dug into the sides of the mountains to divert the rolling Golem’s course. Golem’s body is so hard that even dynamite cannot scratch it. Golem is seldom seen in the wild. However, it can be found living in mountainous regions.",
+      "poke_type"=>["Rock"],
+      "moves"=>[
+         "Tackle",
+         "Rock Throw",
+         "Earthquake"
+      ],
+    },
+    "77"=>{
+      "name"=>"Ponyta",
+      "attack"=>85,
+      "defense"=>55,
+      "description"=>"Ponyta is an equine Pokémon with yellow and reddish-orange flames forming its mane and tail. This fiery mane and tail grows out about an hour after hatching. Its body is mainly cream and has four long legs, each ending in a single, gray hoof. These hooves are said to be harder than diamonds. It also has extraordinary jumping abilities, and is capable of leaping tall buildings in a single bound. However, a newborn Ponyta is a weak runner and is actually barely able to stand. It gradually strengthens its legs and becomes faster by chasing after its parents. In the anime, it is shown that Ponyta can control its flames so that its rider is not burned by them. Ponyta runs in fields and mountains all day. Ponyta live in grasslands, on plains, or anywhere that it can run freely.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+         "Ember",
+         "Stomp"
+      ],
+    },
+    "78"=>{
+      "name"=>"Rapidash",
+      "attack"=>100,
+      "defense"=>70,
+      "description"=>"Rapidash is an equine Pokémon with four slender legs and black hooves. Its body is cream-colored, and it has a horn on its forehead. It also has small red eyes and pointed ears with red insides. Red and orange flames stream from neck, part of its back, and its fetlocks. Flames also form this Pokémon's tail.
+Rapidash is a very agile Pokémon. It runs at about 150 mph, chasing everything that moves in hopes of racing it. With incredible acceleration, it reaches its top speed in only ten steps. At full gallop, its hooves barely touch the ground. The faster Rapidash go, the longer the swaying flames of its mane will become. At an all-out gallop, its blazing mane sparkles, a feature which is said to enhance its beautiful appearance. Rapidash lives in grasslands, but it can also be seen on mountains.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+         "Ember",
+         "Stomp",
+         "Fire Blast"
+      ],
+    },
+    "79"=>{
+      "name"=>"Slowpoke",
+      "attack"=>65,
+      "defense"=>65,
+      "description"=>"Slowpoke is a pink creature that resembles a cross between a salamander and a hippopotamus. Its vacant eyes never seem focused, and it has curled ears and a rounded, tan muzzle. It has four legs, each of which ends in a single white claw. Its long, tapering tail has a white tip. This tail drips a sweet, sappy substance that is attractive to many species of fish. Slowpoke uses it as a lure for fishing, and it will grow back if cut off.
+Slowpoke has notoriously dim intellect, and often forgets what it was doing. It takes a long time to respond to outside stimuli. For example, it can take up to five seconds to process pain and can take an entire day to notice when its tail has been bitten. Slowpoke is commonly found at the water's edge.",
+      "poke_type"=>["Water", "Psychic"],
+      "moves"=>[
+         "Tackle",
+         "Water Gun",
+         "Confusion",
+         "Headbutt"
+      ],
+    },
+    "80"=>{
+      "name"=>"Slowbro",
+      "attack"=>75,
+      "defense"=>110,
+      "description"=>"Slowbro is a bipedal, pink Pokémon with a tan, striped belly and a tan muzzle. It has large, vacant eyes, curled ears, and two pointed teeth in its upper jaw. On its hands, it has three clawed fingers, and two clawed toes on its feet. There is a Shellder attached to its tail. This Shellder has a gray, spiraled shell with darker spots. There are several spikes across the surface of Shellder, and it holds onto Slowbro with many sharp teeth. If Shellder is knocked off, Slowbro will return to its unevolved form.
+Slowbro has lost the capability to feel pain due to Shellder's poison. However, it apparently becomes inspired when Shellder bites down. While it is capable of unleashing powerful psychic attacks, it is peaceful and prefers not to fight. Because it can no longer fish using its tail, it swims to catch its prey and allows Shellder to feed on its scraps. Slowbro tends to live near ponds, lakes, and seashores.",
+      "poke_type"=>["Water", "Psychic"],
+      "moves"=>[
+         "Psychic",
+         "Water Gun",
+         "Confusion",
+         "Headbutt"
+      ],
+    },
+    "81"=>{
+      "name"=>"Magnemite",
+      "attack"=>35,
+      "defense"=>70,
+      "description"=>"Magnemite is a seemingly robotic life form that has a gray, spherical metal body with horseshoe magnets on each side and a single, large eye. It has three Phillips head screws on its body: two near the bottom of its body, and the other on top of its head and looks similar to an antenna. The two bottom screws serve no noticeable purpose, although they may be its feet as the Pokédex identifies a footprint similar to that of the screw's head. Even though Magnemite and its evolved forms are mechanical creatures, the anime has shown that it has emotions and a way of reproducing. It has even exhibited the need to eat, although its main form of nutrients is electrical currents. It is commonly found in locations such as power plants or caves with a strong magnetic field. Despite its modern, artificial appearance, Magnemite has been depicted in carvings discovered at the Ruins of Alph, and has been present in AZ's retelling of the Kalos war, indicating it has existed for at least 3,000 years.",
+      "poke_type"=>["Electric", "Steel"],
+      "moves"=>[
+         "Tackle",
+         "Thunder Shock"
+      ],
+    },
+    "82"=>{
+      "name"=>"Magneton",
+      "attack"=>60,
+      "defense"=>95,
+      "description"=>"Magneton is the result of three Magnemite being linked together by a strong magnetic force, although a single Magnemite can evolve by itself when no other Magnemite are in the vicinity. The three Magnemite that Magneton consists of can be linked several ways. Magneton is most commonly seen as one Magnemite on top, and two Magnemite linked via body on the bottom, forming a triangle. However, in some cases, commonly seen in 3D Pokémon games, the Magnemite will not be connected at all, remaining in a triangular formation at rest, and being able to freely move within each other's vicinity to form other patterns. The magnetic forces that holds the three Magnemite together is powerful enough to dry up all moisture and raise the temperature 3.6 °F in the vicinity. It can also be disruptive to electronic devices.",
+      "poke_type"=>["Electric", "Steel"],
+      "moves"=>[
+         "Tackle",
+         "Thunder Shock",
+         "Thunder"
+      ],
+    },
+    "83"=>{
+      "name"=>"Farfetch'd",
+      "attack"=>65,
+      "defense"=>55,
+      "description"=>"Farfetch'd resembles a brown duck with a white underbelly. It has a yellow beak and a V-shaped, black marking on its forehead. It has wings as big as its body, which appear to be prehensile enough to substitute for hands. It has yellow legs with webbed feet.
+Farfetch'd is always seen carrying a leek stalk or spring onion. It carries it in its wings, and sometimes chooses to hold it in its beak or feet instead. Unable to live without its stick, Farfetch'd will defend the stalk with its life. Known uses for the stick include use as a weapon, nesting material, and emergency food source. It is selective about which sticks it will use, and has been known to fight over good ones. Farfetch'd is found in grasslands.",
+      "poke_type"=>["Normal", "Flying"],
+      "moves"=>[
+         "Peck",
+         "Slash"
+      ],
+    },
+    "84"=>{
+      "name"=>"Doduo",
+      "attack"=>85,
+      "defense"=>45,
+      "description"=>"Doduo is a two-headed, bipedal avian Pokémon. Each head has a long sharp beak and two beady black eyes with no discernible sclera. It has a soft but bristly, down-like covering of brown feathers on its body and both heads. The males of the species have black flexible necks, whereas females have brown necks; both genders have brown coloring on their legs. It has two feet, each with four digits ending in a sharp claw.",
+      "poke_type"=>["Normal", "Flying"],
+      "moves"=>[
+         "Peck"
+      ],
+    },
+    "85"=>{
+      "name"=>"Dodrio",
+      "attack"=>110,
+      "defense"=>70,
+      "description"=>"Dodrio is a large, wingless, three-headed avian Pokémon. Each head has a long, sharp beak and a black feathered, V-shaped crest. It has bristly brown feathers covering its heads and upper body, while its lower half has a smooth layer of black feathers. Its wingless body rests on two long and slender, but powerful legs with anisodactyl feet and sharp claws on each toe. Males have black necks, whereas females have brown necks; both genders have brown legs.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Peck",
+         "Drill Peck"
+      ],
+    },
+    "88"=>{
+      "name"=>"Grimer",
+      "attack"=>80,
+      "defense"=>50,
+      "description"=>"Grimer is a slimy, amorphous blob-like Pokémon, made of living purple sludge. Its body is a pungent cesspool of bacteria, which are so potent that it renders soil barren and incapable of supporting plant life ever again. It has two large eyes with beady little pupils, and a gaping mouth with a grey tongue. While it lacks any visible legs, it does have two arms with three digits on each hand. It is constantly oozing; endlessly leaking a germ-infected fluid from all parts of its body. Pieces of it often breaks off during travel, and from these pieces new Grimer will begin to grow. When combined with another Grimer, it produces new poisonous compounds.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Pound",
+         "Sludge"
+      ],
+    },
+    "89"=>{
+      "name"=>"Muk",
+      "attack"=>105,
+      "defense"=>75,
+      "description"=>"Muk is a large, sticky, amorphous Pokémon, made of living purple sludge. It has two small eyes with beady black pupils. It also has an enormous mouth with a grey tongue and strands of ooze connecting its top and bottom jaws. While it has no visible legs, it does have two arms with three fingers on each hand. However, it typically keeps one hand tucked in while it extends the other hand.
+It is a living biohazard, leaking toxins that instantly kill all plant life it touches. Even it being in close proximity to plants will cause them to wilt and die. Extreme caution is advised in avoiding any contact with this Pokémon, as an accidental brush up can lead to severe sickness. The effects of this Pokémon can leave the landscape barren for three years.",
+      "poke_type"=>["Poison"],
+      "moves"=>[
+         "Pound",
+         "Sludge"
+      ],
+    },
+    "92"=>{
+      "name"=>"Gastly",
+      "attack"=>35,
+      "defense"=>30,
+      "description"=>"Gastly has no true form, due to its body being 95% poisonous gas. However, it consistently appears as a black, spherical Pokémon surrounded by a purple haze. It has a wide, pink mouth with two visible fangs. Though its eyes seem to extend past its round body, visible eyelids surround them. The toxic gas surrounding the main body can induce fainting and suffocation, and is capable of enshrouding an Indian elephant within two seconds. Because it is mostly gas, Gastly will dwindle away when exposed to strong winds.
+The anime suggests that Gastly has a playful personality, often frightening and playing pranks on people for fun. However, it has shown a willingness to preserve or pass on the memories of departed humans. It has further been shown changing form and creating illusions, and it is capable of phasing through solid objects and forming tangible hands out of its gasses. Gastly is often seen in old, dilapidated buildings, but can also be found in caves.",
+      "poke_type"=>["Ghost", "Poison"],
+      "moves"=>[
+         "Tackle",
+         "Lick"
+      ],
+    },
+    "94"=>{
+      "name"=>"Gengar",
+      "attack"=>65,
+      "defense"=>60,
+      "description"=>"Gengar is a dark purple, bipedal Pokémon with a roundish body. It has red eyes and a wide mouth that is usually curled into a sinister grin. Multiple spikes cover its back, and it has large pointed ears. Its arms and legs are short with three digits on both its hands and feet. It also has a stubby tail.
+As Mega Gengar, a portion of its body sinks into the ground. The lower portions turn a more reddish purple, and a third eye appears on its forehead. This new unblinking eye is oval and yellow and allows it to see into other dimensions.[1] The spikes on Mega Gengar's back are more numerous and pointed. Additionally, spikes appear on its hands and tail. Its ears are now considerably longer and project backward.",
+      "poke_type"=>["Ghost"],
+      "moves"=>[
+         "Tackle",
+         "Lick"
+      ],
+    },
+    "95"=>{
+      "name"=>"Onix",
+      "attack"=>45,
+      "defense"=>160,
+      "description"=>"Onix resembles a giant chain of gray boulders that become smaller towards the tail. There is a rocky spine on its head and a pair of black eyes right beneath it. This Pokémon has a magnet in its brain that serves as an internal compass. Its body absorbs many hard objects, making its body very solid. As it grows older, it becomes more rounded and smoother, eventually becoming similar to black diamonds.",
+      "poke_type"=>["Rock", "Ground"],
+      "moves"=>[
+         "Rock Throw",
+         "Slam"
+      ],
+    },
+    "98"=>{
+      "name"=>"Krabby",
+      "attack"=>105,
+      "defense"=>90,
+      "description"=>"As a crustacean, Krabby has a strong outer shell protecting its small body. Its upper half is red, containing two small spikes facing upwards on the top of its head. Its lower body is light tan and doubles as its jaw with two fangs overlapping its upper body. Its hips are visible on the lower front of its body connected to its long and thin legs, featuring small, claw-like feet. The main feature of Krabby's body is its large, red pincers. Krabby uses them as its main form of offense, and as a form of balance. Sometimes, Krabby may lose a claw during battle, or it can forcibly remove a claw if it is damaged, and regenerate the claw over a short period.
+In the wild, Krabby lives near the edge of water in both fresh and salt water. Krabby is most commonly found on beaches where it burrows in the sand to live. In times of scarce food sources, it may eat sand to regain nutrients, and will be very aggressive in defending its home. Its main form of defense is creating foam to shroud its body, in order to confuse opponents into thinking that it is bigger than it actually is. As seen in the anime, on average, Krabby generally keeps to itself, but will quickly defend itself if provoked.",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Bubble",
+         "Stomp"
+      ],
+    },
+    "99"=>{
+      "name"=>"Kingler",
+      "attack"=>130,
+      "defense"=>115,
+      "description"=>"Kingler's strong shell covers the outside of its body, featuring a red upper-half, and a light tan lower-half. Its upper half is topped with six tall, thin spikes on the top of its head, resembling the top of a crown. Its lower half doubles as its jaw, with six fangs overlapping its upper body. Its two outer fangs are much larger than the inner two, and are roughly half as tall as Kingler's entire body. Its hips are visibly protruding from its lower body connecting its long, thin legs with claw-like feet. Kingler's main feature is its red claws. Its left-hand claw is roughly twice as large as the other and hard as steel.
+Kingler is often found on the edges of water, usually the ocean. It has been observed using its powerful claws to pry open the shells of Shellder and Cloyster. While Kingler's large, left-hand claw is it main tool for offensive maneuvers, it is so large and heavy that Kingler can barely lift it. It causes balancing problems and Kingler may quickly become fatigued from continuous use. However, it has been shown to communicate with other Kingler by waving its pincers around.
+",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Stomp",
+         "Crabhammer"
+      ],
+    },
+    "100"=>{
+      "name"=>"Voltorb",
+      "attack"=>30,
+      "defense"=>50,
+      "description"=>"Voltorb is a spherical Pokémon that looks like a Poké Ball with a face, minus the button. The top half is red, while the bottom half is white. Because of its resemblance to Poké Balls, it is thought that it was created when one was exposed to an energy pulse. It was first seen in the plant where modern Poké Balls were invented. Voltorb is generally found in power plants and other areas with electric fields. It has a volatile temperament, and will explode if bumped or agitated.",
+      "poke_type"=>["Electric"],
+      "moves"=>[
+         "Tackle"
+      ],
+    },
+    "101"=>{
+      "name"=>"Electrode",
+      "attack"=>50,
+      "defense"=>70,
+      "description"=>"Electrode is a round Pokémon resembling a reverse-colored Poké Ball with a mouth and eyes. Its top half is white, while its lower half is red. For this reason, many Trainers try to pick it up, mistaking it for an item. The Pocket Monsters Carddass Trading Cards depict Electrode as hollow. Many know it by the nickname 'Bomb Ball.'
+Electrode tends to live in power plants where fresh electricity is being generated, which it consumes. As a result, it often causes blackouts. The more electric energy Electrode consumes, the faster it moves. Electrode explodes in response to even the smallest stimulation, simply to entertain itself, or because it has taken in too much electricity. When full of stored electricity, it has been known to drift with the wind.",
+      "poke_type"=>["Electric"],
+      "moves"=>[
+         "Tackle",
+         "Swift"
+      ],
+    },
     "124"=>{
       "name"=>"Ariel Hou",
       "attack"=>-9999,

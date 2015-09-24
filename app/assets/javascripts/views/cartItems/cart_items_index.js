@@ -35,9 +35,8 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
   placeOrder: function(e) {
     e.preventDefault();
     var that = this
-
     $.ajax({
-      url: "/api/users/1/place_order",
+      url: "/api/users/" + that.user.id + "/place_order",
       type: "POST",
       dataType: "json",
       success: function(data){
@@ -45,10 +44,9 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
           current_subtotal: data.current_subtotal,
           number_of_cart_items: data.number_of_cart_items
         });
-        debugger
         Celadon.currentUser.cart_items().set(data.cart_items);
         Celadon.currentUser.ordered_items().set(data.ordered_items)
-        Backbone.history.navigate('#/user/1/cart_items', { trigger: true });
+        Backbone.history.navigate('#/user/'+ that.user.id + '/cart_items', { trigger: true });
         $('#order-message').toggleClass('hidden');
       }
     })
