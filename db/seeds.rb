@@ -1276,6 +1276,99 @@ Ariel has a language with several cry patterns that sounds similar to human spee
          "Get Wasted"
       ],
     },
+    "129"=>{
+      "name"=>"Magikarp",
+      "attack"=>10,
+      "defense"=>55,
+      "description"=>"Magikarp is a medium-sized fish Pokémon with large, heavy reddish-orange scales. It has large, vacant eyes and pink lips. Its pectoral and tail fins are white, but it has a stiff, three-peaked fin on its back and stomach that are both yellow. It also has long barbels. The barbels are white on a female and tan on a male.
+A long-lived Magikarp is able to utilize its immense splashing power to leap high enough to scale mountains. It also has a strong enough immune system to survive in the most polluted of waters. However, it is usually overlooked by Trainers because of its perceived weakness: even in the heat of battle it will do nothing but flop around. It is not a strong swimmer, and currents in the water will sweep it downstream. It is normally seen using its former signature move, Splash, to leap out of the water, which makes them easy targets to predators such as Pidgeot. It is believed that the ancestors of Magikarp were actually much stronger than modern Magikarp, and this led scientists to research this species. Magikarp is found in many bodies of water, such as lakes, rivers, and ponds. However, due to its weak swimming ability it usually lives downstream of the water's flow.",
+      "poke_type"=>["Water"],
+      "moves"=>[
+         "Splash"
+      ],
+    },
+    "130"=>{
+      "name"=>"Gyarados",
+      "attack"=>125,
+      "defense"=>79,
+      "description"=>"Gyarados is a serpentine Chinese dragon-like Pokémon. It is mostly blue, with a yellow underbelly and yellow spots along its body. It has a three-pointed, dark blue crest on its head and four white fins down its back. Its mouth is very large and gaping, bearing four canine teeth. It has one barbel on each side of its face. The barbels are white on a female and the same color as the main body on a male.
+Mega Gyarados is bulkier than its previous form. The fins on its face, its barbels, and its crest are now considerably longer. A large spike extends downward underneath its chin, and it now has a black underside. The yellow spots along its body are replaced by raised red scales that run with a single red stripe below them. Two large white fins appear on its back, similar to those on its face. Most of the other fins along its back disappear, except for the one near the tail. Instead, it now has four white, pointed fins near is tail: two on its back and two on its underside.",
+      "poke_type"=>["Water", "Dragon"],
+      "moves"=>[
+         "Bite",
+         "Hydro Pump"
+      ],
+    },
+    "131"=>{
+      "name"=>"Lapras",
+      "attack"=>85,
+      "defense"=>80,
+      "description"=>"Lapras is a large sea creature that resembles a plesiosaur. It has a spotted, blue hide with a cream underside. Its neck is long, and it has large black eyes. There is a short horn in the middle of its forehead and curled ears placed farther back on its head. Instead of legs, it has four flippers with the foremost pair being larger than the hind. On its back is a heavy, gray shell covered in blunt knobs.",
+      "poke_type"=>["Water", "Ice"],
+      "moves"=>[
+         "Water Gun",
+         "Body Slam",
+         "Ice Beam",
+         "Hydro Pump"
+      ],
+    },
+    "132"=>{
+      "name"=>"Ditto",
+      "attack"=>48,
+      "defense"=>48,
+      "description"=>"In its natural state, Ditto is a light purple or magenta free-form shape blob with vestigial facial features. It also appears to have two vestigial, handless 'arms' protruding from its body. It is capable of transforming into an exact replica of any physical object. However, if Ditto tries to transform into something based on memory, it may get some of the details wrong. The anime has shown that occasionally a Ditto cannot change its face. Ditto will also be unable to remain in a transformed state if it starts laughing. Ditto cannot mimic the strength of another Pokémon, but it will adapt the form and abilities of its foe. When two Ditto meet in the wild, they will attempt to transform into each other. Ditto will also transform into a rock when sleeping to avoid attack. Ditto is never far from civilization or people.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+        "Transform"
+      ],
+    },
+    "133"=>{
+      "name"=>"Eevee",
+      "attack"=>55,
+      "defense"=>50,
+      "description"=>"Eevee is a mammalian, quadruped creature with primarily brown fur. The tip of its bushy tail and its large furry collar are cream-colored. It has short, slender legs with three small toes and a pink paw pad on each foot. Eevee has brown eyes, long pointed ears, and a small black nose. This Pokémon is rarely found in the wild, and is mostly only found in cities and towns. However, Eevee is said to have an irregularly shaped genetic structure that allows it to adapt to many different kinds of environments. Eventually, Eevee may evolve to better suit its surroundings. According to Pokémon Mystery Dungeon, Eevee has a naive personality.
+",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Tackle",
+         "Bite"
+      ],
+    },
+    "135"=>{
+      "name"=>"Jolteon",
+      "attack"=>65,
+      "defense"=>60,
+      "description"=>"Jolteon is a quadruped, mammalian Pokémon. It is covered in yellow fur with a spiky fringe around its tail, and a white ruff around its neck. In addition to the ability to become sharp like needles, Jolteon's fur also amplifies the electrical charges produced by its cells. It can also store and generate negative ions in its fur, which create a sparking noise. Its ears are large and pointed, and its eyes and small nose are black. It has slender legs and small paws, each with three toes and a pink paw pad. This Pokémon is most often found in cities and towns under the ownership of Trainers.",
+      "poke_type"=>["Electric"],
+      "moves"=>[
+         "Tackle",
+         "Thunder Shock",
+         "Thunder"
+      ],
+    },
+    "136"=>{
+      "name"=>"Flareon",
+      "attack"=>130,
+      "defense"=>60,
+      "description"=>"Flareon is a quadruped Pokémon with three small toes and a yellow paw pad on each foot. It has long ears, dark eyes, and a small black nose. Its body is covered in reddish-orange fur. However, its bushy tail, fluffy collar, and a tuft of fur on its head are yellow. It will fluff out its collar to cool down its high body temperature. This high temperature is caused by its internal flame sac. Flareon stores and heats inhaled air in this sac, and then exhales it as fire. Flareon is mostly found in populated areas, and is rarely seen in the wilderness.",
+      "poke_type"=>["Fire"],
+      "moves"=>[
+         "Flamethrower",
+         "Ember",
+         "Bite"
+      ],
+    },
+    "137"=>{
+      "name"=>"Porygon",
+      "attack"=>60,
+      "defense"=>70,
+      "description"=>"Porygon is a Pokémon made completely out of programming code. It has a pink polyhedral body with a blue stomach, blue triangular prism feet, and a blue rectangular prism tail. It has a pink, polyhedral head that ends in a blue beak and has hexagonal eyes. Built into this code is Silph Co. copy protection DRM, preventing duplication through electronic means. Due to its man-made origins, Porygon does not need to breathe or eat, though it can still accept food if given.",
+      "poke_type"=>["Normal"],
+      "moves"=>[
+         "Tackle",
+         "Psybeam"
+      ],
+    },
     "143"=>{
       "name"=>"Aaron Wong",
       "attack"=>110,
@@ -1288,6 +1381,82 @@ Aaron Wong is often found in mountains and forests. It wakes up only to eat and 
          "Headbutt",
          "Snore",
          "Body Slam"
+      ],
+    },
+    "144"=>{
+      "name"=>"Articuno",
+      "attack"=>85,
+      "defense"=>100,
+      "description"=>"Articuno is a large avian Pokémon with predominantly blue plumage and large wings said to be made of ice. It has a head crest that consists of three, darker blue rhombus-shaped feathers on its forehead and circular red eyes. Its beak is short and gray, and its long, thin legs are gray. It has a long, streamer-like tail that is longer than its body and the same shade of blue as its crest.
+When Articuno flaps its wings, it can chill the moisture in the air around it, making snow fall. It flies from icy mountain to icy mountain. According to legend, it appears before doomed travelers lost in icy regions. As seen in the anime, Articuno sometimes aids travelers and guides them to safety. Articuno lives in cold, isolated locations, such as mountain peaks.
+",
+      "poke_type"=>["Ice", "Flying"],
+      "moves"=>[
+         "Gust",
+         "Ice Beam",
+         "Blizzard"
+      ],
+    },
+    "145"=>{
+      "name"=>"Zapdos",
+      "attack"=>90,
+      "defense"=>85,
+      "description"=>"Zapdos is an avian Pokémon with predominantly yellow plumage. Black rings encircle its eyes, and it has a long, thin, light orange beak. Its wings and tail are a mass of spiky feathers, with black feathers covering the back of its wings and inner tail feathers. A large crest of spiked feathers surrounds its head. Its thighs are a khaki color, and it has anisodactyl feet ending in talons.
+When Zapdos flaps its glittering wings, it releases electricity that can potentially cause thunderstorms. It produces massive crackling and snapping sounds when it flies; these are attributed to the lightning bolts sheds when airborne. When stricken by lightning, it gains power. Zapdos reportedly appears only during thunderstorms, and is said to live among thunderclouds. However, it is rarely seen.",
+      "poke_type"=>["Electric", "Flying"],
+      "moves"=>[
+         "Peck",
+         "Thunder Shock",
+         "Drill Peck",
+         "Thunder"
+      ],
+    },
+    "146"=>{
+      "name"=>"Moltres",
+      "attack"=>100,
+      "defense"=>90,
+      "description"=>"Moltres is a large, avian Pokémon with orange or golden plumage. It has a long, flowing head crest and a billowing tail, both made of flames. Additionally, its wings are also shrouded in fiery plumage. Its straight, pointed beak is brown, as are its anisodactyl feet. It has short talons.
+Moltres sheds embers with every flap of its wings, creating a brilliant flash of flames. By dipping itself into the magma of an active volcano, this Pokémon can heal itself. It migrates to the south with the coming of spring, and is said to bring an early springtime to cold lands. Moltres is rarely seen by Trainers.",
+      "poke_type"=>["Fire", "Flying"],
+      "moves"=>[
+         "Wing Attack",
+         "Ember",
+         "Flamethrower"
+      ],
+    },
+    "147"=>{
+      "name"=>"Dratini",
+      "attack"=>64,
+      "defense"=>45,
+      "description"=>"Dratini is a serpentine Pokémon with a blue body and a white underside. It has white, three-pronged fins on the sides of its head and a white bump on its forehead. Above its large, round, white snout are oval, purple eyes.
+As Dratini is filled with life energy, it is constantly growing, and can thus reach lengths of over six feet. As it grows, it sheds its skin regularly. Whenever Dratini undergoes shedding, it hides behind a large waterfall. Although this Pokémon was originally thought to be nothing more than a myth, it has been found in colonies living underwater.",
+      "poke_type"=>["Dragon"],
+      "moves"=>[
+         "Slam"
+      ],
+    },
+    "148"=>{
+      "name"=>"Dragonair",
+      "attack"=>84,
+      "defense"=>65,
+      "description"=>"Dragonair is a long, serpentine Pokémon with sky blue scales and a white underside. Its violet eyes are dark and glossy. It has a smooth, rounded snout and a small, white horn on its forehead. Its head is flanked by two small, stylized wings, which are white and curve into a swirl at the base. Three blue, crystal orbs, one on its neck and two on its tail, adorn its body.
+Dragonair emits a gentle aura that gives it a mystical appearance. As seen in the anime, it can make its wings grow larger in order to fly, but otherwise moves through the air unaided. Dragonair hosts a large amount of energy within its body, which it can discharge through the crystal orbs on its neck and tail. This causes its body to brighten and give off a different aura that changes the weather in its vicinity. Dragonair is a rare Pokémon that inhabits seas and lakes.",
+      "poke_type"=>["Dragon"],
+      "moves"=>[
+         "Slam"
+      ],
+    },
+    "149"=>{
+      "name"=>"Dragonite",
+      "attack"=>134,
+      "defense"=>95,
+      "description"=>"Dragonite is a draconic, bipedal Pokémon with light orange skin. It has large, grayish-green eyes and a round snout with small nostrils. A pair of long, thin antennae sprout from the top of its head, with a small horn set between them. Its striated underbelly is cream-colored, and extends from its neck to the tip of its long, tapering tail. It has thick arms and legs ending in three claws each. The leg joints are well defined, while its arms have a smooth, rounded appearance. Dragonite's wings are small relative to its body, with teal wing membranes.
+Despite its bulky build, Dragonite is capable of flying faster than the speed of sound. It can circle the globe in sixteen hours, traveling roughly 1,556 mph, or about three times the speed of an average airplane. A kindhearted Pokémon with human-like intelligence, Dragonite shows signs of altruism: it is said to save humans from drowning and lead lost or foundering ships to safety. As demonstrated in the anime, however, it will go on an uncontrollable, destructive rampage if its environment is threatened. Dragonite is very rare in the wild, typically living near the sea. Some claim that there is an island somewhere in the ocean that only Dragonite inhabit.",
+      "poke_type"=>["Dragon", "Flying"],
+      "moves"=>[
+         "Slam",
+         "Wing Attack",
+         "Hyper Beam"
       ],
     },
     "150"=>{
