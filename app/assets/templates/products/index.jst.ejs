@@ -1,7 +1,15 @@
-<div class="advertisement5"></div>
+<div class="advertisement5">
+  <h4>Narrow your choices</h4>
+  <form class="filter-list">
+    <span class="form-header">Categories</span>
+    <% Celadon.types.each(function(type){ %>
+      <input type="checkbox" name="category" value="<%= type.escape('name') %>"> <%= type.escape('name') %><br>
+    <% }) %>
+    <button>Submit</button>
+  </form>
+</div>
 <div class="results-page">
   <section class="results">
-    <h3>All Available Products</h3>
     <ul class="search-results-full all-poke-list"></ul>
     <span>
       <nav class="group">
@@ -11,7 +19,7 @@
 						Previous Page
 					</a>
 				<% } %>
-				<% if (pageNum < results.length) { %>
+				<% if (pageNum < (results.length)) { %>
 					<a class="next-page" href="javascript:void(0)">
 						<span class="next-arrow"></span>
 						Next Page

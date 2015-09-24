@@ -1,9 +1,23 @@
 .advertisement5 {
+  background: #FAFAFA;
+  padding: 20px;
   float: left;
-  width: 230px;
-  height: 400px;
+  width: 190px;
+  height: 1000px;
   // border: 1px solid black;
 }
+
+.form-header {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+}
+
+.filter-list {
+  font-size: 13px;
+}
+
+
 
 .results-page {
   float: left;
