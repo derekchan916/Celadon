@@ -14,8 +14,6 @@ window.Celadon = {
       },
       success: function(){
 
-
-        Backbone.history.start();
       }
     });
     Celadon.productsBasedViews = new Celadon.Collections.Products();
@@ -48,6 +46,7 @@ window.Celadon = {
     var router = new Celadon.Routers.Router({
       $rootEl: $('#main')
     })
+    Backbone.history.start();
   },
 };
 

@@ -18,6 +18,8 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
 
   addToCart: function(e) {
     e.preventDefault();
+    $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
+    
     var that = this;
     var newCartItem = new Celadon.Models.CartItem();
     var attrs = {
@@ -33,6 +35,10 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
         Celadon.currentUser.cart_items().set(data.get('cart_items'))
         that.render();
         $('#add-cart-message').toggleClass('hidden');
+
+        setTimeout(function(){
+          $("body").find(".poke-block").remove();
+        },0);
       }
     })
   },

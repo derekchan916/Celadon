@@ -6,8 +6,8 @@
     Cart subtotal: <p class="price-tag">$<%= Celadon.currentUser.escape('current_subtotal') %></p>
   </span>
   <span class='add-cart-message-btn'>
-    <button>Continue Shopping</button>
-    <button>View your Cart</button>
+    <a href="#">Continue Shopping</a>
+    <a href="#/user/<%= Celadon.currentUser.id %>/cart_items">View your Cart</a>
   </span>
 </div>
 
