@@ -1475,7 +1475,7 @@ Despite its bulky build, Dragonite is capable of flying faster than the speed of
     "175"=>{
       "name"=>"Leah Lin",
       "attack"=>2,
-      "defense"=>1,
+      "defense"=>2,
       "description"=>"Leah is a small, light yellow Pokémon with a round body that is still encased in its eggshell. Leah does not shed its shell. The egg has red and blue shapes on it. Leah has stubby hands and round feet with two toes each. Leah has black eyes and five spikes on its head that seem to form a crown. It also has semi-oval, brown pads on the soles of its feet.
     Leah is able to release poison from the spikes on its head. The anime has shown that it can retract into its shell, which it usually does to sleep. It is able to siphon the positive energy of others, and then release it to those in need of it. It has a very joyful nature. As a result, it is said that it shares its joy with those who take care of it. Because of its disposition, Leah are seen as signs of good luck, especially if a Trainer is capable of getting a sleeping Togepi to stand. Although rare in the wild, Leah can most commonly be found living within the forests.",
       "poke_type"=>["Vegan"],

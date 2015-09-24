@@ -5,9 +5,8 @@ window.Celadon = {
   Routers: {},
 
   initialize: function() {
+    // $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
     Celadon.products = new Celadon.Collections.Products();
-    // Celadon.products.pageNum = 1;
-    // $("body").append("<div class='block'><i></div>");
     Celadon.products.fetch({
       data: {
         type: "fetch_by_page",
@@ -20,7 +19,7 @@ window.Celadon = {
     Celadon.productsBasedViews = new Celadon.Collections.Products();
     Celadon.productsBasedViews.fetch({
       data: {
-        type: "fetch_by_all"
+        type: "fetch_by_views"
       }
     })
     Celadon.users = new Celadon.Collections.Users();
@@ -29,7 +28,16 @@ window.Celadon = {
     Celadon.types.fetch();
 
     Celadon.currentUser = new Celadon.Models.CurrentUser();
-    Celadon.currentUser.fetch();
+    Celadon.currentUser.fetch({
+      success: function() {
+        // Celadon.productsRecommended = new Celadon.Collections.Products();
+        // Celadon.productsRecommended.fetch({
+        //   data: {
+        //     type: "fetch_by_recommended",
+        //   }
+        // })
+      }
+    });
     this.header = new Celadon.Views.Header({ el: '#main-header'})
 
     var router = new Celadon.Routers.Router({
