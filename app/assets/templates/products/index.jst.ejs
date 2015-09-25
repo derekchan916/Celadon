@@ -29,16 +29,16 @@
         <%= "checked" %>
       <% } %>
       > < $10.00<br>
-    <input class="checkbox-price" type="radio" name="price" value="100"
-      <% if (price[0] === "100") { %>
+    <input class="checkbox-price" type="radio" name="price" value="150"
+      <% if (price[0] === "150") { %>
         <%= "checked" %>
       <% } %>
-      > < $100.00<br>
-    <input class="checkbox-price" type="radio" name="price" value="200"
-      <% if (price[0] === "200") { %>
+      > < $150.00<br>
+    <input class="checkbox-price" type="radio" name="price" value="250"
+      <% if (price[0] === "250") { %>
         <%= "checked" %>
       <% } %>
-      > < $200.00<br>
+      > < $250.00<br>
     <input class="checkbox-price" type="radio" name="price"
       <% if (price[0] === "on") { %>
         <%= "checked" %>
@@ -46,18 +46,26 @@
       > All prices<br>
   </form>
 </div>
+
 <div class="results-page">
+  <nav>
+    <% if (results.total_count > 0) { %>
+      Displaying page <%= results.pageNum %> out of <%= Math.ceil(results.total_count / 15) %> page(s)
+    <% } else { %>
+			No results, please search again
+		<% } %>
+  </nav>
   <section class="results">
     <ul class="search-results-full all-poke-list"></ul>
     <span>
       <nav class="group">
-				<% if (pageNum > 1) { %>
+				<% if (results.pageNum > 1) { %>
 					<a class="prev-page" href="javascript:void(0)">
 						<span class="prev-arrow"></span>
 						Previous Page
 					</a>
 				<% } %>
-				<% if (pageNum < (results.total_count / 15)) { %>
+				<% if (results.pageNum < Math.ceil(results.total_count / 15)) { %>
 					<a class="next-page" href="javascript:void(0)">
 						<span class="next-arrow"></span>
 						Next Page

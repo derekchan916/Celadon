@@ -1,10 +1,13 @@
-# json.total_count @search_results.total_count
+json.total_count @products.total_count
+# json._page @products.current_page
 
-json.array!(@products) do |product|
-  json.partial!('product', product: product)
+json.products do
+  json.array!(@products) do |product|
+    json.partial!('product', product: product)
 
-  poke_types = []
-  product.types.each {|type| poke_types << type.name }
-  json.poke_types poke_types
-  json.average_star_rating product.average_star_rating
+    poke_types = []
+    product.types.each {|type| poke_types << type.name }
+    json.poke_types poke_types
+    json.average_star_rating product.average_star_rating
+  end
 end

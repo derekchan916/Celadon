@@ -29,7 +29,7 @@ class Product < ActiveRecord::Base
       ratings << review.star_rating
     end
 
-    ratings.empty? ? 0 : ratings.inject(&:+) / ratings.count.to_f
+    ratings.empty? ? 0 : ((ratings.inject(&:+) / ratings.count.to_f) * 20).round / 20.to_f
   end
 
   def number_of_reviews

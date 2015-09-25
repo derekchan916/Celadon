@@ -19,7 +19,8 @@ window.Celadon = {
     Celadon.productsBasedViews = new Celadon.Collections.Products();
     Celadon.productsBasedViews.fetch({
       data: {
-        type: "fetch_by_views"
+        type: "fetch_by_views",
+        pageNum: 1
       }
     })
     Celadon.users = new Celadon.Collections.Users();

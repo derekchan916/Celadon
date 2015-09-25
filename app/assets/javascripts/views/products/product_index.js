@@ -16,7 +16,6 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
       this.filter = options.filter;
       this.filterList(event);
     }
-
     this.collection.price = ["on"];
   },
 
@@ -34,11 +33,9 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   },
 
   render: function() {
-    // debugger
     this.$el.html(this.template({
       results: this.collection,
       total_count: this.collection.total_count,
-      pageNum: this.collection.pageNum,
       categories: this.collection.categories,
       price: this.collection.price
     }));
@@ -51,8 +48,6 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
     var that = this
     var $result = this.$('input:checked')
     this.collection = new Celadon.Collections.Products();
-    // this.collection.categories = null;
-    // this.collection.price = null;
 
     if (this.filter) {
       this.collection.categories = [this.filter];
@@ -70,7 +65,7 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
         return $(input).val();
       }
     })
-    // debugger
+
     this.collection.pageNum = 1;
     this.collection.fetch({
       data: {

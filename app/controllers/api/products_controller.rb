@@ -15,7 +15,7 @@ module Api
 
         render :index
       elsif params[:type] == "fetch_by_views"
-        @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views)
+        @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views).page(params[:page]).per(5)
       end
     end
 

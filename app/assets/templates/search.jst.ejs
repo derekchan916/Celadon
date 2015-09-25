@@ -2,7 +2,7 @@
 <div class="results-page">
 	<nav>
 		<% if (results.total_count > 0) { %>
-			Displaying page number <%= results.pageNum %> for <p>"<%= Celadon.searchResults.query %>"</p>
+			Displaying page <%= results.pageNum %> out of <%= Math.ceil(results.total_count / 15) %> page(s) for <p>"<%= Celadon.searchResults.query %>"</p>
 		<% } else { %>
 			No results, please search again
 		<% } %>
@@ -17,7 +17,7 @@
 						Previous Page
 					</a>
 				<% } %>
-				<% if (results.pageNum < results.total_count) { %>
+				<% if (results.pageNum < Math.ceil(results.total_count / 15)) { %>
 					<a class="next-page" href="javascript:void(0)">
 						<span class="next-arrow"></span>
 						Next Page
