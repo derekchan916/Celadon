@@ -18,29 +18,33 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
 
   addToCart: function(e) {
     e.preventDefault();
-    $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
-    
-    var that = this;
-    var newCartItem = new Celadon.Models.CartItem();
-    var attrs = {
-      product_id: this.model.id,
-      quantity: this.$('#purchase-qty-selection').val()
-    }
-    newCartItem.save(attrs, {
-      success: function(data) {
-        Celadon.currentUser.set({
-          current_subtotal: data.get('current_subtotal'),
-          number_of_cart_items: data.get('number_of_cart_items')
-        })
-        Celadon.currentUser.cart_items().set(data.get('cart_items'))
-        that.render();
-        $('#add-cart-message').toggleClass('hidden');
+    if (Celadon.currentUser.isSignedIn()) {
+      $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
 
-        setTimeout(function(){
-          $("body").find(".poke-block").remove();
-        },0);
+      var that = this;
+      var newCartItem = new Celadon.Models.CartItem();
+      var attrs = {
+        product_id: this.model.id,
+        quantity: this.$('#purchase-qty-selection').val()
       }
-    })
+      newCartItem.save(attrs, {
+        success: function(data) {
+          Celadon.currentUser.set({
+            current_subtotal: data.get('current_subtotal'),
+            number_of_cart_items: data.get('number_of_cart_items')
+          })
+          Celadon.currentUser.cart_items().set(data.get('cart_items'))
+          that.render();
+          $('#add-cart-message').toggleClass('hidden');
+
+          setTimeout(function(){
+            $("body").find(".poke-block").remove();
+          },0);
+        }
+      })
+    } else {
+      Backbone.history.navigate('#/users/new', { trigger: true })
+    }
   },
 
   render: function() {
