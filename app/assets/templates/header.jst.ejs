@@ -45,6 +45,13 @@
       </span>
     </span>
   </div>
+  <span class="under-search-input-links">
+    <% if (currentUser.isSignedIn()) { %>
+      <a href="#/user/<%= currentUser.id %>"><%= currentUser.escape('fname')%>'s Celadon.com</a>
+    <% } %>
+    <a href="#/products">Search by filters</a>
+  </span>
+
   <div class="navbar-btn-right">
 
     <% if (currentUser.isSignedIn()) { %>
@@ -98,14 +105,17 @@
         </span>
       </span>
     </span>
+
     <% if (currentUser.isSignedIn()) { %>
-      <span class="span-button" id='to-cart-btn'>
+      <span class="span-button cart-button" id='to-cart-btn'>
+        <span class="cart-img"><img src="<%= Celadon.pokeball %>"></span>
+      <span class="line11 cart-number"><%= Celadon.currentUser.escape('number_of_cart_items') %></span>
     <% } else { %>
       <span class="span-button" id='to-cart-btn'>
+        <span class="cart-img"><img src="<%= Celadon.pokeball %>"></span>
+      <span class="line11 cart-number">0</span>
     <% } %>
-      <span class="line1"></span>
-      <span class="line2">Cart</span>
-      <span class="cart-img"></span>
+      <span class="line22 cart-cart">Cart</span>
     </span>
   </div>
 </nav>

@@ -67,7 +67,7 @@ class User < ActiveRecord::Base
   def number_of_cart_items
     count = 0
 
-    self.cart_items.each do |cart_item|
+    self.cart_items(true).each do |cart_item|
       count += cart_item.quantity
     end
     count

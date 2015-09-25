@@ -91,6 +91,22 @@
 .navbar-btn-left {
   float: left;
   padding: 6px 27px 0 15px;
+  margin-right: 52px;
+}
+
+.under-search-input-links {
+  margin-top: 30px;
+  float: left;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.under-search-input-links > a {
+  margin-right: 20px;
+}
+
+.under-search-input-links > a:hover {
+  text-decoration: underline;
 }
 
 .navbar-btn-right {
@@ -226,4 +242,29 @@
 
 .search-bar-img {
   width: 20px
+}
+
+.line22 {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.cart-number {
+  padding: 5px 19px 5px 10px;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f08804;
+}
+
+.cart-cart {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.cart-img {
+  width: 43px;
+  float: left;
 }

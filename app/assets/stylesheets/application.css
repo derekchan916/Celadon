@@ -223,7 +223,7 @@
 
  .icon-pokeball, .icon-pokemon {
    display: inline-block;
-   background: url('Pokeball.png') no-repeat;
+   background: url('Pokeball-small.png') no-repeat;
    overflow: hidden;
    text-indent: -9999px;
    text-align: left;
@@ -231,7 +231,7 @@
 
  .icon-pokeball {
    /*background-position: -10px -0px;*/
-   width: 50px; height: 80px;
+   width: 80px; height: 80px;
  }
 
  /*.icon-pokemon {
