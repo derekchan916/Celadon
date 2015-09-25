@@ -281,7 +281,13 @@
 }
 
 .advertisement7 {
+  margin-top: 10px;
+  padding-top: 20px;
   float: left;
-  background: #ccc;
+  background: #F9F9F9;
   width: 275px;
+}
+
+.advertisement7 img {
+  margin-bottom: 44px;
 }

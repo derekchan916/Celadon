@@ -1,0 +1,1772 @@
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.cart-content {
+  float: left;
+  margin: 20px 20px 40px 20px;
+  width: 1000px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 8, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.cart-content > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* line 14, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.cart-item {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+/* line 19, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.cart-product-img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+}
+
+/* line 26, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.price-quantity {
+  color: #555555;
+}
+
+/* line 31, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.quantity-column {
+  float: right;
+  margin-left: 300px;
+}
+
+/* line 36, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.price-column {
+  float: right;
+}
+
+/* line 40, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.price-quantity > span {
+  font-size: 14px;
+}
+
+/* line 44, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.cart-product-content {
+  float: left;
+}
+
+/* line 49, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header {
+  height: 100px;
+  position: relative;
+}
+
+/* line 54, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > h3 {
+  width: 834px;
+}
+
+/* line 58, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > h3 > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0066c0;
+  cursor: pointer;
+}
+
+/* line 65, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > h3 > a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* line 70, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header .price-column {
+  font-size: 16px;
+  font-weight: bold;
+  color: #B12704;
+}
+
+/* line 76, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header .quantity-column {
+  font-size: 16px;
+}
+
+/* line 80, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > span {
+  display: block;
+  font-size: 13px;
+  color: #555555;
+}
+
+/* line 86, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > .delete-cart-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #0066c0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* line 95, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > .delete-cart-item:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* line 100, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.poke-content-header > .in-stock {
+  color: #008A00;
+  font-size: 13px;
+}
+
+/* line 105, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.order-details {
+  width: 300px;
+  right: 0px;
+  float: right;
+}
+
+/* line 111, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-bar {
+  float: right;
+  position: absolute;
+  margin: 65px 30px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  right: 0px;
+  float: right;
+  background: #F3F3F3;
+}
+
+/* line 123, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-bar > .quick-details {
+  display: block;
+  font-weight: bold;
+  margin: 20px 20px 0 20px;
+}
+
+/* line 129, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-bar > .add-cart-message-btn {
+  font-size: 13px;
+  width: 238px;
+  cursor: pointer;
+  margin: 30px 20px 30px 20px;
+}
+
+/* line 136, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.order-details {
+  width: 260px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #ccc;
+  background: white;
+  font-size: 13px;
+  padding: 20px;
+}
+
+/* line 146, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.order-details > h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 151, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-left {
+  width: 140px;
+  float: left;
+}
+
+/* line 156, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-right {
+  float: right;
+}
+
+/* line 160, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.order-details > .bold {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* line 167, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.confirmation-page {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -220px;
+  width: 360px;
+  height: 300px;
+  padding: 20px;
+  background: #fff;
+  z-index: 6;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: default;
+  background: #eee;
+  display: block;
+}
+
+/* line 185, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.confirmation-page-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 194, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.confirmation-page > button {
+  margin: 40px auto;
+  width: 338px;
+}
+
+/* line 200, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.confirmation-page .cancel {
+  margin: 5px;
+  float: left;
+  box-shadow: none;
+  color: #838B8B;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* line 210, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.confirmation-page .cancel:hover {
+  color: #ccc;
+}
+
+/* line 214, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-message {
+  display: block;
+  border: 1px solid #ccc;
+  background: #F3F3F3;
+  width: 1100px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+/* line 223, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.checkout-message .checkmark {
+  float: left;
+  background: #FAFAFA;
+  width: 90px;
+  padding: 22px 20px;
+  border-right: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00B050;
+}
+
+/* line 234, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/cart.scss */
+.order-message-sentence {
+  display: block;
+  margin: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-img {
+  width: 100px;
+}
+
+/* line 5, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar {
+  position: relative;
+  z-index: 100;
+}
+
+/* line 10, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-ad {
+  background: white;
+}
+
+/* line 14, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar {
+  background: #232F3E;
+  color: white;
+  height: 99px;
+}
+
+/* line 20, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.container {
+  margin: 0 auto;
+}
+
+/* line 24, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-logo {
+  float: left;
+  padding: 7px 19px 0 27px;
+  width: 146px;
+  height: 26px;
+}
+
+/* line 31, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-logo > .navbar-logo-img {
+  color: white;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+/* line 37, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 35px;
+  margin-right: 400px;
+  padding: 11px 25px 0 0;
+  overflow: hidden;
+}
+
+/* line 47, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar-input {
+  position: absolute;
+  display: block;
+  float: left;
+  height: 35px;
+  width: 98%;
+  padding: 0 6px 10px 6px;
+  color: black;
+  padding: 0 6px;
+}
+
+/* line 58, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar-input-bar {
+  background: white;
+  position: relative;
+  padding-left: 5px;
+  display: block;
+  border: 1px solid white;
+  height: 95%;
+  width: 95%;
+  border-radius: 5px;
+}
+
+/* line 69, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar-input > input:focus {
+  border: 1px solid #FEBD69;
+}
+
+/* line 73, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar .search-bar-button {
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 35px;
+  right: 0px;
+  top: 0px;
+  background: #FEBD69;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 86, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar-button > .search-bar-img {
+  padding: 6px 0 0 9px;
+  width: 25px;
+}
+
+/* line 91, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-btn-left {
+  float: left;
+  padding: 6px 27px 0 15px;
+  margin-right: 52px;
+}
+
+/* line 97, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.under-search-input-links {
+  margin-top: 30px;
+  float: left;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* line 104, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.under-search-input-links > a {
+  margin-right: 20px;
+}
+
+/* line 108, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.under-search-input-links > a:hover {
+  text-decoration: underline;
+}
+
+/* line 112, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-btn-right {
+  float: right;
+  padding: 6px 7px 5px 32px;
+}
+
+/* line 117, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.span-button {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  margin: 0 1px 0 3px;
+  border: 1px solid transparent;
+}
+
+/* line 128, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.span-button:hover {
+  border-radius: 5px;
+  border: 1px solid #838B8B;
+  box-shadow: 1px;
+}
+
+/* line 134, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.line1 {
+  font-size: 12px;
+  color: #ccc;
+  height: 14px;
+  font-weight: 400;
+  margin-top: 9px;
+  float: left;
+  clear: both;
+  padding-right: 11px;
+}
+
+/* line 146, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.line2 {
+  color: white;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 0 11px 5px 0;
+  float: left;
+  clear: both;
+}
+
+/* line 157, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 0 2px 5px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #ccc;
+}
+
+/* line 168, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.arrow > .dropdown {
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: -101px;
+  width: 170px;
+  padding: 10px 15px;
+  background: white;
+  color: #444444;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* line 182, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown-arrow {
+  position: absolute;
+  left: 46%;
+  top: -8px;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+/* line 194, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown-btn > .dropdown-btn-link {
+  width: 84%;
+}
+
+/* line 198, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown-btn > .dropdown-btn-link:hover {
+  background: #e4aa5e;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 204, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.start-here {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+/* line 209, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.start-here:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* line 214, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.type-dropdown > a {
+  line-height: 0px;
+}
+
+/* line 218, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown > ul > li {
+  font-weight: 300;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+/* line 224, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown > ul > li > a {
+  cursor: pointer;
+}
+
+/* line 228, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown > ul > li > a:hover {
+  color: #F08804;
+  text-decoration: underline;
+}
+
+/* line 233, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.dropdown > ul > .category-drop:hover {
+  font-weight: bold;
+}
+
+/* line 237, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.navbar-type {
+  float: right;
+  text-align: center;
+  line-height: 15px;
+}
+
+/* line 243, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.search-bar-img {
+  width: 20px;
+}
+
+/* line 247, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.line22 {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+/* line 253, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.cart-number {
+  padding: 5px 19px 5px 10px;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f08804;
+}
+
+/* line 261, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.cart-cart {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+/* line 267, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/headers.scss */
+.cart-img {
+  width: 43px;
+  float: left;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.homepage-all-products {
+  float: left;
+  padding: 0 10px 0 40px;
+  width: 1100px;
+}
+
+/* line 7, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.homepage-all-products > div > h4 {
+  margin-top: 25px;
+  font-size: 21px;
+  color: #4D4D4D;
+}
+
+/* line 13, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.homepage-all-products > div > div {
+  float: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 19, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.homepage-product-image {
+  float: left;
+  width: 200px;
+  margin: 0 10px;
+}
+
+/* line 29, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.see-more-tab {
+  font-size: 14px;
+  color: #2377B7;
+}
+
+/* line 35, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/homepage.scss */
+.see-more-tab:hover {
+  color: #E47911;
+  text-decoration: underline;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-show {
+  width: 820px;
+  margin: 30px auto;
+}
+
+/* line 6, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-show h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* line 11, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+/* line 17, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-header {
+  background: #F6F6F6;
+  color: #555555;
+  border-bottom: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* line 27, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content {
+  padding: 20px;
+}
+
+/* line 31, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 36, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-img {
+  float: left;
+  width: 100px;
+  margin-right: 30px;
+}
+
+/* line 42, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content-left > h4 > a {
+  font-size: 20px;
+  color: #0066c0;
+  cursor: pointer;
+}
+
+/* line 48, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content-left > h4 > a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* line 53, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-header-left {
+  font-size: 14px;
+}
+
+/* line 57, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content-right {
+  font-size: 14px;
+  float: right;
+}
+
+/* line 62, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content-right > a {
+  background: #ECEEF1;
+  border: 1px solid #8D9096;
+}
+
+/* line 67, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/orders.scss */
+.ordered-product-content-right > a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.main-content {
+  margin: 20px;
+  margin-top: 20px;
+}
+
+/* line 6, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-image {
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: 20px 40px 0 100px;
+}
+
+/* line 17, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content {
+  margin-top: 35px;
+  margin-right: 30px;
+  float: left;
+  width: 420px;
+}
+
+/* line 24, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content > .poke-content-header {
+  height: 30px;
+}
+
+/* line 28, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content h3 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+/* line 35, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-subheader {
+  margin: 15px 0;
+}
+
+/* line 39, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content p {
+  display: inline;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* line 45, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-subheader > .price {
+  font-size: 16px;
+  color: #B12704;
+}
+
+/* line 50, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-subheader > .date-found {
+  color: black;
+}
+
+/* line 54, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-content {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 59, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-content .in-stock {
+  display: block;
+  color: #008A00;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+/* line 66, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-content .type-indicator {
+  padding: 3px 20px;
+  font-size: 12px;
+}
+
+/* line 71, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-description {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding: 12px 0;
+  float: left;
+}
+
+/* line 78, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-description h3 {
+  color: #CC6600;
+  display: block;
+  font-weight: bold;
+}
+
+/* line 84, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.poke-content-description > p {
+  display: block;
+  font-size: 14px;
+  margin: 10px 10px 20px 40px;
+}
+
+/* line 90, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.content-right {
+  float: right;
+  width: 244px;
+  margin: 0 40px 0 24px;
+  display: block;
+}
+
+/* line 97, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.purchase-tab {
+  position: absolute;
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 18px 18px;
+  float: right;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* line 107, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.purchase-tab .purchase-tab-qty {
+  display: block;
+  font-size: 13px;
+}
+
+/* line 112, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.purchase-tab .purchase-tab-details {
+  font-size: 13px;
+}
+
+/* line 116, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.purchase-tab p {
+  color: #B12704;
+  font-size: 13px;
+}
+
+/* line 121, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.purchase-tab button {
+  margin-top: 15px;
+  font-size: 14px;
+  width: 80%;
+}
+
+/* line 127, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message {
+  display: block;
+  border: 1px solid #ccc;
+  background: #F3F3F3;
+  width: 1100px;
+  margin: 30px auto;
+}
+
+/* line 135, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message .checkmark {
+  float: left;
+  background: #FAFAFA;
+  width: 200px;
+  padding: 22px 20px;
+  border-right: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00B050;
+}
+
+/* line 146, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message img {
+  float: left;
+  margin-right: 15px;
+  width: 30px;
+}
+
+/* line 152, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message .quick-details {
+  padding: 24px 15px;
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 159, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message .price-tag {
+  color: #B12704;
+}
+
+/* line 163, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/product_show.scss */
+.add-cart-message .add-cart-message-btn {
+  float: right;
+  padding: 24px;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.advertisement5 {
+  background: #FAFAFA;
+  padding: 20px;
+  float: left;
+  width: 190px;
+  height: 1000px;
+}
+
+/* line 10, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.filter-list-categories {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+/* line 15, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.form-header {
+  font-weight: bold;
+  display: block;
+}
+
+/* line 20, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.filter-list-price {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+/* line 25, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results-page {
+  float: left;
+  width: 830px;
+  font-size: 15px;
+}
+
+/* line 32, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results-page > nav {
+  margin: 8px;
+}
+
+/* line 36, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results-page > nav > p {
+  color: #C45500;
+}
+
+/* line 40, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results {
+  margin: 30px 0 100px 0;
+}
+
+/* line 48, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.individual-list {
+  padding: 0 0 5px 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* line 54, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-image {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+}
+
+/* line 60, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-all-content {
+  float: left;
+  width: 645px;
+  height: 117px;
+  overflow: hidden;
+}
+
+/* line 68, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 73, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-header > a {
+  font-weight: 400;
+  font-size: 25px;
+  color: #0066C0;
+}
+
+/* line 79, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-header > a:hover {
+  color: #E47911;
+}
+
+/* line 83, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-summary-left {
+  float: left;
+  width: 420px;
+  margin-bottom: 50px;
+}
+
+/* line 89, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-summary-left .result-price {
+  display: block;
+}
+
+/* line 93, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-date {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* line 99, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.type-bar {
+  padding: 4px 30px;
+}
+
+/* line 103, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-summary-right {
+  width: 225px;
+  height: 30px;
+  float: left;
+}
+
+/* line 109, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-rating > img {
+  display: inline-block;
+  width: 15px;
+}
+
+/* line 114, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-rating {
+  display: block;
+}
+
+/* line 118, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.description-header-results {
+  float: left;
+  display: block;
+  font-weight: bold;
+  margin-top: 3px;
+  color: #555555;
+  font-size: 12px;
+}
+
+/* line 127, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.result-description-thing {
+  float: left;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+
+/* line 137, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results > span > nav {
+  margin: 0 auto;
+  width: 500px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0066c0;
+}
+
+/* line 145, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.results > span > nav > a:hover {
+  color: #C96400;
+}
+
+/* line 149, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.prev-page {
+  float: left;
+}
+
+/* line 153, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/results.scss */
+.next-page {
+  float: right;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-reviews {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  float: left;
+}
+
+/* line 8, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-reviews h3 {
+  color: #CC6600;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* line 14, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.review-summary {
+  float: left;
+  width: 250px;
+  font-size: 14px;
+}
+
+/* line 23, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.average-star-rating > img {
+  display: inline-block;
+  width: 20px;
+}
+
+/* line 28, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.review-create {
+  width: 300px;
+  float: left;
+  font-size: 14px;
+}
+
+/* line 34, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.review-create > button {
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid #BABABA;
+  padding: 5px 10px;
+  text-align: center;
+  background: #ECEEF1;
+}
+
+/* line 43, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.review-create > button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 47, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-screen {
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: default;
+}
+
+/* line 58, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -220px;
+  width: 360px;
+  height: 300px;
+  padding: 20px;
+  background: #fff;
+  z-index: 3;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: default;
+  background: #eee;
+}
+
+/* line 74, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form p {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 79, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.star-rate-input > img {
+  display: inline-block;
+  width: 20px;
+}
+
+/* line 84, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form input {
+  position: block;
+  background: white;
+  width: 280px;
+  height: 25px;
+  padding: 0px 3px;
+  border: 1px solid #838B8B;
+  border-radius: 3px;
+  margin-left: 0px;
+  outline: none;
+  font-size: 12px;
+}
+
+/* line 98, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form input:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+/* line 103, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form textarea {
+  position: block;
+  float: left;
+  width: 286px;
+  height: 80px;
+  border-radius: 3px;
+  margin: 10px;
+  margin-left: 0px;
+  outline: 0;
+  border: 1px solid #838B8B;
+  font-size: 12px;
+}
+
+/* line 116, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form textarea:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+/* line 121, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form button {
+  float: left;
+  background: #CC6600;
+  padding: 5px 18px;
+  border-radius: 3px;
+  font-weight: 400;
+  margin: 8px 4px 0 0;
+  color: white;
+}
+
+/* line 131, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form button:hover {
+  opacity: 0.8;
+}
+
+/* line 135, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form .cancel {
+  margin: 10px;
+  float: left;
+  box-shadow: none;
+  color: #838B8B;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* line 144, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.modal-review-form .cancel:hover {
+  background: transparent;
+  color: #3D3D3D;
+}
+
+/* line 149, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-review-list {
+  margin: 20px 0;
+  width: 100%;
+  float: right;
+  color: #111111;
+  font-size: 14px;
+}
+
+/* line 157, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-review-list li {
+  margin-bottom: 25px;
+}
+
+/* line 161, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-review-list p {
+  display: block;
+}
+
+/* line 165, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-review-list .review-body {
+  margin-top: 10px;
+  width: 800px;
+  word-wrap: break-word;
+}
+
+/* line 171, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.poke-content-review-list .bold-title {
+  color: black;
+  font-weight: bold;
+}
+
+/* line 176, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/reviews.scss */
+.user-star-rating > img {
+  display: inline-block;
+  width: 17px;
+}
+/* line 1, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px 26px;
+  width: 296px;
+  margin: 40px auto;
+}
+
+/* line 9, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > h2 {
+  margin-bottom: 15px;
+}
+
+/* line 13, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > form > label {
+  display: block;
+  font-weight: bold;
+  height: auto;
+}
+
+/* line 20, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > form > label > p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* line 25, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > form > label > input {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 280px;
+  height: 22px;
+  padding: 3px 7px;
+  border-top: 1px solid #bbb;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 36, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > form > label > input:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+/* line 41, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > form > button {
+  font-size: 14px;
+  width: 280px;
+}
+
+/* line 46, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.small-header {
+  position: relative;
+  z-index: 2;
+  width: 100px;
+  padding: 0 6px;
+  background: white;
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 0;
+  left: 35%;
+}
+
+/* line 58, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.divider {
+  position: relative;
+  top: -6px;
+  border-top: 1px solid #ccc;
+  z-index: 1;
+  margin-bottom: 14px;
+}
+
+/* line 66, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.facebook-btn {
+  display: block;
+  background: #3D5A9C;
+  border-radius: 5px;
+  margin: 3px 0;
+  width: 280px;
+  color: white;
+  font-size: 14px;
+  padding: 6px 11px;
+  text-align: center;
+}
+
+/* line 78, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > div > .create-btn {
+  background: #ECEEF1;
+  border: 1px solid #BABABA;
+  font-size: 14px;
+  width: 280px;
+}
+
+/* line 85, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.sign-in-sheet > div > .create-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 89, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.link-to-sign {
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+/* line 95, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.link-to-sign > a {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+/* line 100, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/sign_in_&_create.scss */
+.link-to-sign > a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+/* line 5, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 100px auto;
+  background: #F6F6F6;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* line 17, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information > img {
+  position: absolute;
+  top: -90px;
+  left: 165px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: white;
+}
+
+/* line 28, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information .user-content {
+  margin-top: 120px;
+}
+
+/* line 32, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information .user-content > div {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 38, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information .user-content > p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}
+
+/* line 45, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information a {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+/* line 50, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.user-information a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* line 55, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-inner {
+  border: 1px solid #AAAAAA;
+  margin: 5px auto;
+  width: 350px;
+  background: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* line 64, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-input-section {
+  float: left;
+  width: 175px;
+}
+
+/* line 69, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 74, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-input-section > input {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: calc(100% - 20px);
+  padding: 3px 7px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+/* line 83, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-input-section > input:focus {
+  border: 1px solid #FEBD69;
+  box-shadow: 0 0 1px 0 #FEBD69;
+}
+
+/* line 88, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-image {
+  display: block;
+  font-size: 13px;
+}
+
+/* line 93, /Users/derekchan/Desktop/celadon/app/assets/stylesheets/users.scss */
+.edit-form-inner button {
+  font-size: 12px;
+  width: 330px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ html, body, header, ul, li, input, a, button, h1, h2, h3, h4, h5, label, div,
+ span, nav, p, img {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   color: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   box-sizing: inherit;
+   background: transparent;
+ }
+
+ p {
+   display: inline;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ input[type="password"],
+ input[type="email"],
+ input[type="text"],
+ input[type="submit"],
+ textarea,
+ button {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+ }
+
+ button,
+ input[type="submit"] {
+   cursor: pointer;
+ }
+
+ .group:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+ h2 {
+   font-size: 28px;
+ }
+
+ h3 {
+   font-size: 20px;
+ }
+
+ body {
+   font-family: arial,sans-serif;
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ .darken {
+   background: rgba(0, 0, 0, 0.6);
+   transition: 0.2s;
+   position: fixed;
+   z-index: 4;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   cursor: default;
+ }
+
+ .arrow > .hidden {
+   display: none;
+ }
+
+ .type-indicator {
+   margin: 3px 0px;
+   border-radius: 3px;
+   color: white;
+   font-size: 10px;
+   width: 70px;
+   height: 16px;
+   cursor: pointer;
+ }
+
+ .type-indicator > a {
+   display: block;
+   line-height: normal;
+   margin: 3px 0;
+   text-align: center;
+ }
+
+ .type-indicator:hover {
+   background: rgba(0, 0, 0, 0.6);
+ }
+
+ .sign-in-btn {
+   display: inline-block;
+   color: black;
+   text-align: center;
+   padding: 5px 10px;
+   /*width: 84%;*/
+   margin: 0 auto;
+   border: 1px solid #846A29;
+   border-radius: 5px;
+   background: #FEBD69;
+ }
+
+ .sign-in-btn:hover {
+   background: #e4aa5e;
+   text-decoration: none;
+   color: black;
+ }
+
+ .Poison {
+   background: #B97FC9;
+ }
+
+ .Grass {
+   background: #96C64D;
+ }
+
+ .Fire {
+   background: #F07722;
+ }
+
+ .Ice {
+   background: #51C4E7;
+ }
+
+ .Psychic {
+   background: #EA62B2;
+ }
+
+ .Flying {
+   background: #BDB9B8;
+ }
+
+ .Water {
+   background: #4592C4;
+ }
+
+ .Bug {
+   background: #729F3F;
+ }
+
+ .Normal {
+   background: #A4ACAF;
+ }
+
+ .Electric {
+   background: #EED535;
+ }
+
+ .Ground {
+   background: #AB9842;
+ }
+
+ .Fighting {
+   background: #D56723;
+ }
+
+ .Rock {
+   background: #A38C21;
+ }
+
+ .Steel {
+   background: #9EB7B8;
+ }
+
+ .Ghost {
+   background: #7B62A3;
+ }
+
+ .Fairy {
+   background: #FDB9E9;
+ }
+
+ .Dragon {
+   background: #5818F2;
+ }
+
+ .Dark {
+   background: gray;
+ }
+
+ .Vegan {
+   background: #15E95F;
+ }
+
+ .money {
+   font-size: 16px;
+   font-weight: bold;
+   color: #B12704;
+ }
+
+ .icon-pokeball, .icon-pokemon {
+   display: inline-block;
+   background: url('Pokeball-small.png') no-repeat;
+   overflow: hidden;
+   text-indent: -9999px;
+   text-align: left;
+  }
+
+ .icon-pokeball {
+   /*background-position: -10px -0px;*/
+   width: 80px; height: 80px;
+ }
+
+ /*.icon-pokemon {
+   background-position: -10px -60px;
+   width: 50px; height: 50px;
+ }*/
+
+ .poke-block {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #fff;
+   /*z-index: 1;*/
+}
+
+.icon-pokeball {
+  animation: spinning 2s infinite;
+  animation: spinning 1s infinite steps(8);
+}
+
+.poke-block .icon-pokeball {
+  position: absolute;
+  top: 30%;
+  left: 48%;
+}
+
+@keyframes spinning {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.advertisement7 {
+  margin-top: 10px;
+  padding-top: 20px;
+  float: left;
+  background: #F9F9F9;
+  width: 275px;
+}
+
+.advertisement7 img {
+  margin-bottom: 44px;
+}
