@@ -279,3 +279,9 @@
             transform: rotate(359deg);
   }
 }
+
+.advertisement7 {
+  float: left;
+  background: #ccc;
+  width: 275px;
+}
