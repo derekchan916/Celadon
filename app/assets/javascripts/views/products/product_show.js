@@ -69,9 +69,13 @@ Celadon.Views.ProductShow = Backbone.CompositeView.extend({
   },
 
   renderReviewForm: function() {
-    var view = new Celadon.Views.ReviewForm ({
-      collection: this.model.reviews()
-    })
-    this.addSubview('#review-create', view)
+    if (Celadon.currentUser.isSignedIn()) {
+      var view = new Celadon.Views.ReviewForm ({
+        collection: this.model.reviews()
+      })
+      this.addSubview('#review-create', view)
+    } else {
+      Backbone.history.navigate('#/users/new', { trigger: true })
+    }
   }
 })

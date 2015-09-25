@@ -31,7 +31,7 @@
             <span class="dropdown-arrow type-dropdown"></span>
               <ul>
                 <% Celadon.types.each(function(type){ %>
-                  <li class="tabs">
+                  <li class="tabs category-drop">
                     <a href="#/products/<%= type.escape('name') %>"><%= type.escape('name') %>
                       <span class="<%= type.escape('name') %> type-indicator navbar-type">
                         <%= type.escape('name') %>

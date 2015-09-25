@@ -209,7 +209,12 @@
   cursor: pointer;
 }
 
-.dropdown > ul > li:hover {
+.dropdown > ul > li > a:hover {
+  color: #F08804;
+  text-decoration: underline;
+}
+
+.dropdown > ul > .category-drop:hover {
   font-weight :bold;
 }
 
