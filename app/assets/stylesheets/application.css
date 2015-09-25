@@ -80,6 +80,10 @@
    font-family: arial,sans-serif;
  }
 
+ .main {
+   min-width: 1420px;
+ }
+
  .hidden {
    display: none;
  }
@@ -285,7 +289,7 @@
   padding-top: 20px;
   float: left;
   background: #F9F9F9;
-  width: 275px;
+  width: 270px;
 }
 
 .advertisement7 img {
