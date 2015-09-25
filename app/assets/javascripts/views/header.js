@@ -5,8 +5,8 @@ Celadon.Views.Header = Backbone.View.extend({
   events: {
     "change #search-bar": "search",
     "click #sign-out-link": "signOut",
-    'mouseenter .button-able-hover': 'toggleDropdownOn',
-    'mouseleave .button-able-hover': 'toggleDropdownOff',
+    'mouseenter .button-able-hover': 'toggleHoverEnter',
+    'mouseleave .button-able-hover': 'toggleHoverLeave',
     'click #to-cart-btn': 'goToCart'
   },
 
@@ -17,8 +17,29 @@ Celadon.Views.Header = Backbone.View.extend({
     Celadon.searchResults = new Celadon.Collections.SearchResults();
     Celadon.searchResults.pageNum = 1;
     this.listenTo(Celadon.searchResults, "sync", this.renderSearch);
-
+    this.timeoutId;
     this.renderHeader();
+  },
+
+  toggleHoverEnter: function(e) {
+    e.preventDefault();
+    if (!this.timeoutId) {
+        this.timeoutId = window.setTimeout(function() {
+            this.timeoutId = null;
+            this.toggleDropdownOn(e);
+       }.bind(this), 300);
+    }
+  },
+
+  toggleHoverLeave: function(e) {
+    e.preventDefault();
+      if (this.timeoutId) {
+          window.clearTimeout(this.timeoutId);
+          this.timeoutId = null;
+      }
+      else {
+         this.toggleDropdownOff(e);
+      }
   },
 
   renderHeader: function(){
@@ -54,14 +75,12 @@ Celadon.Views.Header = Backbone.View.extend({
   },
 
   toggleDropdownOn: function(e) {
-    e.preventDefault();
     $target = $(e.currentTarget).attr('data')
     $('.' + $target + ' .dropdown').removeClass('hidden');
     $('.modal-screen-backdrop').addClass('darken');
   },
 
   toggleDropdownOff: function(e) {
-    e.preventDefault();
     $target = $(e.currentTarget).attr('data')
     $('.' + $target + ' .dropdown').addClass('hidden');
     $('.modal-screen-backdrop').removeClass('darken');
