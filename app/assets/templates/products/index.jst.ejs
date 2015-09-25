@@ -1,6 +1,6 @@
 <div class="advertisement5">
-  <h4>Narrow your choices</h4>
-  <form class="filter-list">
+  <h4>Expand your horizons</h4>
+  <form class="filter-list-categories">
     <span class="form-header">Categories</span>
     <% Celadon.types.each(function(type){ %>
       <input class="checkbox-input"
@@ -16,6 +16,34 @@
              <% } %>
              >  <%= type.escape('name') %><br>
      <% }) %>
+  </form>
+  <form class="filter-list-price">
+    <span class="form-header">Price</span>
+    <input class="checkbox-price" type="radio" name="price" value="0"
+      <% if (price[0] === "0") { %>
+        <%= "checked" %>
+      <% } %>
+      > < $0.00<br>
+    <input class="checkbox-price" type="radio" name="price" value="10"
+      <% if (price[0] === "10") { %>
+        <%= "checked" %>
+      <% } %>
+      > < $10.00<br>
+    <input class="checkbox-price" type="radio" name="price" value="100"
+      <% if (price[0] === "100") { %>
+        <%= "checked" %>
+      <% } %>
+      > < $100.00<br>
+    <input class="checkbox-price" type="radio" name="price" value="200"
+      <% if (price[0] === "200") { %>
+        <%= "checked" %>
+      <% } %>
+      > < $200.00<br>
+    <input class="checkbox-price" type="radio" name="price"
+      <% if (price[0] === "on") { %>
+        <%= "checked" %>
+      <% } %>
+      > All prices<br>
   </form>
 </div>
 <div class="results-page">

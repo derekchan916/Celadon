@@ -7,23 +7,12 @@ module Api
         if params[:categories]
           @products = @products.joins(:categories, :types).where(types: {name: params[:categories]}).uniq
         end
+
+        if (params[:price] != ["on"]) && params[:price]#below certain price point
+          @products = @products.where("price < #{params[:price].first.to_i}")
+        end
         @products = @products.page(params[:page]).per(15)
-        # @products = Product.joins(:categories).joins(:type).where('types.name = Poison')
-        # Product.joins(:categories).where('categories.type_id = 4')
-        #
-        # Product.find_by_sql(<<-SQL)
-        #   SELECT
-        #     *
-        #   FROM
-        #     products
-        #   JOIN
-        #     categories ON products.id = categories.product_id
-        #   JOIN
-        #     types ON types.id = categories.type_id
-        #   WHERE
-        #     types.name = 'Poison' OR
-        #     types.name = 'Grass'
-        # SQL
+
         render :index
       elsif params[:type] == "fetch_by_views"
         @products = Product.all.includes(:reviews, :cart_items, :ordered_items, :moves, :types, :views)

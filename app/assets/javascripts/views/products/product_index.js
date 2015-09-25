@@ -4,18 +4,20 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   events: {
     "click .next-page": "nextPage",
     "click .prev-page": "prevPage",
-    "click .checkbox-input": "filterList"
+    "click .checkbox-input": "filterList",
+    "click .checkbox-price": "filterList"
   },
 
   initialize: function(options) {
     this.collection.pageNum = 1;
-    // this.collection.categories = null;
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(Celadon.types, "sync", this.render);
     if (options.filter) {
       this.filter = options.filter;
       this.filterList(event);
     }
+
+    this.collection.price = ["on"];
   },
 
   renderLists: function() {
@@ -32,11 +34,13 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
   },
 
   render: function() {
+    // debugger
     this.$el.html(this.template({
       results: this.collection,
       total_count: this.collection.total_count,
       pageNum: this.collection.pageNum,
-      categories: this.collection.categories
+      categories: this.collection.categories,
+      price: this.collection.price
     }));
     this.renderLists();
     return this;
@@ -47,21 +51,33 @@ Celadon.Views.ProductsIndex = Backbone.CompositeView.extend({
     var that = this
     var $result = this.$('input:checked')
     this.collection = new Celadon.Collections.Products();
+    // this.collection.categories = null;
+    // this.collection.price = null;
+
     if (this.filter) {
       this.collection.categories = [this.filter];
       this.filter = null;
     } else {
-      this.collection.categories = $.map($result, function(input) {
-        return $(input).val()
+      this.collection.categories = $.map(this.$('.checkbox-input'), function(input){
+        if ($(input).is(":checked")) {
+          return $(input).val();
+        }
       })
     }
 
+    this.collection.price = $.map(this.$('.checkbox-price'), function(input) {
+      if ($(input).is(':checked')) {
+        return $(input).val();
+      }
+    })
+    // debugger
     this.collection.pageNum = 1;
     this.collection.fetch({
       data: {
         page: this.collection.pageNum,
         type: "fetch_by_page",
-        categories: this.collection.categories
+        categories: this.collection.categories,
+        price: this.collection.price
       },
       success: function() {
         that.render();
