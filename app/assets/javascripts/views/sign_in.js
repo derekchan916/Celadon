@@ -8,7 +8,8 @@ Celadon.Views.SignIn = Backbone.View.extend({
   },
 
   events: {
-    "submit form": "submit"
+    "submit form": "submit",
+    "click #guest-sign-in-btn": "guestSignIn"
   },
 
   render: function(){
@@ -35,6 +36,14 @@ Celadon.Views.SignIn = Backbone.View.extend({
     } else {
       Backbone.history.navigate("", { trigger: true });
     }
+  },
+
+  guestSignIn: function(e) {
+    e.preventDefault();
+    Celadon.currentUser.signIn({
+      email: "ashketchup@pokemon.com",
+      password: "password"
+    })
   }
 
 });
