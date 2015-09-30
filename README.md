@@ -2,25 +2,18 @@
 
 [Heroku link][heroku]
 
-[heroku]:
-
-## Updated List
-Create Table for category, area, and vendor
-Sort Bys
-Date:
-add discount prices
-
+[heroku]: www.celadon.online
 
 ## Minimum Viable Product
 Celadon is a clone of Amazon built on Rails and Backbone. Users can:
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
-- [ ] View Products
-- [ ] Filter / Search Products
-- [ ] Have a shopping cart
-- [ ] Rate the products
-- [ ] Purchase and view order history
+- [X] Create accounts
+- [X] Create sessions (log in)
+- [X] View Products
+- [X] Filter / Search Products
+- [X] Have a shopping cart
+- [X] Rate the products
+- [X] Purchase and view order history
 
 ## Design Docs
 * [View Wireframes][views]
@@ -34,8 +27,7 @@ Celadon is a clone of Amazon built on Rails and Backbone. Users can:
 
 # Phase 1: User Authentication & Products List (~2 days)
 I will implement user authentication in Rails based on the practices learned at
-App Academy. The most important aspect of this will be - users do not have to be signed in in order to browse products. The user has to be signed in in order to use any of the other functions (view shopping cart, purchase, comment etc). The most important part of this phase will be pushing the app to Heroku and
-ensuring that everything works before moving on to phase 2.
+App Academy. The most important aspect of this will be - users do not have to be signed in in order to browse products. The user has to be signed in in order to use any of the other functions (view shopping cart, purchase, comment etc). The most important part of this phase will be pushing the app to Heroku and ensuring that everything works before moving on to phase 2.
 
 [Details][phase-one]
 
@@ -76,9 +68,9 @@ a Vendor page in order to create products.
 
 ### Bonus Features (TBD)
 - [ ] Amazon Prime
-- [ ] Pagination/infinite scroll
+- [X] Pagination/infinite scroll
 - [ ] Multiple sessions/session management
-- [ ] User avatars
+- [X] User avatars
 - [ ] Algorithm for "Recommended Products"
 
 [phase-one]: ./docs/phases/phase1.md

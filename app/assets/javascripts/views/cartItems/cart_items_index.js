@@ -34,7 +34,7 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
 
   placeOrder: function(e) {
     e.preventDefault();
-    Backbone.history.navigate('#/user/'+ this.user.id + '/cart_items', { trigger: true });
+
 
     $("body").append("<div class='poke-block'><i class='icon-pokeball'/></div>")
     var that = this
@@ -47,7 +47,6 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
           current_subtotal: data.current_subtotal,
           number_of_cart_items: data.number_of_cart_items
         });
-        Celadon.currentUser.cart_items().set(data.cart_items);
         Celadon.currentUser.ordered_items().set(data.ordered_items)
         $('#order-message').toggleClass('hidden');
 
@@ -56,6 +55,9 @@ Celadon.Views.CartItemsIndex = Backbone.CompositeView.extend({
         },0);
       }
     })
+    
+    Celadon.currentUser.cart_items().set([]);
+    Backbone.history.navigate('#/user/'+ this.user.id + '/cart_items', { trigger: true });
   },
 
   render: function() {
