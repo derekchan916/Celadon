@@ -75,10 +75,16 @@
   text-align: center;
 }
 
-.guest-sign-in-btn {
+.sign-in-sheet .guest-sign-in-btn {
+  background: #CD3333;
   width: 280px;
-  color: black;
+  color: white;
   font-size: 13px;
+}
+
+.sign-in-sheet .guest-sign-in-btn:hover {
+  color: white;
+  background: #8B2323;
 }
 
 .sign-in-sheet > div > .create-btn {
