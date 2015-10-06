@@ -2,67 +2,16 @@
 
 [Heroku link][www.celadon.online]
 
-## Minimum Viable Product
-Celadon is a clone of Amazon built on Rails and Backbone. Users can:
-
-- [X] Create accounts
-- [X] Create sessions (log in)
-- [X] View Products
-- [X] Filter / Search Products
-- [X] Have a shopping cart
-- [X] Rate the products
-- [X] Purchase and view order history
-
-## Design Docs
-* [View Wireframes][views]
-* [DB schema][schema]
-
-[views]: ./docs/views.md
-[schema]: ./docs/schema.md
-
-## Implementation Timeline
-By the end of every phase, I will work on the CSS aspects.
-
-## Phase 1: User Authentication & Products List (~2 days)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. The most important aspect of this will be - users do not have to be signed in in order to browse products. The user has to be signed in in order to use any of the other functions (view shopping cart, purchase, comment etc). The most important part of this phase will be pushing the app to Heroku and ensuring that everything works before moving on to phase 2.
-
-[Details][phase-one]
-
-## Phase 2: Shopping Cart & Commenting on Products (with Ratings) (~2 days)
-I will be adding the same functions of the shopping cart and following a
-product. Following will be similar to the Like Demo. Just like Amazon, there
-should just be a button that lets you click "Add to cart" when viewing a
-product. The user should also be able to view his/her shopping cart on the user
-page.
-
-[Details][phase-two]
-
-## Phase 3: Filtering, and Checkout  (~2 days)
-Filtering will be the heart of my website. I plan on making a detailed filtering
-checkbox system that will send a request to the products controller, allowing
-for filtering using SQL. The response will be parsed each time the user clicks
-a checkbox.
-
-[Details][phase-three]
-
-## Phase 4: Orders (~1 day)
-I will add a new table for Orders, so that the user can look at his/her past
-orders. This will be parsed from the users on the backbone side, and the user
-will be able to view the past orders from the user page. Orders will only be
-created after the checkout phase from the shopping cart.
-
-[Details][phase-four]
-
-## Phase 5: Recommended!! Searching for Products and Listing Products Using
-### Carousel, Thumbnail Images (~2 the rest of the time)
-The main part here would be to create a "search engine" in the main page. This
-will be similar to using an AJAX request every time the user inputs a letter.
-If there is time I will continue with making a Carousel for different sections
-on the rootUrl page, and allowing for multiple images. Lastly, I will create
-a Vendor page in order to create products.
-
-[Details][phase-five]
+## Features
+- A single-page Backbone.js app built on a RESTful Ruby on Rails architecture
+- OmniAuth and User Auth stored through BCrypt
+- Rate and Review products using RateyRate Gem
+- Add products to cart and checkout using custom AJAX methods
+- Filter search using custom AJAX and custom SQL requests
+- Prefix search using PgSearch
+- Image uploads using AWS via Paperclip
+- Pagination using Kaminari
+- Deep product layout using multiple associations
 
 ## Bonus Features (TBD)
 - [ ] Amazon Prime
@@ -70,9 +19,4 @@ a Vendor page in order to create products.
 - [ ] Multiple sessions/session management
 - [X] User avatars
 - [ ] Algorithm for "Recommended Products"
-
-[phase-one]: ./docs/phases/phase1.md
-[phase-two]: ./docs/phases/phase2.md
-[phase-three]: ./docs/phases/phase3.md
-[phase-four]: ./docs/phases/phase4.md
-[phase-five]: ./docs/phases/phase5.md
+- [ ] Thumbnails for product images 
