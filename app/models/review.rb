@@ -7,7 +7,7 @@ class Review < ActiveRecord::Base
     message: "You are only allowed to comment once."}
 
   belongs_to :author, class_name: 'User', foreign_key: :author_id
-  belongs_to :product, class_name: 'product', foreign_key: :product_id
+  belongs_to :product, class_name: 'Product', foreign_key: :product_id
 
   def self.average_rating
   end
