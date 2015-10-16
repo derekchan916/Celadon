@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   validates :email, :fname, :lname, :session_token, presence: true
-  validates :password, length: { minimum: 4, allow_nil: true }
+  validates :password, length: { minimum: 6, allow_nil: true }
   validates :email, uniqueness: true
   has_attached_file :image, default_url: "missing.png"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/

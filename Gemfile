@@ -59,6 +59,15 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'quiet_assets'
+  gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'database_cleaner'
+  gem 'launchy'
 end
 
 group :production do
