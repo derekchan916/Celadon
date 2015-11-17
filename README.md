@@ -1,5 +1,5 @@
 # Celadon
-[Live][www.celadon.online]
+[Live](www.celadon.online)
 
 ## Custom SQL requests
 
